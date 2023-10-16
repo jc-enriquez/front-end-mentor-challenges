@@ -22,16 +22,6 @@ html {
   font-size: 62.5%;
 }
 
-@media screen and (max-width: 38em) {
-  html {
-    font-size: 56.25%;
-  }
-
-  .container {
-    padding: 2rem;
-  }
-}
-
 body {
   background-color: var(--cream);
   font-family: "Montserrat", sans-serif;
@@ -52,16 +42,6 @@ body {
   width: 60rem;
   border-radius: 9px;
   overflow: hidden;
-}
-
-@media screen and (max-width: 28em) {
-  html {
-    font-size: 50%;
-  }
-
-  .product {
-    grid-template-columns: 1fr;
-  }
 }
 
 .product__img {
@@ -135,4 +115,24 @@ body {
 
 .btn-add:hover {
   background-color: var(--darker-cyan);
+}
+
+@media screen and (max-width: 38em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 28em) {
+  html {
+    font-size: 50%;
+  }
+
+  .product {
+    grid-template-columns: 1fr;
+  }
 }
