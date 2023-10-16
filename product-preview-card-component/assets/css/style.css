@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --darker-cyan: hsl(159, 36%, 18%);
+
+  /* Neutral Colors */
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 38em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    padding: 2rem;
+  }
+}
+
+body {
+  background-color: var(--cream);
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-gray-blue);
+  line-height: 1.8;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 60rem;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 28em) {
+  html {
+    font-size: 50%;
+  }
+
+  .product {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product__text-box {
+  background-color: var(--white);
+  padding: 3rem;
+}
+
+.product__label {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 1.6rem;
+}
+
+.product__title {
+  color: var(--dark-blue);
+  font-family: "Fraunces", serif;
+  font-size: 3.6rem;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+  font-weight: 700;
+}
+
+.product__description {
+  margin-bottom: 2.4rem;
+  font-size: 1.4rem;
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.product__price--sale {
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.product__price--original {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-add {
+  color: var(--white);
+  background-color: var(--dark-cyan);
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: var(--darker-cyan);
+}
