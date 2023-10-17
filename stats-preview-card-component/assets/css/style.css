@@ -161,6 +161,7 @@ body {
   .stats-preview__img-box {
     order: 1;
     height: 32rem;
+    background-image: url(../images/image-header-mobile.jpg);
   }
 
   .stats-preview__numbers {
