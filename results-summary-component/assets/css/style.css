@@ -32,6 +32,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -44,6 +45,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.05);
+  margin-bottom: 3.6rem;
 }
 
 .summary__text {
@@ -174,6 +176,24 @@ body {
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
+}
+
+.attribution {
+  font-size: 1rem;
+}
+
+.attribution__link:link,
+.attribution__link:visited {
+  padding-bottom: 0.3rem;
+  color: var(--cobalt-blue);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.attribution__link:hover,
+.attribution__link:active {
+  border-bottom: 1px solid var(--cobalt-blue);
 }
 
 @media screen and (max-width: 43.75em) {
