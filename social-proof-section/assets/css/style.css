@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  background-image: url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top -65rem left, bottom -30rem right;
+  background-size: 100%;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.social-proof {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.social-proof__header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.heading--secondary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  line-height: 0.8;
+  margin-bottom: 2.4rem;
+}
+
+.social-proof__description {
+  color: var(--dark-grayish-magenta);
+}
+
+.social-proof__ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.social-proof__rating {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  background-color: var(--light-grayish-magenta);
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
+}
+
+.social-proof__rating:nth-child(1) {
+  align-self: start;
+}
+
+.social-proof__rating:nth-child(2) {
+  align-self: center;
+}
+
+.social-proof__rating:nth-child(3) {
+  align-self: end;
+}
+
+.social-proof__rating-stars {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-proof__rating-caption {
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+}
+
+.social-proof__testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.social-proof__testimonial {
+  background-color: var(--very-dark-magenta);
+  color: var(--white);
+  padding: 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.social-proof__testimonial:nth-child(2) {
+  margin: 1.6rem 0 -1.6rem 0;
+}
+
+.social-proof__testimonial:nth-child(3) {
+  margin: 3.2rem 0 -3.2rem 0;
+}
+
+.social-proof__testimonial-avatar {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.social-proof__testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-name {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.testimonial-role {
+  font-weight: 500;
+  color: var(--soft-pink);
+}
+
+.social-proof__testimonial-review {
+  line-height: 1.2;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution__link:link,
+.attribution__link:visited {
+  padding-bottom: 0.3rem;
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.attribution__link:hover,
+.attribution__link:active {
+  border-bottom: 1px solid var(--very-dark-magenta);
+}
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  body {
+    background-position: top -30rem left, bottom -10rem right;
+  }
+
+  .social-proof__header {
+    gap: 4.8rem;
+  }
+}
+
+@media screen and (max-width: 43.75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .social-proof__rating {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 34.375em) {
+  body {
+    background-image: url(../images/bg-pattern-top-mobile.svg),
+      url(../images/bg-pattern-bottom-mobile.svg);
+
+    background-position: top left, bottom right;
+  }
+
+  .social-proof {
+    padding: 4.8rem 0;
+  }
+
+  .social-proof__header {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    text-align: center;
+    margin-bottom: 4.8rem;
+  }
+
+  .social-proof__rating {
+    gap: 1.6rem;
+  }
+
+  .social-proof__rating:nth-child(1),
+  .social-proof__rating:nth-child(2),
+  .social-proof__rating:nth-child(3) {
+    align-self: stretch;
+  }
+
+  .social-proof__testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .social-proof__testimonial:nth-child(2) {
+    margin: 0;
+  }
+
+  .social-proof__testimonial:nth-child(3) {
+    margin: 0;
+  }
+}
