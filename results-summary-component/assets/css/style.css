@@ -36,12 +36,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 0 2rem;
 }
 
 .summary {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 60rem;
+  max-width: 60rem;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.05);
