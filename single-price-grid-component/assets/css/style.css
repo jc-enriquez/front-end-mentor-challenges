@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral Colors */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+
+  /* Own color declaration */
+  --white: hsl(0, 0%, 100%);
+  --lighter-cyan: hsl(179, 47%, 55%);
+  --lightest-cyan: hsl(178, 47%, 72%);
+  --darker-bright-yellow: hsl(71, 62%, 49%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--light-gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.price-component {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 65rem;
+  margin-bottom: 5.2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.price-component__header {
+  grid-column: 1 / -1;
+  background-color: var(--white);
+}
+
+.price-component__header,
+.price-component__subscription,
+.price-component__why-us {
+  padding: 3rem 5rem 3rem 3rem;
+}
+
+.price-component__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 1.6rem;
+}
+
+.price-component__subtitle {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bright-yellow);
+  margin-bottom: 1.2rem;
+}
+
+.price-component__description {
+  line-height: 1.4;
+  color: var(--grayish-blue);
+}
+
+.price-component__subscription {
+  color: var(--white);
+  background-color: var(--cyan);
+}
+
+.price-component__subscription-title,
+.price-component__why-us-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.price-component__subscription-price {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.price-component__subscription-price span {
+  font-size: 1.8rem;
+  opacity: 0.5;
+}
+
+.price-component__subscription-desc {
+  margin-bottom: 2.4rem;
+}
+
+.btn-sign-up:link,
+.btn-sign-up:visited {
+  display: block;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--bright-yellow);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.btn-sign-up:hover,
+.btn-sign-up:active {
+  transform: translateY(-3px);
+  background-color: var(--darker-bright-yellow);
+}
+
+.price-component__why-us {
+  background-color: var(--lighter-cyan);
+  color: var(--white);
+}
+
+.price-component__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  list-style: none;
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+
+.attribution {
+  font-size: 1rem;
+}
+
+.attribution__link:link,
+.attribution__link:visited {
+  padding-bottom: 0.3rem;
+  color: var(--cyan);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.attribution__link:hover,
+.attribution__link:active {
+  border-bottom: 1px solid var(--cyan);
+}
+
+@media screen and (max-width: 43.75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .price-component__header,
+  .price-component__subscription,
+  .price-component__why-us {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .price-component {
+    grid-template-columns: 1fr;
+    max-width: 30rem;
+  }
+  .price-component__list {
+    gap: 0.6rem;
+  }
+}
