@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  /* Own color declaration */
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3rem;
+  background-color: var(--light-grayish-blue);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.preview {
+  max-width: 75rem;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.preview__img {
+  width: 100%;
+  height: 100%;
+}
+
+.preview__text-box {
+  padding: 3.5rem;
+}
+
+.preview__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+  color: var(--very-dark-grayish-blue);
+}
+
+.preview__description {
+  color: var(--desaturated-dark-blue);
+  margin-bottom: 1.6rem;
+}
+
+.preview__info {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.preview__avatar {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+.preview__author {
+  margin-right: auto;
+  margin-left: 1.2rem;
+}
+
+.preview__name {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+}
+
+.preview__date {
+  color: var(--grayish-blue);
+}
+
+.share-btn {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.share-btn:hover {
+  background-color: var(--desaturated-dark-blue);
+}
+
+.share-icon {
+  fill: var(--desaturated-dark-blue);
+  transition: all 0.3s;
+}
+
+.share-btn:hover .share-icon {
+  fill: var(--white);
+}
+
+.share-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: black;
+  position: absolute;
+  top: -5rem;
+  right: -8rem;
+  z-index: 1;
+}
+
+.share-links span {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.share-links-icon {
+  fill: var(--white);
+}

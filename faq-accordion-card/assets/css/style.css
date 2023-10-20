@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Primary - Text */
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+
+  /* Primary - Gradient */
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+
+  /* Neutral - Text */
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --light-grayish-blue: hsl(240, 5%, 91%);
+
+  /* Own color declaration */
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.2rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--soft-violet),
+    var(--soft-blue)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq {
+  max-width: 100rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--white);
+  /* background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top -15rem left -10rem; */
+}
+
+.faq__img-box {
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top -17rem right 5rem;
+}
