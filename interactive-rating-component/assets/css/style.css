@@ -3,12 +3,16 @@
 :root {
   /* Primary */
   --orange: hsl(25, 97%, 53%);
+
   /* Neutral */
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
-  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue: hsl(213, 20%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
+
+  /* Own color declaration */
+  --dark-grey: hsl(214, 12%, 26%);
 }
 
 * {
@@ -28,19 +32,28 @@ body {
 }
 
 .container {
+  position: relative;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
 }
 
 .form {
+  z-index: 1;
+}
+
+.form,
+.message {
   max-width: 40rem;
   background-color: var(--dark-blue);
   color: var(--white);
   padding: 3rem;
   border-radius: 30px;
+  transition: all 0.3s;
+  margin-bottom: 5.2rem;
 }
 
 .form__img-box {
@@ -50,11 +63,12 @@ body {
   height: 3.5rem;
   width: 3.5rem;
   border-radius: 50%;
-  background-color: var(--light-grey);
+  background-color: var(--dark-grey);
   margin-bottom: 2.4rem;
 }
 
-.form__title {
+.form__title,
+.message__title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
@@ -63,13 +77,50 @@ body {
 .form__description {
   line-height: 1.4;
   color: var(--medium-grey);
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .form__rating-box {
   display: flex;
-  gap: 1.2rem;
-  margin-bottom: 1.6rem;
+  gap: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.form__rating-container {
+  position: relative;
+}
+
+.form__rating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.form__rating-checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  padding: 2.5rem;
+  font-size: 1.6rem;
+  color: var(--light-grey);
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__rating-checkmark:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.form__rating:checked + .form__rating-checkmark {
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .btn-submit {
@@ -89,4 +140,74 @@ body {
 .btn-submit:hover {
   background-color: var(--white);
   color: var(--orange);
+}
+
+.message {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.message__img-box {
+  margin-bottom: 1.6rem;
+}
+
+.message__img-box {
+  display: block;
+}
+
+.message__score {
+  color: var(--orange);
+  background-color: var(--dark-grey);
+  padding: 1rem 1.5rem;
+  border-radius: 100px;
+  margin-bottom: 3.2rem;
+}
+
+.message__description {
+  line-height: 1.4;
+  color: var(--medium-grey);
+  text-align: center;
+}
+
+.attribution {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.attribution__link:link,
+.attribution__link:visited {
+  padding-bottom: 0.3rem;
+  color: var(--orange);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.attribution__link:hover,
+.attribution__link:active {
+  border-bottom: 1px solid var(--orange);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media screen and (max-width: 43.75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
 }

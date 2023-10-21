@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="" class="form">
+      <form class="form">
         <div class="form__img-box">
           <img
             src="assets/images/icon-star.svg"
@@ -29,46 +29,83 @@
             <input
               type="radio"
               class="form__rating"
+              id="1"
               value="1"
               name="form__rating"
+              required
             />
-            <span class="form__rating-checkmark"></span>
+            <label for="1" class="form__rating-checkmark">1</label>
           </div>
           <div class="form__rating-container">
             <input
               type="radio"
               class="form__rating"
+              id="2"
               value="2"
               name="form__rating"
             />
+            <label for="2" class="form__rating-checkmark">2</label>
           </div>
           <div class="form__rating-container">
             <input
               type="radio"
               class="form__rating"
+              id="3"
               value="3"
               name="form__rating"
             />
+            <label for="3" class="form__rating-checkmark">3</label>
           </div>
           <div class="form__rating-container">
             <input
               type="radio"
               class="form__rating"
+              id="4"
               value="4"
               name="form__rating"
             />
+            <label for="4" class="form__rating-checkmark">4</label>
           </div>
           <div class="form__rating-container">
             <input
               type="radio"
               class="form__rating"
+              id="5"
               value="5"
               name="form__rating"
             />
+            <label for="5" class="form__rating-checkmark">5</label>
           </div>
         </div>
         <button class="btn-submit">Submit</button>
       </form>
+      <figure class="message">
+        <div class="message__img-box">
+          <img
+            src="assets/images/illustration-thank-you.svg"
+            alt="Thank you illustration"
+          />
+        </div>
+        <p class="message__score">
+          You selected <span class="score"></span> out of 5
+        </p>
+        <p class="message__title">Thank you!</p>
+        <p class="message__description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </figure>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="attribution__link"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="#" class="attribution__link">John Christopher Enriquez </a>.
+      </div>
     </div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
