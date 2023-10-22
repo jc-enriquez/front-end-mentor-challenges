@@ -1,0 +1,1 @@
+$(".form__email").parsley();

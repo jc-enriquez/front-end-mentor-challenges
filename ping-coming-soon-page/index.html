@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Front-End Mentor &mdash; Ping Coming Soon Page</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <img src="assets/images/logo.svg" alt="Ping logo" />
+    </header>
+    <main class="margin-bottom-lg">
+      <section class="section-launch">
+        <div class="section-launch__text-box">
+          <h1 class="heading--primary margin-bottom-sm">
+            We are launching <span>soon!</span>
+          </h1>
+          <p class="section-launch__description">Subscribe and get notified</p>
+        </div>
+        <form action="#" class="form">
+          <div class="form__group">
+            <div>
+              <input
+                type="text"
+                name="email"
+                type="email"
+                data-parsley-type="email"
+                id="email"
+                class="form__email"
+                placeholder="
+          Your email address..."
+              />
+              <span class="form__message" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn-submit">Notify Me</button>
+          </div>
+        </form>
+        <div class="section-launch__img-box">
+          <img
+            src="assets/images/illustration-dashboard.png"
+            alt="Ping dashboard"
+            class="section-launch__img-hero"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__links">
+        <ul class="footer__list">
+          <li>
+            <a href="#"
+              ><ion-icon
+                name="logo-facebook"
+                class="footer__list-icon"
+              ></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon
+                name="logo-twitter"
+                class="footer__list-icon"
+              ></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon
+                name="logo-instagram"
+                class="footer__list-icon"
+              ></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="footer__copyright">
+        &copy; Copyright Ping. All Rights Reserved.
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
