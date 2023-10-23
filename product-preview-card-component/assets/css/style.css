@@ -44,7 +44,7 @@ body {
   max-width: 60rem;
   border-radius: 9px;
   overflow: hidden;
-  margin-bottom: 3.6rem;
+  margin-bottom: 5.2rem;
 }
 
 .product__img {
@@ -122,6 +122,7 @@ body {
 
 .attribution {
   font-size: 1rem;
+  text-align: center;
 }
 
 .attribution__link:link,

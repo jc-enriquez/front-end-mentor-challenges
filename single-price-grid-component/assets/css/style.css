@@ -39,7 +39,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .price-component {
@@ -149,6 +149,7 @@ body {
 
 .attribution {
   font-size: 1rem;
+  text-align: center;
 }
 
 .attribution__link:link,

@@ -28,11 +28,12 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 0 2rem;
 }
 
 .qr-code {
   width: 30rem;
-  margin-bottom: 3.6rem;
+  margin-bottom: 5.2rem;
   padding: 1.5rem;
   border-radius: 12px;
   background-color: var(--white);
@@ -65,6 +66,7 @@ body {
 
 .attribution {
   font-size: 1rem;
+  text-align: center;
 }
 
 .attribution__link:link,

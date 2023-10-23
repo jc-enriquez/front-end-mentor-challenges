@@ -32,16 +32,19 @@ body {
 .container {
   max-width: 144rem;
   margin: 0 auto;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.4rem;
+  margin-bottom: 5.2rem;
 }
 
 .testimonials__card {
@@ -119,6 +122,7 @@ body {
 .attribution {
   font-size: 1rem;
   color: var(--very-dark-blackish-blue);
+  text-align: center;
 }
 
 .attribution__link:link,

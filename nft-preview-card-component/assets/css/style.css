@@ -34,6 +34,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 0 2rem;
 }
 
 .nft__card {
@@ -172,6 +173,7 @@ body {
 .attribution {
   font-size: 1rem;
   color: var(--white);
+  text-align: center;
 }
 
 .attribution__link:link,

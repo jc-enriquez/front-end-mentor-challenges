@@ -31,7 +31,7 @@ body {
 .container {
   max-width: 140rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .header {
@@ -94,6 +94,7 @@ body {
   display: flex;
   gap: 1.2rem;
   justify-content: end;
+  margin-bottom: 5.2rem;
 }
 
 .social-icons {
@@ -103,7 +104,6 @@ body {
   border: 1px solid currentColor;
   border-radius: 50%;
   transition: all 0.3s;
-  margin-bottom: 3.2rem;
 }
 
 .social-icons:hover {

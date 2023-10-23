@@ -176,6 +176,7 @@ body {
 .attribution {
   font-size: 1rem;
   color: var(--white);
+  text-align: center;
 }
 
 .attribution__link:link,

@@ -35,7 +35,7 @@ body {
 }
 
 .preview {
-  margin-bottom: 3.6rem;
+  margin-bottom: 5.2rem;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -123,6 +123,7 @@ body {
 
 .attribution {
   font-size: 1rem;
+  text-align: center;
 }
 
 .attribution__link:link,
