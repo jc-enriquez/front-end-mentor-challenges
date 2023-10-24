@@ -24,35 +24,113 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 5rem;
+  left: 40rem;
 }
 
 .coming-soon {
-  max-width: 110rem;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 
+.coming-soon__form-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  max-width: 45rem;
+}
+
 .form__title {
-  font-size: 5.2rem;
+  font-size: 8.2rem;
+  font-weight: 300;
   text-transform: uppercase;
-  color: var(--dark-grayish-red);
+  color: var(--desaturated-red);
+  letter-spacing: 1.5rem;
+  margin-bottom: 2.4rem;
 }
 
 .form__title span {
   display: block;
-  font-weight: 300;
-  color: var(--desaturated-red);
+  font-weight: 400;
+  color: var(--dark-grayish-red);
 }
 
 .form__description {
-  line-height: 1.4;
+  line-height: 1.8;
+  color: var(--desaturated-red);
+  margin-bottom: 3.2rem;
+}
+
+.form__input-group {
+  display: flex;
+  flex: 1 1 auto;
+  border: 1px solid var(--desaturated-red);
+  border-radius: 100px;
+}
+
+.form__input-email {
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 100px;
+  border: none;
+  background-color: transparent;
+  color: var(--dark-grayish-red);
+}
+
+.form__input-email:focus {
+  outline: none;
+}
+
+.form__input-email::placeholder {
   color: var(--desaturated-red);
 }
 
+.form__input-group:has(.form__input-email:focus) {
+  box-shadow: inset 0 0 0 1px var(--desaturated-red);
+}
+
+.btn-submit {
+  padding: 1.5rem 4rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0rem 1.5rem 1.5rem rgba(0, 0, 0, 0.07);
+}
+
+/* .btn-submit:hover {
+  transform: scale(1.1);
+} */
+
 .coming-soon__img {
+  display: block;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .coming-soon {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

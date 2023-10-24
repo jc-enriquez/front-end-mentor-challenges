@@ -8,27 +8,35 @@
     <title>Front-End Mentor &mdash; Base Apparel Coming Soon</title>
   </head>
   <body>
-    <div class="container">
+    <main>
+      <header class="header">
+        <img src="assets/images/logo.svg" alt="Logo" class="form__logo" />
+      </header>
       <section class="coming-soon">
-        <form action="#" class="form">
-          <div class="form__logo-box">
-            <img src="assets/images/logo.svg" alt="Logo" class="form__logo" />
-          </div>
-          <div class="form__text-box">
-            <p class="form__title"><span>We're</span> coming soon</p>
-            <p class="form__description">
-              Hello fellow shoppers! We're currently building our new fashion
-              store. Add your email below to stay-up-to-date with announcements
-              and our launch deals.
-            </p>
-          </div>
-          <div class="form__input-group">
-            <input type="email" name="" id="" placeholder="Email Address" />
-            <button type="submit">
-              <img src="assets/images/icon-arrow.svg" alt="Arrow icon" />
-            </button>
-          </div>
-        </form>
+        <div class="coming-soon__form-box">
+          <form action="#" class="form">
+            <div class="form__text-box">
+              <p class="form__title">We're <span>coming soon</span></p>
+              <p class="form__description">
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay-up-to-date with
+                announcements and our launch deals.
+              </p>
+            </div>
+            <div class="form__input-group">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email Address"
+                class="form__input-email"
+              />
+              <button type="submit" class="btn-submit">
+                <img src="assets/images/icon-arrow.svg" alt="Arrow icon" />
+              </button>
+            </div>
+          </form>
+        </div>
         <div class="coming-soon__img-box">
           <img
             src="assets/images/hero-desktop.jpg"
@@ -37,6 +45,6 @@
           />
         </div>
       </section>
-    </div>
+    </main>
   </body>
 </html>

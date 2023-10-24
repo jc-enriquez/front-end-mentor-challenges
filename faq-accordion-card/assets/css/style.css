@@ -54,15 +54,78 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--white);
-  /* background-image: url(../images/bg-pattern-desktop.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top -15rem left -10rem; */
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 4rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
-.faq__img-box {
-  background-image: url(../images/bg-pattern-desktop.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top -17rem right 5rem;
+/* .faq__img-box {
+  overflow: hidden;
+} */
+
+.faq__img-composition {
+  position: relative;
 }
+
+.faq__img-composition div {
+  position: relative;
+}
+
+.faq__img-composition-1 {
+  position: absolute;
+  left: -9.2rem;
+  top: 15rem;
+  z-index: 1;
+}
+
+.faq__img-composition-2 {
+  position: absolute;
+  left: -5rem;
+}
+
+.heading--secondary {
+  font-size: 3.6rem;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.2rem;
+}
+
+.faq__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+.faq__accordion-item {
+  border-bottom: 1px solid var(--light-grayish-blue);
+  padding-bottom: 1.5rem;
+}
+
+.faq__header {
+  margin-bottom: 1.2rem;
+}
+
+.faq__button {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  transition: all 0.2s;
+  color: inherit;
+}
+
+.faq__button:hover {
+  color: var(--soft-red);
+}
+
+/* .faq__answer {
+  display: none;
+} */
