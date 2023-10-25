@@ -9,42 +9,64 @@
   </head>
   <body>
     <main>
-      <header class="header">
-        <img src="assets/images/logo.svg" alt="Logo" class="form__logo" />
-      </header>
       <section class="coming-soon">
         <div class="coming-soon__form-box">
-          <form action="#" class="form">
-            <div class="form__text-box">
-              <p class="form__title">We're <span>coming soon</span></p>
-              <p class="form__description">
-                Hello fellow shoppers! We're currently building our new fashion
-                store. Add your email below to stay-up-to-date with
-                announcements and our launch deals.
-              </p>
-            </div>
-            <div class="form__input-group">
-              <input
-                type="email"
-                name=""
-                id=""
-                placeholder="Email Address"
-                class="form__input-email"
+          <div>
+            <header class="header">
+              <img
+                src="assets/images/logo.svg"
+                alt="Base apparel logo"
+                class="header__logo"
               />
-              <button type="submit" class="btn-submit">
-                <img src="assets/images/icon-arrow.svg" alt="Arrow icon" />
-              </button>
-            </div>
-          </form>
+            </header>
+            <form action="#" class="form">
+              <div class="form__text-box">
+                <p class="form__title">We're <span>coming soon</span></p>
+                <p class="form__description">
+                  Hello fellow shoppers! We're currently building our new
+                  fashion store. Add your email below to stay-up-to-date with
+                  announcements and our launch deals.
+                </p>
+              </div>
+              <div class="form__input-group">
+                <input
+                  type="text"
+                  name=""
+                  id="form__input-email"
+                  placeholder="Email Address"
+                  class="form__input-email"
+                />
+
+                <img
+                  src="assets/images/icon-error.svg"
+                  alt="Error icon "
+                  class="form__input-error-icon"
+                />
+
+                <button type="submit" class="btn-submit">
+                  <img src="assets/images/icon-arrow.svg" alt="Arrow icon" />
+                </button>
+              </div>
+            </form>
+            <span class="form__input-message" aria-live="polite"></span>
+          </div>
         </div>
         <div class="coming-soon__img-box">
-          <img
-            src="assets/images/hero-desktop.jpg"
-            alt="Woman model"
-            class="coming-soon__img"
-          />
+          <picture>
+            <source
+              media="(min-width:900px)"
+              srcset="assets/images/hero-desktop.jpg"
+              alt="Base apparel model"
+            />
+            <img
+              src="assets/images/hero-mobile.jpg"
+              alt="Base apparel model"
+              class="coming-soon__img"
+            />
+          </picture>
         </div>
       </section>
     </main>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
