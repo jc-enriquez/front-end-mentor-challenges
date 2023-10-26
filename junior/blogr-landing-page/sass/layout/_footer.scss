@@ -1,0 +1,32 @@
+.footer {
+  font-family: "Ubuntu", sans-serif;
+  padding-block: 4rem;
+  background-color: $very-dark-black-blue;
+  border-radius: 0 100px 0 0;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    list-style: none;
+  }
+
+  &__item-header {
+    font-weight: 500;
+    color: $white;
+    margin-bottom: 1.2rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $grayish-blue;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $white;
+    text-decoration: underline;
+  }
+}

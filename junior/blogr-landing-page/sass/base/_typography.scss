@@ -1,0 +1,39 @@
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.6rem;
+}
+
+.heading-primary {
+  color: $white;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+
+  &--dark {
+    color: $very-dark-blue;
+  }
+
+  &--light {
+    color: $white;
+  }
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  color: $very-dark-blue;
+}
+
+.paragraph {
+  line-height: 1.6;
+
+  &--dark {
+    color: $very-dark-grayish-blue;
+  }
+
+  &--light {
+    color: $grayish-blue;
+  }
+}

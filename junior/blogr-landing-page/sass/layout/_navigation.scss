@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-block: 4rem;
+  gap: 4.8rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+
+  &__list {
+    display: flex;
+    gap: 3.2rem;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $grayish-blue;
+    transition: all 0.3s;
+    display: block;
+  }
+
+  &__link:hover,
+  &__link:active {
+    text-decoration: underline;
+    color: $white;
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    margin-left: auto;
+  }
+}

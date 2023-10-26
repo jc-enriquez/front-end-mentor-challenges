@@ -1,0 +1,35 @@
+.btn:link,
+.btn:visited {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  font-weight: 500;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.btn--solid:link,
+.btn--solid:visited {
+  color: $light-red;
+  background-color: $white;
+  border: 1px solid transparent;
+}
+
+.btn--solid:hover,
+.btn--solid:active {
+  color: $white;
+  background-color: $very-light-red;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  color: $white;
+  border: 1px solid $white;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  color: $light-red;
+  background-color: $white;
+}
