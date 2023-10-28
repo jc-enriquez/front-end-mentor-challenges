@@ -1,0 +1,18 @@
+.heading {
+  font-family: "Fraunces", serif;
+
+  &--primary {
+    font-size: 5.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+
+  &--secondary {
+    font-size: 4.8rem;
+  }
+
+  &--tertiary {
+    font-size: 3.2rem;
+  }
+}

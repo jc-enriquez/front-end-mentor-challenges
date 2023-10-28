@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+
+  &__list {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $white;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 1px solid $white;
+  }
+
+  &__cta:link,
+  &__cta:visited {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $very-dark-saturated-blue;
+    background-color: $white;
+    padding: 1.2rem 2.4rem;
+    border-radius: 100px;
+    transition: all 0.3s;
+  }
+
+  &__cta:hover,
+  &__cta:active {
+    color: $white;
+    background-color: $grayish-blue;
+  }
+}

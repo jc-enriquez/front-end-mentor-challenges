@@ -1,0 +1,36 @@
+.section-content {
+  &__img-box {
+    & img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    &--graphic-design {
+      background-image: url(../images/desktop/image-graphic-design.jpg);
+    }
+
+    &--photography {
+      background-image: url(../images/desktop/image-photography.jpg);
+    }
+
+    &--graphic-design,
+    &--photography {
+      height: 60rem;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      flex-direction: column;
+      background-size: cover;
+      background-position: top;
+      text-align: center;
+    }
+  }
+}
+
+// .section-gallery {
+
+//   &__img {
+
+//   }
+// }

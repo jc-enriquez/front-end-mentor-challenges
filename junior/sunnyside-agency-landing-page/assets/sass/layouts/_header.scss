@@ -1,0 +1,12 @@
+.header {
+  min-height: 80vh;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: $white;
+
+  &__content {
+    margin-top: 5.2rem;
+  }
+}

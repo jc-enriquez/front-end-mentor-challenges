@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif; }
+
+.heading {
+  font-family: "Fraunces", serif; }
+  .heading--primary {
+    font-size: 5.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 10px; }
+  .heading--secondary {
+    font-size: 4.8rem; }
+  .heading--tertiary {
+    font-size: 3.2rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 5.2rem; }
+
+.grid {
+  display: grid; }
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; }
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr); }
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr); }
+
+.header {
+  min-height: 80vh;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white; }
+  .header__content {
+    margin-top: 5.2rem; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem; }
+  .navigation__list {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none; }
+  .navigation__link:link, .navigation__link:visited {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s; }
+  .navigation__link:hover, .navigation__link:active {
+    border-bottom: 1px solid white; }
+  .navigation__cta:link, .navigation__cta:visited {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23303e;
+    background-color: white;
+    padding: 1.2rem 2.4rem;
+    border-radius: 100px;
+    transition: all 0.3s; }
+  .navigation__cta:hover, .navigation__cta:active {
+    color: white;
+    background-color: #a7abae; }
+
+.section-content__img-box img {
+  width: 100%;
+  display: block;
+  object-fit: cover; }
+
+.section-content__img-box--graphic-design {
+  background-image: url(../images/desktop/image-graphic-design.jpg); }
+
+.section-content__img-box--photography {
+  background-image: url(../images/desktop/image-photography.jpg); }
+
+.section-content__img-box--graphic-design, .section-content__img-box--photography {
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  background-size: cover;
+  background-position: top;
+  text-align: center; }
