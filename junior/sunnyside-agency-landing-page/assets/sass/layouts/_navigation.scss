@@ -40,6 +40,6 @@
   &__cta:hover,
   &__cta:active {
     color: $white;
-    background-color: $grayish-blue;
+    background-color: rgba($white, 0.3);
   }
 }

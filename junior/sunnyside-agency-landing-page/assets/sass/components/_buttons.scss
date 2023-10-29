@@ -1,0 +1,33 @@
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $very-dark-saturated-blue;
+}
+
+.cta:link::after,
+.cta:visited::after {
+  content: "";
+  display: block;
+  height: 1.2rem;
+  width: 100%;
+  border-radius: 100px;
+  margin-top: -1rem;
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+
+.cta--yellow:link::after {
+  background-color: $yellow;
+}
+
+.cta--red:link::after {
+  background-color: $soft-red;
+}
+
+.cta:hover + .cta:link::after {
+  opacity: 1;
+}

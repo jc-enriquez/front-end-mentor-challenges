@@ -10,9 +10,30 @@
 
   &--secondary {
     font-size: 4.8rem;
+    color: $very-dark-saturated-blue;
   }
 
   &--tertiary {
     font-size: 3.2rem;
+    color: $grayish-blue;
+    text-transform: uppercase;
+
+    &--graphic-design,
+    &--photography {
+      text-transform: none;
+    }
+
+    &--graphic-design {
+      color: $dark-desaturated-cyan;
+    }
+
+    &--photography {
+      color: $dark-blue;
+    }
   }
+}
+
+.description {
+  line-height: 1.6;
+  color: $very-dark-grayish-blue;
 }

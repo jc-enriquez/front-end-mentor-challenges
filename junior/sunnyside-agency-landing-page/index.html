@@ -15,9 +15,12 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <div class="navigation__logo">
+        <div class="navigation__logo-box">
           <a href="index.html"
-            ><img src="assets/images/logo.svg" alt="Sunnyside agency logo"
+            ><img
+              src="assets/images/logo.svg"
+              alt="Sunnyside agency logo"
+              class="navigation__logo"
           /></a>
         </div>
         <ul class="navigation__list">
@@ -36,7 +39,7 @@
         </ul>
       </nav>
       <div class="header__content">
-        <h1 class="heading heading--primary u-margin-bottom-md">
+        <h1 class="heading heading--primary u-margin-top-lg u-margin-bottom-xl">
           We are creatives
         </h1>
 
@@ -47,13 +50,17 @@
       <section class="section-content">
         <div class="grid grid-2-cols">
           <div class="section-content__text-box">
-            <h2 class="heading heading--secondary">Transform your brand</h2>
-            <p class="description">
-              We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
-            </p>
-            <a href="#" class="cta cta--yellow">Learn more</a>
+            <div class="section-content__text-block">
+              <h2 class="heading heading--secondary u-margin-bottom-sm">
+                Transform your brand
+              </h2>
+              <p class="description u-margin-bottom-md">
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <a href="#" class="cta cta--yellow">Learn more</a>
+            </div>
           </div>
           <div class="section-content__img-box">
             <img
@@ -65,19 +72,25 @@
             <img src="assets/images/desktop/image-stand-out.jpg" alt="" />
           </div>
           <div class="section-content__text-box">
-            <h2 class="heading heading--secondary">
-              Stand out to the right audience
-            </h2>
-            <p class="description">
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
-            </p>
-            <a href="#" class="cta cta--red">Learn more</a>
+            <div class="section-content__text-block">
+              <h2 class="heading heading--secondary u-margin-bottom-sm">
+                Stand out to the right audience
+              </h2>
+              <p class="description u-margin-bottom-md">
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <a href="#" class="cta cta--red">Learn more</a>
+            </div>
           </div>
           <div class="section-content__img-box--graphic-design">
-            <div class="text-box">
-              <h3 class="heading heading--tertiary">Graphic design</h3>
+            <div class="section-content__text-block--sm">
+              <h3
+                class="heading heading--tertiary heading--tertiary--graphic-design u-margin-bottom-sm"
+              >
+                Graphic design
+              </h3>
               <p class="description description--graphic-design">
                 Great design makes you memorable. We deliver artwork that
                 underscores your brand message and captures potential clients’
@@ -86,8 +99,12 @@
             </div>
           </div>
           <div class="section-content__img-box--photography">
-            <div class="text-box">
-              <h3 class="heading heading--tertiary">Photography</h3>
+            <div class="section-content__text-block--sm">
+              <h3
+                class="heading heading--tertiary heading--tertiary--photography u-margin-bottom-sm"
+              >
+                Photography
+              </h3>
               <p class="description description--photography">
                 Increase your credibility by getting the most stunning,
                 high-quality photos that improve your business image.
@@ -97,7 +114,9 @@
         </div>
       </section>
       <section class="section-testimonials">
-        <h3 class="heading heading--tertiary heading--tertiary--dark">
+        <h3
+          class="heading heading--tertiary heading--tertiary--dark u-margin-bottom-lg"
+        >
           Client testimonials
         </h3>
 
@@ -118,62 +137,87 @@
 
           <figure class="testimonials__card">
             <img
-              src="assets/images/image-emily.jpg"
-              alt="Emily R."
+              src="assets/images/image-thomas.jpg"
+              alt="Thomas S."
               class="testimonials__img"
             />
             <p class="testimonials__feedback">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
             </p>
-            <p class="testimonials__author">Emily R.</p>
-            <p class="testimonials__role">Marketing Director</p>
+            <p class="testimonials__author">Thomas S.</p>
+            <p class="testimonials__role">Chief Operating Officer</p>
           </figure>
 
           <figure class="testimonials__card">
             <img
-              src="assets/images/image-emily.jpg"
-              alt="Emily R."
+              src="assets/images/image-jennie.jpg"
+              alt="Jennie F."
               class="testimonials__img"
             />
             <p class="testimonials__feedback">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!t.
             </p>
-            <p class="testimonials__author">Emily R.</p>
-            <p class="testimonials__role">Marketing Director</p>
+            <p class="testimonials__author">Jennie F.</p>
+            <p class="testimonials__role">Business Owner</p>
           </figure>
         </div>
       </section>
+
       <section class="section-gallery">
         <div class="grid grid-4-cols">
-          <figure class="section-gallery__img">
+          <figure class="section-gallery__fig">
             <img
               src="assets/images/desktop/image-gallery-milkbottles.jpg"
               alt="Milk bottles"
+              class="section-gallery__img"
             />
           </figure>
-          <figure class="section-gallery__img">
+          <figure class="section-gallery__fig">
             <img
               src="assets/images/desktop/image-gallery-orange.jpg"
               alt="Orange"
+              class="section-gallery__img"
             />
           </figure>
-          <figure class="section-gallery__img">
+          <figure class="section-gallery__fig">
             <img
               src="assets/images/desktop/image-gallery-cone.jpg"
               alt="Cone"
+              class="section-gallery__img"
             />
           </figure>
-          <figure class="section-gallery__img">
+          <figure class="section-gallery__fig">
             <img
               src="assets/images/desktop/image-gallery-sugarcubes.jpg"
               alt="Sugar cubes"
+              class="section-gallery__img"
             />
           </figure>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <div class="footer__navigation-logo">
+          <a href="index.html"
+            ><img src="assets/images/logo.svg" alt="Sunnyside agency logo"
+          /></a>
+        </div>
+        <ul class="footer__navigation-list">
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">About</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">Services</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">Projects</a>
+          </li>
+        </ul>
+        <ul class="footer__socials"></ul>
+      </nav>
+    </footer>
   </body>
 </html>

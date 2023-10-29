@@ -8,9 +8,11 @@
 }
 
 .grid-3-cols {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(min-content, 40rem));
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-4-cols {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(min-content, 60rem));
 }

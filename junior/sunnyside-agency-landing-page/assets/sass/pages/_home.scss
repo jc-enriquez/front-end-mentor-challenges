@@ -1,4 +1,13 @@
 .section-content {
+  &__text-block {
+    max-width: 50rem;
+    margin: 0 auto;
+
+    &--sm {
+      max-width: 40rem;
+    }
+  }
+
   &__img-box {
     & img {
       width: 100%;
@@ -8,10 +17,18 @@
 
     &--graphic-design {
       background-image: url(../images/desktop/image-graphic-design.jpg);
+
+      & .description {
+        color: $dark-desaturated-cyan;
+      }
     }
 
     &--photography {
       background-image: url(../images/desktop/image-photography.jpg);
+
+      & .description {
+        color: $dark-blue;
+      }
     }
 
     &--graphic-design,
@@ -28,9 +45,15 @@
   }
 }
 
-// .section-gallery {
+.section-testimonials {
+  text-align: center;
+  padding-block: 9.6rem;
+}
 
-//   &__img {
-
-//   }
-// }
+.section-gallery {
+  &__img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
