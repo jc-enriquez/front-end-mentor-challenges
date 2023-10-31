@@ -1,0 +1,13 @@
+.section-future {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+  row-gap: 6.4rem;
+  margin-bottom: 5.2rem;
+
+  @media screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+    column-gap: 0;
+  }
+}

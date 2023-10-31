@@ -1,0 +1,30 @@
+.btn:link,
+.btn:visited {
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 1.5rem 3rem;
+  transition: all 0.2s;
+}
+
+.btn--solid:link,
+.btn--solid:visited {
+  color: $off-white;
+  background-color: $soft-red;
+}
+
+.btn--solid:hover,
+.btn--solid:active {
+  background-color: $very-dark-blue;
+}
+
+.btn--mobile {
+  background: transparent;
+  border: none;
+  display: none;
+
+  @media screen and (max-width: $bp-small) {
+    display: block;
+  }
+}

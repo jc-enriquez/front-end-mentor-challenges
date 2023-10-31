@@ -1,0 +1,18 @@
+.footer {
+  font-size: 1rem;
+  text-align: center;
+
+  &__attribution-link:link,
+  &__attribution-link:visited {
+    padding-bottom: 0.3rem;
+    color: $soft-red;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__attribution-link:hover,
+  &__attribution-link:active {
+    border-bottom: 1px solid currentColor;
+  }
+}
