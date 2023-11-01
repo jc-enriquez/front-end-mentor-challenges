@@ -1,0 +1,11 @@
+.header {
+  min-height: 80vh;
+  // background-image: url(../assets/images/desktop/image-hero.jpg);
+  // background-position: center;
+  // background-size: cover;
+  background-color: violet;
+
+  &__text-box {
+    border: 2px solid $white;
+  }
+}

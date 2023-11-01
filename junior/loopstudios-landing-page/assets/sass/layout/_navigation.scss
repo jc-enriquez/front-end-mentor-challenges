@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $white;
+    padding-bottom: 1rem;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 1px solid $white;
+  }
+}
