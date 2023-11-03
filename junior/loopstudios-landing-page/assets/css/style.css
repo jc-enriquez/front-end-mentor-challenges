@@ -26,6 +26,19 @@ body {
   .heading--secondary {
     font-size: 3.2rem; }
 
+.paragraph {
+  line-height: 1.8; }
+
+.u-container {
+  max-width: 130rem;
+  margin: 0 auto; }
+
+.u-block {
+  display: block; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem; }
+
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -44,10 +57,49 @@ body {
   color: #ffffff;
   background-color: #000000; }
 
+.img-card {
+  position: relative;
+  cursor: pointer; }
+  .img-card__img {
+    filter: brightness(85%);
+    transition: all 0.3s;
+    width: 100%; }
+  .img-card__text {
+    position: absolute;
+    bottom: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0 0 3rem 3rem;
+    transition: all 0.3s; }
+  .img-card:hover img {
+    filter: opacity(70%); }
+  .img-card:hover .img-card__text {
+    color: #000000; }
+
+.footer {
+  padding: 3.2rem 0;
+  background-color: #000000; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between; }
+  .footer__navigation-list {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none; }
+  .footer__navigation-link {
+    color: #ffffff;
+    text-decoration: none; }
+  .footer__copyright {
+    color: #8c8c8c; }
+
 .header {
   min-height: 80vh;
   background-color: violet; }
   .header__text-box {
+    display: inline-block;
     border: 2px solid #ffffff; }
 
 .navigation {
@@ -64,11 +116,19 @@ body {
   .navigation__link:hover, .navigation__link:active {
     border-bottom: 1px solid #ffffff; }
 
-.section-creations__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.section-creations__content {
+.section-leader__container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  align-items: baseline; }
+
+.section-creations {
+  margin-bottom: 16rem; }
+  .section-creations__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.4rem; }
+  .section-creations__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem; }

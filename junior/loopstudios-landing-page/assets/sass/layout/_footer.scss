@@ -1,0 +1,24 @@
+.footer {
+  padding: 3.2rem 0;
+  background-color: $black;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation-list {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+  }
+
+  &__navigation-link {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    color: $dark-gray;
+  }
+}

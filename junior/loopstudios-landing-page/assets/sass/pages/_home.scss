@@ -1,12 +1,24 @@
+.section-leader {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+  }
+}
+
 .section-creations {
+  margin-bottom: 16rem;
+
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 6.4rem;
   }
 
   &__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
   }
 }

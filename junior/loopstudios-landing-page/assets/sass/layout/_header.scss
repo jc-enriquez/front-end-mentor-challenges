@@ -6,6 +6,7 @@
   background-color: violet;
 
   &__text-box {
+    display: inline-block;
     border: 2px solid $white;
   }
 }
