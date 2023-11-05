@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400; }
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 800; }
+
+.paragraph {
+  color: #868e96; }
+  .paragraph a:link,
+  .paragraph a:visited {
+    text-decoration: none;
+    font-weight: 600;
+    color: #4263eb;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s; }
+  .paragraph a:hover,
+  .paragraph a:active {
+    border-bottom: 2px solid #4263eb; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.6rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 3.2rem; }
+
+.u-margin-bottom-large {
+  margin-bottom: 6.4rem; }
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  transition: all 0.3s;
+  font-weight: 600; }
+
+.btn--solid:link, .btn--solid:visited {
+  background-color: #4263eb;
+  color: #f8f9fa; }
+
+.btn--solid:hover, .btn--solid:active {
+  background-color: #5c7cfa; }
+
+.btn--outline:link, .btn--outline:visited {
+  color: #4263eb;
+  box-shadow: 0 0 0 1px inset #4263eb; }
+
+.btn--outline:hover, .btn--outline:active {
+  background-color: #4263eb;
+  color: #f8f9fa; }
+
+.card {
+  position: relative;
+  max-width: 30rem;
+  border: 1px solid #dee2e6;
+  border-radius: 9px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s; }
+  .card:hover {
+    transform: translateY(-2px); }
+  .card__img {
+    width: 100%;
+    display: block; }
+  .card__content {
+    padding: 2.4rem 2rem; }
+  .card__tags {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+  .card__title:link, .card__title:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1.6rem; }
+  .card__description {
+    color: #868e96;
+    line-height: 1.8;
+    margin-bottom: 2.4rem; }
+  .card__btns {
+    display: flex;
+    gap: 1.2rem; }
+
+.tag,
+.level {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  color: #f8f9fa; }
+
+.tag--html {
+  background-color: #e34c26; }
+
+.tag--css {
+  background-color: #563d7c; }
+
+.tag--js {
+  background-color: #f1e05a; }
+
+.tag--sass {
+  background-color: #a53b70; }
+
+.level {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1; }
+  .level--newbie {
+    background-color: #6abecd; }

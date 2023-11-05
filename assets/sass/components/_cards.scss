@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  max-width: 30rem;
+  border: 1px solid $light-gray;
+  border-radius: 9px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__content {
+    padding: 2.4rem 2rem;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &__title:link,
+  &__title:visited {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+  }
+
+  &__description {
+    color: $medium-gray;
+    line-height: 1.8;
+    margin-bottom: 2.4rem;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 1.2rem;
+  }
+}
+
+.tag,
+.level {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  color: $white;
+}
+
+.tag {
+  &--html {
+    background-color: $html;
+  }
+
+  &--css {
+    background-color: $css;
+  }
+
+  &--js {
+    background-color: $js;
+  }
+
+  &--sass {
+    background-color: $sass;
+  }
+}
+
+.level {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+
+  &--newbie {
+    background-color: $newbie;
+  }
+}

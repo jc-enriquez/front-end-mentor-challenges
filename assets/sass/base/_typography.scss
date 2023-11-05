@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 800;
+}
+
+.paragraph {
+  color: $medium-gray;
+
+  & a:link,
+  & a:visited {
+    text-decoration: none;
+    font-weight: 600;
+    color: $primary;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+
+  & a:hover,
+  & a:active {
+    border-bottom: 2px solid $primary;
+  }
+}
