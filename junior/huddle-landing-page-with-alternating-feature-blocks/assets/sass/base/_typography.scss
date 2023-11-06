@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: $very-dark-cyan;
+
+  &--primary {
+    font-size: 5.2rem;
+    line-height: 1.2;
+  }
+
+  &--secondary {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+}
+
+.paragraph {
+  &--dark {
+    color: $very-dark-cyan;
+  }
+
+  &--light {
+    color: $grayish-blue;
+  }
+}

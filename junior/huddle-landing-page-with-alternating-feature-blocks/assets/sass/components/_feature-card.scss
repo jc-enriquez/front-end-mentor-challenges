@@ -1,0 +1,13 @@
+.feature-card {
+  padding-block: 4rem;
+  padding-left: 9.6rem;
+  padding-right: 2rem;
+  box-shadow: 0 0.02rem 1rem 0.02rem rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

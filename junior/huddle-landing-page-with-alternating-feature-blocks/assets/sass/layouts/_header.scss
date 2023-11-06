@@ -1,0 +1,11 @@
+.header {
+  background-image: url(../assets/images/bg-hero-desktop.svg);
+  background-color: $very-pale-cyan;
+  background-size: cover;
+  min-height: 65vh;
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
