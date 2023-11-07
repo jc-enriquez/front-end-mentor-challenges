@@ -125,22 +125,24 @@
           >Get Started For Free</a
         >
       </div>
-      <div class="u-container grid grid-4-cols">
+      <div class="footer__container u-container">
         <address class="footer__address">
           <ul class="footer__list">
             <li class="footer__item">
-              <span class="footer__address-icon"></span>
-              <span class="footer__adress-detail">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua</span
-              >
+              <ion-icon name="location" class="footer__icon"></ion-icon>
+              <span class="footer__address-detail"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </span>
             </li>
             <li class="footer__item">
-              <span class="footer__address-icon"></span>
+              <ion-icon name="call" class="footer__icon"></ion-icon>
+
               <span class="footer__adress-detail"> +1-543-123-4567</span>
             </li>
             <li class="footer__item">
-              <span class="footer__address-icon"></span>
+              <ion-icon name="mail" class="footer__icon"></ion-icon>
+
               <span class="footer__adress-detail"> example@huddle.com</span>
             </li>
           </ul>
@@ -173,12 +175,21 @@
           </ul>
         </nav>
 
-        <div>
+        <div class="footer__socials">
+          <ul class="footer__social"></ul>
           <p class="copyright">
             &copy; Copyright 2018 Huddle. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

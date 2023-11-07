@@ -1,10 +1,15 @@
 .footer {
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: $very-dark-cyan;
   color: $white;
   padding-top: 9.6rem;
   padding-bottom: 4.8rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__message {
     position: absolute;
@@ -28,5 +33,25 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+  }
+
+  &__item {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__link:hover,
+  &__link:active {
+    text-decoration: underline;
   }
 }
