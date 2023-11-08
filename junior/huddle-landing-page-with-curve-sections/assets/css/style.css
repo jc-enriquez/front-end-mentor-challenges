@@ -102,7 +102,10 @@ body {
   .feature--blue {
     background-color: #f5faff; }
     .feature--blue--1 {
-      background-image: url(../assets/images/bg-section-bottom-desktop-1.svg), url(../assets/images/bg-section-top-desktop-1.svg); }
+      background: url("../images/bg-section-bottom-desktop-1.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top; }
   .feature__img {
     width: 100%; }
 
