@@ -2,10 +2,30 @@
   background-image: url(../assets/images/bg-hero-desktop.svg);
   background-color: $very-pale-cyan;
   background-size: cover;
-  min-height: 65vh;
+
+  @media screen and (max-width: $bp-medium) {
+    text-align: center;
+  }
+
+  &__container {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+
+    @media screen and (max-width: $bp-medium) {
+      padding-block: 4rem;
+    }
+  }
 
   &__img {
     display: block;
     width: 100%;
+  }
+}
+
+.logo {
+  height: 3.2rem;
+
+  &--footer {
+    margin-bottom: 2.4rem;
   }
 }

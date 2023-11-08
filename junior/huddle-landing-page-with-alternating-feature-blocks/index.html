@@ -10,22 +10,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+    <title>
+      Front-End Mentor &mdash; Huddle Landing Page with Alternating Feature
+      Blocks
+    </title>
   </head>
   <body>
     <header class="header">
       <div class="u-container">
         <nav class="navigation">
           <div class="navigation__logo-box">
-            <img
-              src="assets/images/logo.svg"
-              alt="Huddle logo"
-              class="navigation__logo"
-            />
+            <img src="assets/images/logo.svg" alt="Huddle logo" class="logo" />
           </div>
           <a href="#" class="btn btn--solid-white">Try It Free</a>
         </nav>
-        <div class="grid grid-2-cols">
+        <div class="header__container grid grid-2-cols grid-2-cols--gap-sm">
           <div class="header__text-box">
             <h1 class="heading heading--primary u-margin-bottom-large">
               Build The Community Your Fans Will Love
@@ -51,8 +51,10 @@
       <section class="section-features">
         <div class="section-features__container u-container">
           <figure class="feature-card">
-            <div class="grid grid-2-cols grid-gap-lg">
-              <div class="feature-card__text-box">
+            <div class="grid grid-2-cols grid-2-cols--gap-lg">
+              <div
+                class="feature-card__text-box feature-card__text-box--second"
+              >
                 <h2 class="heading heading--secondary u-margin-bottom-small">
                   Grow Together
                 </h2>
@@ -62,21 +64,21 @@
                   you miss out on with a feedback form.
                 </p>
               </div>
-              <div class="feature-card__img-box">
+              <div class="feature-card__img-box feature-card__img-box--first">
                 <img
                   src="assets/images/illustration-grow-together.svg"
-                  alt=""
+                  alt="Illustration of two people standing apart from each other"
                   class="feature-card__img"
                 />
               </div>
             </div>
           </figure>
           <figure class="feature-card">
-            <div class="grid grid-2-cols grid-gap-lg">
+            <div class="grid grid-2-cols grid-2-cols--gap-lg">
               <div class="feature-card__img-box">
                 <img
                   src="assets/images/illustration-flowing-conversation.svg"
-                  alt=""
+                  alt="Illustration of people talking"
                   class="feature-card__img"
                 />
               </div>
@@ -93,8 +95,10 @@
             </div>
           </figure>
           <figure class="feature-card">
-            <div class="grid grid-2-cols grid-gap-lg">
-              <div class="feature-card__text-box">
+            <div class="grid grid-2-cols grid-2-cols--gap-lg">
+              <div
+                class="feature-card__text-box feature-card__text-box--second"
+              >
                 <h2 class="heading heading--secondary u-margin-bottom-small">
                   Your Users
                 </h2>
@@ -104,10 +108,10 @@
                   app, your users can start chatting immediately.
                 </p>
               </div>
-              <div class="feature-card__img-box">
+              <div class="feature-card__img-box feature-card__img-box--first">
                 <img
                   src="assets/images/illustration-your-users.svg"
-                  alt=""
+                  alt="Illustration of three people"
                   class="feature-card__img"
                 />
               </div>
@@ -117,69 +121,114 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__message">
-        <h2 class="heading heading--secondary u-margin-bottom-large">
-          Ready To Build Your Community?
-        </h2>
-        <a href="#" class="btn btn--large btn--solid-pink"
-          >Get Started For Free</a
-        >
-      </div>
-      <div class="footer__container u-container">
-        <address class="footer__address">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <ion-icon name="location" class="footer__icon"></ion-icon>
-              <span class="footer__address-detail"
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua
-              </span>
-            </li>
-            <li class="footer__item">
-              <ion-icon name="call" class="footer__icon"></ion-icon>
+      <div class="u-container">
+        <div class="u-margin-bottom-medium">
+          <div class="footer__message">
+            <h2 class="heading heading--secondary u-margin-bottom-large">
+              Ready To Build Your Community?
+            </h2>
+            <a href="#" class="btn btn--large btn--solid-pink"
+              >Get Started For Free</a
+            >
+          </div>
+        </div>
 
-              <span class="footer__adress-detail"> +1-543-123-4567</span>
-            </li>
-            <li class="footer__item">
-              <ion-icon name="mail" class="footer__icon"></ion-icon>
+        <a href="index.html" class="footer__link">
+          <img
+            src="assets/images/logo-footer.svg"
+            alt="Huddle logo"
+            class="logo logo--footer"
+          />
+        </a>
+        <div class="footer__container u-margin-bottom-xl">
+          <address class="footer__address">
+            <ul class="footer__address-list">
+              <li class="footer__address-item">
+                <ion-icon name="location" class="footer__icon"></ion-icon>
+                <span class="footer__address-detail"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </span>
+              </li>
+              <li class="footer__address-item">
+                <ion-icon name="call" class="footer__icon"></ion-icon>
 
-              <span class="footer__adress-detail"> example@huddle.com</span>
-            </li>
-          </ul>
-        </address>
-        <nav class="footer__nav">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">About Us</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">What We Do</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">FAQ</a>
-            </li>
-          </ul>
-        </nav>
+                <span class="footer__adress-detail"> +1-543-123-4567</span>
+              </li>
+              <li class="footer__address-item">
+                <ion-icon name="mail" class="footer__icon"></ion-icon>
 
-        <nav class="footer__nav">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="#" class="footer__link">Career</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Blog</a>
-            </li>
-            <li class="footer__item">
-              <a href="#" class="footer__link">Contact Us</a>
-            </li>
-          </ul>
-        </nav>
+                <span class="footer__adress-detail"> example@huddle.com</span>
+              </li>
+            </ul>
+          </address>
 
-        <div class="footer__socials">
-          <ul class="footer__social"></ul>
-          <p class="copyright">
-            &copy; Copyright 2018 Huddle. All rights reserved.
-          </p>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">About Us</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">What We Do</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">FAQ</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">Career</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">Blog</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__socials">
+            <ul class="footer__socials-list">
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  ><ion-icon
+                    name="logo-facebook"
+                    class="footer__icon footer__icon--social"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  ><ion-icon
+                    name="logo-twitter"
+                    class="footer__icon footer__icon--social"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"
+                  ><ion-icon
+                    name="logo-instagram"
+                    class="footer__icon footer__icon--social"
+                  ></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="copyright">
+              &copy; Copyright 2018 Huddle. All rights reserved.
+            </p>
+          </div>
+        </div>
+        <div class="footer__attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="footer__attribution-link"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="#" class="footer__attribution-link"
+            >John Christopher Enriquez </a
+          >.
         </div>
       </div>
     </footer>

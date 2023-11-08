@@ -7,41 +7,83 @@
   padding-bottom: 4.8rem;
 
   &__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(20rem, 35rem) repeat(
+        3,
+        minmax(10rem, max-content)
+      );
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+    }
   }
 
   &__message {
     position: absolute;
     left: 50%;
-    top: -40%;
-    transform: translate(-50%, -40%);
-    max-width: 200rem;
+    transform: translate(-50%);
+    top: -16rem;
+    max-width: 80rem;
+    width: 100%;
     padding-block: 6rem;
     background-color: $white;
     text-align: center;
     box-shadow: 0 0.02rem 1rem 0.02rem rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+
+    @media screen and (max-width: $bp-medium) {
+      width: 90%;
+      padding: 4rem;
+    }
   }
 
   &__address {
     font-style: normal;
+
+    &-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    &-item {
+      display: flex;
+      gap: 1.2rem;
+    }
   }
 
   &__list {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-  }
+    flex-wrap: wrap;
 
-  &__item {
-    display: flex;
-    gap: 2.4rem;
+    &-item {
+      flex: 0 0 50%;
+      margin-bottom: 1.2rem;
+
+      @media screen and (max-width: $bp-medium) {
+        flex: 0 0 100%;
+      }
+    }
   }
 
   &__icon {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+
+    &--social {
+      padding: 0.5rem;
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $pink;
+      }
+    }
   }
 
   &__link:link,
@@ -53,5 +95,43 @@
   &__link:hover,
   &__link:active {
     text-decoration: underline;
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-medium) {
+      align-items: center;
+    }
+
+    &-list {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+
+      @media screen and (max-width: $bp-medium) {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+
+  &__attribution {
+    text-align: center;
+  }
+
+  &__attribution-link:link,
+  &__attribution-link:visited {
+    padding-bottom: 0.3rem;
+    color: $white;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__attribution-link:hover,
+  &__attribution-link:active {
+    border-bottom: 1px solid currentColor;
   }
 }

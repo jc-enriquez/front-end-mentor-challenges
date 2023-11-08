@@ -5,6 +5,27 @@
   box-shadow: 0 0.02rem 1rem 0.02rem rgba(0, 0, 0, 0.05);
   border-radius: 10px;
 
+  &__text-box {
+    &--second {
+      @media screen and (max-width: $bp-medium) {
+        order: 2;
+      }
+    }
+  }
+
+  &__img-box {
+    &--first {
+      @media screen and (max-width: $bp-medium) {
+        order: 1;
+      }
+    }
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 4rem;
+    text-align: center;
+  }
+
   &__img {
     display: block;
     width: 100%;

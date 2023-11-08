@@ -5,12 +5,20 @@
 
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
-}
 
-.grid-4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
 
-.grid-gap-lg {
-  gap: 9.6rem;
+  &--gap-sm {
+    gap: 4.8rem;
+  }
+
+  &--gap-lg {
+    gap: 9.6rem;
+
+    @media screen and (max-width: $bp-medium) {
+      gap: 4.8rem;
+    }
+  }
 }

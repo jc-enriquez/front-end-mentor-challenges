@@ -20,12 +20,20 @@
   &--large:visited {
     padding: 2rem 9rem;
     font-size: 1.6rem;
+
+    @media screen and (max-width: $bp-medium) {
+      padding-inline: 6rem;
+    }
   }
 
   &--solid-white:link,
   &--solid-white:visited {
     color: $very-dark-cyan;
     background-color: $white;
+
+    @media screen and (max-width: $bp-medium) {
+      padding-inline: 3rem;
+    }
   }
 
   &--solid-pink:link,
