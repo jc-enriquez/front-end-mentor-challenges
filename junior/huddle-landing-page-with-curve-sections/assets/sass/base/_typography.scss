@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: $very-dark-cyan;
+
+  &--primary {
+    font-size: 4.6rem;
+  }
+
+  &--secondary {
+    font-size: 3.2rem;
+  }
+
+  &--tertiary {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+.paragraph {
+  &--three-line {
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  &__icon {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  &__title {
+    font-size: 5.2rem;
+    font-weight: 700;
+    color: $very-dark-cyan;
+  }
+
+  &__sub {
+    font-size: 1.4rem;
+  }
+}

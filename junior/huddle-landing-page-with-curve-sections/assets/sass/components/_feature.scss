@@ -1,0 +1,15 @@
+.feature {
+  padding: 6.4rem 0;
+
+  &--blue {
+    background-color: $very-pale-blue;
+
+    &--1 {
+      background-image: url(../assets/images/bg-section-bottom-desktop-1.svg),
+        url(../assets/images/bg-section-top-desktop-1.svg);
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+}

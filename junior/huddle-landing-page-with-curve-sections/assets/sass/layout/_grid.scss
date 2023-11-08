@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  align-items: center;
+}
+
+.grid-start {
+  align-items: start;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+}

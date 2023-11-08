@@ -1,0 +1,54 @@
+.footer {
+  font-size: 1.2rem;
+  color: $white;
+  background-color: $very-dark-cyan;
+  padding: 9.6rem 0;
+
+  &__info {
+    img {
+      margin-bottom: 1.2rem;
+    }
+    p {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2.4rem;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 1.2rem;
+
+    &-link:link,
+    &-link:visited {
+      color: $white;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &-link:hover,
+    &-link:active {
+      color: blue;
+    }
+  }
+
+  &__icon {
+    font-size: 2.4rem;
+
+    &--small {
+      font-size: inherit;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--small:link,
+  &--small:visited {
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  &--large:link,
+  &--large:visited {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.5rem 6rem;
+  }
+
+  &--outline:link,
+  &--outline:visited {
+    color: $pink;
+    border: 1px solid currentColor;
+  }
+
+  &--solid:link,
+  &--solid:visited {
+    color: $white;
+    background-color: $pink;
+  }
+}
