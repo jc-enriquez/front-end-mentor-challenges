@@ -1,0 +1,13 @@
+.form {
+  &--hero {
+    display: flex;
+    gap: 1.2rem;
+  }
+}
+
+.input {
+  &--hero {
+    width: 50%;
+    padding: 0.5rem 2rem;
+  }
+}
