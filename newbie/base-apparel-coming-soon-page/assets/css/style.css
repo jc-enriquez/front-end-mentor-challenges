@@ -78,6 +78,7 @@ body {
   align-items: center;
   border: 1px solid var(--desaturated-red);
   border-radius: 100px;
+  margin-bottom: 1rem;
 }
 
 .form__input-email {
@@ -123,26 +124,6 @@ body {
   margin-left: 1.6rem;
   margin-top: 1.2rem;
   text-align: left;
-}
-
-.error {
-  color: var(--soft-red);
-}
-
-.success {
-  color: var(--green);
-}
-
-.valid {
-  border: 1px solid var(--desaturated-red);
-}
-
-.invalid {
-  border: 1px solid var(--soft-red);
-}
-
-.visible {
-  display: block;
 }
 
 .btn-submit {
