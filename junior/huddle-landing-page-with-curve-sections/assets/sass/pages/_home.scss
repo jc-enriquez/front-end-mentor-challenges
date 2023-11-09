@@ -1,6 +1,15 @@
 .section-hero {
   max-width: 100rem;
   margin: 0 auto;
+  padding: 15rem 0 40rem 0;
+
+  @media screen and (max-width: $bp-large) {
+    padding: 7.5rem 0 20rem 0;
+  }
+
+  @media screen and (max-width: $bp-smallest) {
+    padding: 3.5rem 0 10rem 0;
+  }
 
   &__text-box {
     text-align: center;
@@ -14,11 +23,29 @@
   &__stats {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: center;
+      gap: 9.6rem;
+    }
   }
 }
 
 .section-features {
   &__text-box {
-    padding: 9.6rem 0;
+    padding: 40rem 0;
+
+    @media screen and (max-width: $bp-large) {
+      padding: 20rem 0 35rem 0;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      padding: 20rem 0;
+    }
+
+    @media screen and (max-width: $bp-smallest) {
+      padding: 10rem 0;
+    }
   }
 }

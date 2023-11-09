@@ -1,5 +1,13 @@
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -14,11 +22,23 @@ body {
   color: $very-dark-cyan;
 
   &--primary {
-    font-size: 4.6rem;
+    font-size: 4.4rem;
+
+    @media screen and (max-width: $bp-medium) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      font-size: 3.6rem;
+    }
   }
 
   &--secondary {
     font-size: 3.2rem;
+
+    @media screen and (max-width: $bp-medium) {
+      font-size: 3rem;
+    }
   }
 
   &--tertiary {
@@ -34,26 +54,5 @@ body {
   &--three-line {
     max-width: 65rem;
     margin: 0 auto;
-  }
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-
-  &__icon {
-    height: 3.2rem;
-    width: 3.2rem;
-  }
-
-  &__title {
-    font-size: 5.2rem;
-    font-weight: 700;
-    color: $very-dark-cyan;
-  }
-
-  &__sub {
-    font-size: 1.4rem;
   }
 }

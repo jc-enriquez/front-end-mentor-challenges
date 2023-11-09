@@ -20,7 +20,9 @@
       <div class="u-container">
         <nav class="navigation">
           <div class="navigation__logo-box">
-            <img src="assets/images/logo.svg" alt="Huddle logo" class="logo" />
+            <a href="index.html"
+              ><img src="assets/images/logo.svg" alt="Huddle logo" class="logo"
+            /></a>
           </div>
           <a href="#" class="btn btn--small btn--outline">Try it free</a>
         </nav>
@@ -66,7 +68,7 @@
                 class="stat__icon"
               />
               <span class="stat__title">2.7m+</span>
-              <span class="stat__sub">Messages Sent</span>
+              <span class="stat__sub u-text-center">Messages Sent</span>
             </figure>
           </div>
         </div>
@@ -75,15 +77,17 @@
         <figure class="feature feature--blue feature--blue--1">
           <div class="u-container">
             <div class="grid grid-2-cols grid-center">
-              <div class="feature__text-box">
-                <h2 class="heading heading--secondary">Grow Together</h2>
+              <div class="feature__text-box feature__text-box--second">
+                <h2 class="heading heading--secondary u-margin-bottom-xs">
+                  Grow Together
+                </h2>
                 <p class="paragraph">
                   Generate meaningful discussions with your audience and build a
                   strong, loyal community. Think of the insightful conversations
                   you miss out on with a feedback form.
                 </p>
               </div>
-              <div class="feature__img-box">
+              <div class="feature__img-box feature__img-box--first">
                 <img
                   src="assets/images/illustration-grow-together.svg"
                   alt="Illustration of man and woman standing apart"
@@ -94,7 +98,7 @@
           </div>
         </figure>
 
-        <figure class="feature">
+        <figure class="feature feature--white">
           <div class="u-container">
             <div class="grid grid-2-cols grid-center">
               <div class="feature__img-box">
@@ -105,7 +109,7 @@
                 />
               </div>
               <div class="feature__text-box">
-                <h2 class="heading heading--secondary">
+                <h2 class="heading heading--secondary u-margin-bottom-xs">
                   Flowing Conversations
                 </h2>
                 <p class="paragraph">
@@ -118,18 +122,20 @@
           </div>
         </figure>
 
-        <figure class="feature feature--blue feature--blue--1">
+        <figure class="feature feature--blue feature--blue--2">
           <div class="u-container">
             <div class="grid grid-2-cols grid-center">
-              <div class="feature__text-box">
-                <h2 class="heading heading--secondary">Your Users</h2>
+              <div class="feature__text-box feature__text-box--second">
+                <h2 class="heading heading--secondary u-margin-bottom-xs">
+                  Your Users
+                </h2>
                 <p class="paragraph">
                   It takes no time at all to integrate Huddle with your app's
                   authentication solution. This means, once signed in to your
                   app, your users can start chatting immediately.
                 </p>
               </div>
-              <div class="feature__img-box">
+              <div class="feature__img-box feature__img-box--first">
                 <img
                   src="assets/images/illustration-your-users.svg"
                   alt="Illustration three people"
@@ -150,9 +156,11 @@
     </main>
     <footer class="footer">
       <div class="u-container">
-        <div class="grid grid-2-cols grid-start">
+        <div class="footer__container">
           <div class="footer__info">
-            <img src="assets/images/logo-white.svg" alt="" class="logo" />
+            <a href="index.html"
+              ><img src="assets/images/logo-white.svg" alt="" class="logo"
+            /></a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
               nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
@@ -185,18 +193,35 @@
               ></a>
             </div>
           </div>
-          <div class="footer__newsletter">
-            <h3 class="heading--tertiary u-margin-bottom-xs">Newsletter</h3>
-            <p class="u-margin-bottom-sm">
-              To recieve tips on how to grow your community, sign up to our
-              weekly newsletter. We’ll never send you spam or pass on your email
-              address
-            </p>
-            <form action="#" class="footer__form">
-              <input type="email" name="" id="" />
-              <button type="submit">Subscribe</button>
+          <div class="newsletter">
+            <div class="newsletter__header">
+              <h3 class="heading--tertiary u-margin-bottom-xs">Newsletter</h3>
+              <p class="u-margin-bottom-sm">
+                To recieve tips on how to grow your community, sign up to our
+                weekly newsletter. We’ll never send you spam or pass on your
+                email address
+              </p>
+            </div>
+            <form action="#" class="newsletter__form">
+              <div class="newsletter__input-group">
+                <input type="text" name="" id="" class="newsletter__input" />
+                <span class="error-message"></span>
+              </div>
+              <button type="submit" class="newsletter__btn">Subscribe</button>
             </form>
           </div>
+        </div>
+        <div class="footer__attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="footer__attribution-link"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="#" class="footer__attribution-link"
+            >John Christopher Enriquez </a
+          >.
         </div>
       </div>
     </footer>
@@ -208,5 +233,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

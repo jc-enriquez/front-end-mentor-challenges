@@ -1,16 +1,139 @@
 .feature {
   padding: 6.4rem 0;
 
+  @media screen and (max-width: $bp-small) {
+    padding: 3.2rem 0;
+  }
+
   &--blue {
     background-color: $very-pale-blue;
 
     &--1 {
-      background: url("../images/bg-section-bottom-desktop-1.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: -20rem;
+        background-image: url(../images/bg-section-top-desktop-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
+
+        @media screen and (max-width: $bp-small) {
+          background-image: url(../images/bg-section-top-mobile-1.svg);
+          background-size: contain;
+          top: -12rem;
+        }
+
+        @media screen and (max-width: $bp-smallest) {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -20rem;
+        height: 20rem;
+        background-image: url(../images/bg-section-bottom-desktop-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (max-width: $bp-small) {
+          background-image: url(../images/bg-section-bottom-mobile-1.svg);
+          background-size: contain;
+        }
+
+        @media screen and (max-width: $bp-smallest) {
+          display: none;
+        }
+      }
+    }
+
+    &--2 {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: -20rem;
+        height: 20rem;
+        background-image: url(../images/bg-section-top-desktop-2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (max-width: $bp-small) {
+          background-image: url(../images/bg-section-top-mobile-2.svg);
+          background-size: contain;
+          top: -12rem;
+        }
+
+        @media screen and (max-width: $bp-smallest) {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -20rem;
+        height: 20rem;
+        background-image: url(../images/bg-section-bottom-desktop-2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (max-width: $bp-small) {
+          background-image: url(../images/bg-section-bottom-mobile-2.svg);
+          background-size: contain;
+        }
+
+        @media screen and (max-width: $bp-smallest) {
+          display: none;
+        }
+      }
     }
   }
+
+  &--white {
+    padding: 30rem 0;
+
+    @media screen and (max-width: $bp-medium) {
+      padding: 25rem 0;
+    }
+
+    @media screen and (max-width: $bp-smallest) {
+      padding: 3.2rem 0;
+    }
+  }
+
+  &__text-box {
+    @media screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+    &--second {
+      @media screen and (max-width: $bp-medium) {
+        order: 2;
+      }
+    }
+  }
+
+  &__img-box {
+    &--first {
+      @media screen and (max-width: $bp-medium) {
+        order: 1;
+      }
+    }
+  }
+
   &__img {
     width: 100%;
   }
