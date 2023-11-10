@@ -1,3 +1,5 @@
+"use strict";
+
 const formEl = document.querySelector(".form");
 const inputGroup = document.querySelector(".form__input-group");
 const inputEmail = document.querySelector(".form__input-email");
@@ -22,7 +24,7 @@ const formSubmit = function (e) {
   const submitError = function () {
     if (!isValid) {
       inputGroup.style.border = "1px solid var(--soft-red)";
-      message.textContent = "Please provide a valid email address";
+      message.textContent = "Please provide a valid email";
       message.style.color = "var(--soft-red)";
       errorIcon.style.display = "block";
     } else {

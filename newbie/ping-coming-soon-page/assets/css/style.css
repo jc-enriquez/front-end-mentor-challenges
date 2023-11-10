@@ -95,6 +95,7 @@ body {
   padding: 1.5rem;
   border-radius: 100px;
   border: 1px solid var(--pale-blue);
+  margin-bottom: 0.2rem;
 }
 
 .form__email::-webkit-input-placeholder {
@@ -107,31 +108,9 @@ body {
 }
 
 .form__message {
-  display: none;
   font-size: 1.2rem;
   font-style: italic;
   margin-left: 2.4rem;
-  margin-top: 1.2rem;
-}
-
-.error {
-  color: var(--light-red);
-}
-
-.success {
-  color: var(--green);
-}
-
-.valid {
-  border: 1px solid var(--green);
-}
-
-.invalid {
-  border: 1px solid var(--light-red);
-}
-
-.visible {
-  display: block;
 }
 
 .btn-submit {

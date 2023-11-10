@@ -1,3 +1,5 @@
+"use strict";
+
 const shareBtn = document.querySelector(".share-btn");
 const shareLinksEl = document.querySelector(".share-links");
 

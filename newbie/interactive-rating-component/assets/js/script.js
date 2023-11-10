@@ -1,3 +1,5 @@
+"use strict";
+
 const formEl = document.querySelector(".form");
 const messageEl = document.querySelector(".message");
 const scoreEl = document.querySelector(".score");
