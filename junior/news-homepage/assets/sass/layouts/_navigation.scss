@@ -8,16 +8,26 @@
     display: flex;
     gap: 2.4rem;
     list-style: none;
-    z-index: 1;
+    z-index: 2;
 
-    @media screen and (max-width: $bp-small) {
+    @media screen and (max-width: $bp-smallest) {
       position: absolute;
       top: 0;
       right: 0;
       flex-direction: column;
-      background-color: red;
-      min-height: 100vh;
+      background-color: $off-white;
+      width: 65vw;
+      height: 100vh;
       padding: 2rem;
+      transform: translateX(100%);
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      transition: all 0.5s ease-in;
+
+      & :first-child {
+        margin-top: 15rem;
+      }
     }
   }
 
@@ -32,4 +42,33 @@
   &__link:active {
     color: $soft-red;
   }
+
+  &__open &__list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  &__open .btn--mobile [name="close-btn"] {
+    display: block;
+  }
+
+  &__open .btn--mobile [name="menu-btn"] {
+    display: none;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
 }

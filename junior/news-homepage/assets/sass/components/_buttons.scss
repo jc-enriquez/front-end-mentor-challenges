@@ -23,8 +23,13 @@
   background: transparent;
   border: none;
   display: none;
+  z-index: 2;
 
-  @media screen and (max-width: $bp-small) {
+  @media screen and (max-width: $bp-smallest) {
     display: block;
   }
+}
+
+.btn--mobile [name="close-btn"] {
+  display: none;
 }

@@ -23,4 +23,8 @@ body {
   background-color: $off-white;
   padding: 2rem;
   position: relative;
+
+  @media screen and (max-width: $bp-smallest) {
+    overflow-x: hidden;
+  }
 }

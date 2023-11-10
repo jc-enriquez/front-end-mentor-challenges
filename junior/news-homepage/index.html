@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="u-container">
-        <nav class="navigation">
+        <div class="navigation">
           <div class="navigation__logo-box">
             <img
               src="assets/images/logo.svg"
@@ -24,6 +24,7 @@
               class="navigation__logo"
             />
           </div>
+
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="#" class="navigation__link">Home</a>
@@ -43,9 +44,19 @@
           </ul>
 
           <button class="btn--mobile">
-            <img src="assets/images/icon-menu.svg" alt="" />
+            <img
+              src="assets/images/icon-menu.svg"
+              alt="Mobile menu icon"
+              name="menu-btn"
+            />
+            <img
+              src="assets/images/icon-menu-close.svg"
+              alt="Close menu icon"
+              name="close-btn"
+            />
           </button>
-        </nav>
+          <div class="overlay hidden"></div>
+        </div>
       </div>
     </header>
     <main>
@@ -180,5 +191,6 @@
         >.
       </div>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
