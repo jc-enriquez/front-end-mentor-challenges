@@ -1,0 +1,40 @@
+.testimonial-card {
+  max-width: 35rem;
+  padding: 3rem;
+  font-size: 1.4rem;
+  color: $very-dark-blue;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.02);
+
+  @media screen and (max-width: $bp-medium) {
+    text-align: left;
+  }
+
+  &__review {
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__avatar {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+  }
+
+  &__role {
+    font-size: 1rem;
+  }
+}

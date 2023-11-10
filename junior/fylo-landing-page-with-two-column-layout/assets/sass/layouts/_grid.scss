@@ -4,5 +4,30 @@
 
 .grid-2-cols {
   grid-template-columns: 3fr 2fr;
-  gap: 4.8rem;
+  gap: 5.2rem;
+
+  @media screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  &--center {
+    align-items: center;
+  }
+
+  &--small {
+    grid-template-columns: repeat(2, minmax(min-content, 50rem));
+    justify-content: space-between;
+    align-items: start;
+
+    @media screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      gap: 3.2rem;
+    }
+  }
 }

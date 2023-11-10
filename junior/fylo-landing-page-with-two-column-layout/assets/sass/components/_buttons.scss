@@ -1,0 +1,54 @@
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border: 1px solid transparent;
+  color: $light-grayish-blue;
+  transition: all 0.3s;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &--solid {
+    background-color: $bright-blue;
+
+    &:hover {
+      background-color: lighten($bright-blue, 10%);
+    }
+  }
+
+  &--medium {
+    padding: 1.2rem 2.4rem;
+  }
+
+  &--large {
+    padding: 1.2rem 4.8rem;
+  }
+}
+
+.cta {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &--underline:link,
+  &--underline:visited {
+    color: $moderate-cyan;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 0.5rem;
+    transition: all 0.3s;
+  }
+
+  &--underline:hover,
+  &--underline:active {
+    color: lighten($moderate-cyan, 20%);
+  }
+
+  &__icon {
+    transform: translateY(4px);
+  }
+
+  &--underline:hover &__icon {
+    transform: translateY(2px);
+  }
+}

@@ -1,0 +1,100 @@
+.section-hero {
+  padding: 5rem 0 30rem 0;
+
+  @media screen and (max-width: $bp-medium) {
+    text-align: center;
+    padding-bottom: 20rem;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    padding-bottom: 15rem;
+  }
+}
+
+.section-productive {
+  background-color: $light-grayish-blue;
+  padding: 0 0 10rem 0;
+  position: relative;
+
+  @media screen and (max-width: $bp-medium) {
+    padding-top: 5rem;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    top: -20rem;
+    background: url(../images/bg-curve-desktop.svg);
+    background-size: cover;
+
+    @media screen and (max-width: $bp-medium) {
+      background: url(../images/bg-curve-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: -8rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      top: -5rem;
+    }
+  }
+
+  & h2 {
+    @media screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+  }
+}
+
+.section-early {
+  background-color: $desaturated-blue;
+  padding: 10rem 0;
+
+  @media screen and (max-width: $bp-medium) {
+    text-align: center;
+    padding: 5rem;
+  }
+}
+
+.text-box {
+  @media screen and (max-width: $bp-medium) {
+    order: 2;
+  }
+
+  &--productive {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $bp-medium) {
+      align-items: center;
+      text-align: center;
+    }
+
+    & > * :not(a.cta) {
+      @media screen and (max-width: $bp-medium) {
+        text-align: left;
+      }
+    }
+
+    & .paragraph {
+      @media screen and (max-width: $bp-medium) {
+        color: $desaturated-blue;
+      }
+    }
+
+    & .cta {
+      @media screen and (max-width: $bp-medium) {
+        margin: 2rem 0 6rem 0;
+      }
+    }
+  }
+}
+
+.img-box {
+  @media screen and (max-width: $bp-medium) {
+    order: 1;
+  }
+}

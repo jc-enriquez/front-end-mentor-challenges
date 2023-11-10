@@ -1,5 +1,13 @@
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -11,10 +19,42 @@ body {
 .heading {
   font-family: "Raleway", sans-serif;
 
-  &--primary {
+  &--primary,
+  &--secondary {
     color: $very-dark-blue;
-    font-size: 4.4rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 1.4;
+
+    @media screen and (max-width: $bp-large) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &--secondary {
+    @media screen and (max-width: $bp-medium) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &--tertiary {
+    font-size: 3.2rem;
+    color: $light-grayish-blue;
+
+    @media screen and (max-width: $bp-large) {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+.paragraph {
+  line-height: 1.4;
+
+  &--dark {
+    color: $very-dark-blue;
+  }
+
+  &--light {
+    color: $light-grayish-blue;
   }
 }

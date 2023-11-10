@@ -14,5 +14,25 @@
   &__link:visited {
     text-decoration: none;
     color: $desaturated-blue;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.logo {
+  @media screen and (max-width: $bp-medium) {
+    height: 3.2rem;
+  }
+
+  &--footer {
+    @media screen and (max-width: $bp-medium) {
+      height: 3.6rem;
+      margin-bottom: 1.6rem;
+    }
   }
 }

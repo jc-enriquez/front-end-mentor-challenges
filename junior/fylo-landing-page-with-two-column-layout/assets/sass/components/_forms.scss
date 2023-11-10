@@ -1,13 +1,76 @@
 .form {
+  display: flex;
+  gap: 1.2rem;
+
+  @media screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
+
   &--hero {
-    display: flex;
-    gap: 1.2rem;
+    gap: 1.8rem;
+    align-items: start;
+
+    @media screen and (max-width: $bp-large) {
+      align-items: stretch;
+      gap: 1rem;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      margin-top: 3.2rem;
+    }
+  }
+
+  &--early {
+    flex-direction: column;
+    align-items: start;
+
+    @media screen and (max-width: $bp-medium) {
+      align-items: stretch;
+      gap: 1rem;
+    }
   }
 }
 
 .input {
-  &--hero {
+  font-family: inherit;
+  border-radius: 4px;
+  padding: 1.2rem;
+  color: $very-dark-blue;
+  outline: none;
+
+  &__group {
     width: 50%;
-    padding: 0.5rem 2rem;
+
+    @media screen and (max-width: $bp-large) {
+      width: 100%;
+    }
+  }
+
+  &--hero {
+    width: 100%;
+    border: 1px solid $light-gray;
+    margin-bottom: 1rem;
+
+    &:focus {
+      border: 1px solid $bright-blue;
+    }
+  }
+
+  &--early {
+    width: 100%;
+    border: none;
+
+    &:focus {
+      box-shadow: inset 0 0 0 1px $bright-blue;
+    }
+  }
+}
+
+.error {
+  display: none;
+  font-size: 1.2rem;
+
+  @media screen and (max-width: $bp-medium) {
+    text-align: left;
   }
 }

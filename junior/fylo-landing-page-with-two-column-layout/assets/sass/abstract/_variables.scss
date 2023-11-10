@@ -9,5 +9,15 @@ $bright-blue: hsl(224, 93%, 58%);
 $moderate-cyan: hsl(170, 45%, 43%);
 
 // Neutral
-$light-grayish-blue: hsl(240, 75%, 98%);
+$light-grayish-blue: #f8f8fe;
 $light-gray: hsl(0, 0%, 75%);
+
+// Own declartion
+$white: #fff;
+$red: #ff6b6b;
+
+// BREAKPOINTS
+
+$bp-large: 56.25em; // 900px
+$bp-medium: 43.75em; // 700px
+$bp-small: 30em; // 475px
