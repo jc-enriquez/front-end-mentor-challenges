@@ -7,6 +7,12 @@ const errorMessage = document.querySelector(".error-message");
 const emailRegExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+const resetForm = function () {
+  inputEmail.style.boxShadow = "none";
+  inputEmail.value = "";
+  errorMessage.style.display = "none";
+};
+
 const formSubmit = function (e) {
   e.preventDefault();
 
@@ -23,6 +29,12 @@ const formSubmit = function (e) {
   !isValid
     ? (errorMessage.style.color = `#ff4242`)
     : (errorMessage.style.color = `#51cf66`);
+
+  errorMessage.style.display = "block";
+
+  setTimeout(() => {
+    resetForm();
+  }, 3000);
 };
 
 formEl.addEventListener("submit", formSubmit);
