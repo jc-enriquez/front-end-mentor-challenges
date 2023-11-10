@@ -8,6 +8,9 @@
 body {
   box-sizing: border-box; }
 
+.hidden {
+  display: none; }
+
 html {
   font-size: 62.5%; }
 
