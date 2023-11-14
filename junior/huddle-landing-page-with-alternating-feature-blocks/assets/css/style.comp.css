@@ -198,13 +198,15 @@ body {
         .footer__socials-list {
           margin-bottom: 1.2rem; } }
   .footer__attribution {
+    font-size: 1rem;
     text-align: center; }
   .footer__attribution-link:link, .footer__attribution-link:visited {
     padding-bottom: 0.3rem;
-    color: #fff;
+    color: #ff52bf;
     font-weight: 700;
     text-decoration: none;
-    border-bottom: 1px solid transparent; }
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s; }
   .footer__attribution-link:hover, .footer__attribution-link:active {
     border-bottom: 1px solid currentColor; }
 

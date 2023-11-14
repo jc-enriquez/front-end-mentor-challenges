@@ -118,16 +118,18 @@
   }
 
   &__attribution {
+    font-size: 1rem;
     text-align: center;
   }
 
   &__attribution-link:link,
   &__attribution-link:visited {
     padding-bottom: 0.3rem;
-    color: $white;
+    color: $pink;
     font-weight: 700;
     text-decoration: none;
     border-bottom: 1px solid transparent;
+    transition: all 0.3s;
   }
 
   &__attribution-link:hover,
