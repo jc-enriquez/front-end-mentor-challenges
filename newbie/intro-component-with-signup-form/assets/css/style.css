@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  /* Primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* Accent */
+  --blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+
+  /* Own declaration */
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background: url(../images/bg-intro-desktop.png), var(--red);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.section-signup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.signup-text {
+  color: var(--white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 4rem;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.form__input {
+  font-family: inherit;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem 3rem;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 6px;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+.btn-submit {
+  padding: 1rem;
+  color: var(--white);
+  background-color: var(--green);
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
