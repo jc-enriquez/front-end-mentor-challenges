@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-bottom: 5.2rem;
 }
 
 .coming-soon__form-box {
@@ -148,6 +149,27 @@ body {
   object-fit: cover;
 }
 
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.attribution__link:link,
+.attribution__link:visited {
+  padding-bottom: 0.3rem;
+  color: var(--soft-red);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.attribution__link:hover,
+.attribution__link:active {
+  border-bottom: 1px solid currentColor;
+}
+
 @media screen and (max-width: 56.25em) {
   html {
     font-size: 56.25%;
@@ -160,8 +182,11 @@ body {
 
   .coming-soon__form-box {
     order: 2;
-    text-align: center;
     padding: 9.6rem 2rem;
+  }
+
+  .coming-soon__form-box > * :not(.left) {
+    text-align: center;
   }
 
   .header {

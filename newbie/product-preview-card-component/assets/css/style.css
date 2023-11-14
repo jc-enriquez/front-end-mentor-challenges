@@ -35,7 +35,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .product {
@@ -132,11 +132,12 @@ body {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .attribution__link:hover,
 .attribution__link:active {
-  border-bottom: 1px solid var(--dark-cyan);
+  border-bottom: 1px solid currentColor;
 }
 
 @media screen and (max-width: 38em) {

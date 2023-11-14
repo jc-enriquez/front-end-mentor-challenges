@@ -39,7 +39,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .price-component {
@@ -159,11 +159,12 @@ body {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .attribution__link:hover,
 .attribution__link:active {
-  border-bottom: 1px solid var(--cyan);
+  border-bottom: 1px solid currentColor;
 }
 
 @media screen and (max-width: 43.75em) {

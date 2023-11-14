@@ -41,7 +41,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   position: relative;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .profile-card {
@@ -139,11 +139,12 @@ body {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .attribution__link:hover,
 .attribution__link:active {
-  border-bottom: 1px solid var(--white);
+  border-bottom: 1px solid currentColor;
 }
 
 @media screen and (max-width: 37.5em) {
@@ -163,9 +164,5 @@ body {
 
   body {
     background-position: left -30rem top -20rem, right -30rem bottom -20rem;
-  }
-
-  .container {
-    padding: 2rem;
   }
 }

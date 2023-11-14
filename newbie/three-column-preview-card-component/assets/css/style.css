@@ -32,6 +32,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 2rem;
 }
 
 .preview {
@@ -133,20 +134,17 @@ body {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .attribution__link:hover,
 .attribution__link:active {
-  border-bottom: 1px solid var(--bright-orange);
+  border-bottom: 1px solid currentColor;
 }
 
 @media screen and (max-width: 56.25rem) {
   html {
     font-size: 56.25%;
-  }
-
-  .container {
-    padding: 2rem;
   }
 }
 

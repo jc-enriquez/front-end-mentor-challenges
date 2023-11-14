@@ -31,7 +31,7 @@ body {
 .container {
   max-width: 140rem;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .header {
@@ -120,9 +120,10 @@ body {
 .attribution__link:visited {
   padding-bottom: 0.3rem;
   color: var(--white);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .attribution__link:hover,
