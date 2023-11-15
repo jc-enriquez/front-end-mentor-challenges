@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&display=swap");
 
 :root {
   --dark-gray: #212529;
@@ -30,10 +30,15 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
+  line-height: 1.8;
 }
 
 header {
   margin-bottom: 5.2rem;
+}
+
+strong {
+  font-weight: 800;
 }
 
 main {
