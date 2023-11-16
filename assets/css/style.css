@@ -79,3 +79,15 @@ a:active {
 ::selection {
   background-color: #000;
 }
+
+@media screen and (max-width: 43.75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+}
