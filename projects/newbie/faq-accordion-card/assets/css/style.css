@@ -95,6 +95,7 @@ body {
 }
 
 .faq__accordion {
+  width: 35rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -108,6 +109,10 @@ body {
 
 .faq__header {
   margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .faq__button {
@@ -126,6 +131,6 @@ body {
   color: var(--soft-red);
 }
 
-/* .faq__answer {
+.faq__answer {
   display: none;
-} */
+}
