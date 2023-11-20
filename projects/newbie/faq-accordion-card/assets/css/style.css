@@ -134,3 +134,15 @@ body {
 .faq__answer {
   display: none;
 }
+
+.active .faq__question {
+  font-weight: 700;
+}
+
+.active .faq__icon {
+  transform: rotate(180deg);
+}
+
+.active .faq__answer {
+  display: block;
+}

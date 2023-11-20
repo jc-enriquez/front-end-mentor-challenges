@@ -1,28 +1,14 @@
 "use strict";
 
-const accordionBtns = document.querySelectorAll(".faq__header");
-const accordionQuestion = document.querySelector(".faq__question");
+const accordion = document.querySelector(".faq__accordion");
+const accordionItems = document.querySelectorAll(".faq__accordion-item");
 
-accordionBtns.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    let accordionQuestion = this.firstElementChild;
-    let accordionAnswer = this.nextElementSibling;
-    let accordionIcon = this.lastElementChild;
+accordion.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".faq__accordion-item");
 
-    const questionStyle = (accordionQuestion.style.fontWeight = "400");
-    const answerStyle = accordionAnswer.style.display === "block";
-    const iconStyle = (accordionIcon.style.transform = "rotate(0deg)");
+  // // Remove active class
+  // accordionItems.forEach((item) => item.classList.remove("active"));
 
-    questionStyle
-      ? (accordionQuestion.style.fontWeight = "700")
-      : (accordionQuestion.style.fontWeight = "400");
-
-    iconStyle
-      ? (accordionIcon.style.transform = "rotate(180deg)")
-      : (accordionIcon.style.transform = "rotate(0deg)");
-
-    answerStyle
-      ? (accordionAnswer.style.display = "none")
-      : (accordionAnswer.style.display = "block");
-  });
+  // Add active class
+  clicked.classList.toggle("active");
 });
