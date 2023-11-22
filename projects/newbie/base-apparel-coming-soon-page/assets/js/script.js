@@ -9,6 +9,27 @@ const message = document.querySelector(".form__input-message");
 const emailRegExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+let isValid;
+
+const errorStyle = function () {
+  inputGroup.style.border = "1px solid var(--soft-red)";
+  message.textContent = "Please provide a valid email";
+  message.style.color = "var(--soft-red)";
+  errorIcon.style.display = "block";
+};
+
+const successStyle = function () {
+  inputGroup.style.border = "1px solid var(--green)";
+  message.textContent = "Email submitted!";
+  message.style.color = "var(--green)";
+  errorIcon.style.display = "none";
+};
+
+const checkInput = function () {
+  isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
+  !isValid ? errorStyle() : successStyle();
+};
+
 const resetForm = function () {
   message.textContent = "";
   inputGroup.style.border = "1px solid var(--desaturated-red)";
@@ -19,23 +40,7 @@ const resetForm = function () {
 const formSubmit = function (e) {
   e.preventDefault();
 
-  const isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
-
-  const submitError = function () {
-    if (!isValid) {
-      inputGroup.style.border = "1px solid var(--soft-red)";
-      message.textContent = "Please provide a valid email";
-      message.style.color = "var(--soft-red)";
-      errorIcon.style.display = "block";
-    } else {
-      inputGroup.style.border = "1px solid var(--green)";
-      message.textContent = "Email submitted!";
-      message.style.color = "var(--green)";
-      errorIcon.style.display = "none";
-    }
-  };
-
-  submitError();
+  checkInput();
 
   setTimeout(() => {
     resetForm();

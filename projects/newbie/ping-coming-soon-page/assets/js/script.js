@@ -7,6 +7,25 @@ const message = document.querySelector(".form__message");
 const emailRegExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+let isValid;
+
+const errorStyle = function () {
+  inputEmail.style.border = "1px solid var(--light-red)";
+  message.textContent = "Please provide a valid email address";
+  message.style.color = "var(--light-red)";
+};
+
+const successStyle = function () {
+  inputEmail.style.border = "1px solid var(--green)";
+  message.textContent = "Email submitted!";
+  message.style.color = "var(--green)";
+};
+
+const checkInput = function () {
+  isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
+  !isValid ? errorStyle() : successStyle();
+};
+
 const resetForm = function () {
   message.textContent = "";
   inputEmail.style.border = "1px solid var(--blue)";
@@ -16,21 +35,7 @@ const resetForm = function () {
 const formSubmit = function (e) {
   e.preventDefault();
 
-  const isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
-
-  const submitError = function () {
-    if (!isValid) {
-      inputEmail.style.border = "1px solid var(--light-red)";
-      message.textContent = "Please provide a valid email address";
-      message.style.color = "var(--light-red)";
-    } else {
-      inputEmail.style.border = "1px solid var(--green)";
-      message.textContent = "Email submitted!";
-      message.style.color = "var(--green)";
-    }
-  };
-
-  submitError();
+  checkInput();
 
   setTimeout(() => {
     resetForm();
