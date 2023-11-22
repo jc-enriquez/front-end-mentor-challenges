@@ -10,7 +10,7 @@
   &__form {
     display: flex;
     align-items: start;
-    gap: 3.2rem;
+    gap: 2.4rem;
 
     @media screen and (max-width: $bp-medium) {
       flex-direction: column;
