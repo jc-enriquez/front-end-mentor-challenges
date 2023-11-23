@@ -207,7 +207,7 @@ body {
 .newsletter__form {
   display: flex;
   align-items: start;
-  gap: 3.2rem; }
+  gap: 2.4rem; }
   @media screen and (max-width: 37.5em) {
     .newsletter__form {
       flex-direction: column;
