@@ -61,28 +61,13 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
-/* .faq__img-box {
-  overflow: hidden;
-} */
-
-.faq__img-composition {
-  position: relative;
-}
-
-.faq__img-composition div {
-  position: relative;
-}
-
-.faq__img-composition-1 {
-  position: absolute;
-  left: -9.2rem;
-  top: 15rem;
-  z-index: 1;
-}
-
-.faq__img-composition-2 {
-  position: absolute;
-  left: -5rem;
+.faq__img-box {
+  background: url(../images/illustration-woman-online-desktop.svg),
+    url(../images/bg-pattern-desktop.svg);
+  background-position: top -40rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
 }
 
 .heading--secondary {
@@ -115,24 +100,17 @@ body {
   cursor: pointer;
 }
 
-.faq__button {
-  width: 100%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  border: none;
-  transition: all 0.2s;
-  color: inherit;
+.faq__header:hover .faq__question {
+  color: var(--soft-red);
 }
 
-.faq__button:hover {
-  color: var(--soft-red);
+.faq__question {
+  transition: all 0.2s;
 }
 
 .faq__answer {
   display: none;
+  line-height: 1.4;
 }
 
 .active .faq__question {
