@@ -9,6 +9,11 @@ const emailRegExp =
 
 let isValid;
 
+const messageStyle = function () {
+  message.style.opacity = 1;
+  message.style.transform = "translateY(0)";
+};
+
 const errorStyle = function () {
   inputEmail.style.border = "1px solid var(--light-red)";
   message.textContent = "Please provide a valid email address";
@@ -24,6 +29,7 @@ const successStyle = function () {
 const checkInput = function () {
   isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
   !isValid ? errorStyle() : successStyle();
+  messageStyle();
 };
 
 const resetForm = function () {
