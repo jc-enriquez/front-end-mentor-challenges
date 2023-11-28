@@ -14,22 +14,23 @@ const emailRegExp =
 
 let isValidEmail;
 
-const errorStyle = function () {
-  inputFirstName.style.border = borderRed;
-  inputLastName.style.border = borderRed;
-  inputPassword.style.border = borderRed;
-};
-
-const successStyle = function () {
-  inputFirstName.style.border = borderGreen;
-  inputLastName.style.border = borderGreen;
-  inputPassword.style.border = borderGreen;
-};
-
 const inputCheck = function () {
-  !inputFirstName.value === 0 ? errorStyle() : successStyle();
-  !inputLastName.value === 0 ? errorStyle() : successStyle();
-  !inputPassword.value === 0 ? errorStyle() : successStyle();
+  inputFirstName.value === 0
+    ? (inputFirstName.style.border = borderGreen)
+    : (inputFirstName.style.border = borderRed);
+
+  inputFirstName.value === 0
+    ? (inputFirstName.style.background = "none")
+    : (inputFirstName.style.background =
+        "url(../assets/images/icon-error.svg)");
+
+  inputLastName.value === 0
+    ? (inputLastName.style.border = borderGreen)
+    : (inputLastName.style.border = borderRed);
+
+  inputPassword.value === 0
+    ? (inputPassword.style.border = borderGreen)
+    : (inputPassword.style.border = borderRed);
 };
 
 const emailCheck = function () {
