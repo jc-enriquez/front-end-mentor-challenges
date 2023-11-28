@@ -6,8 +6,14 @@ const inputLastName = document.querySelector(".input--lastname");
 const inputEmail = document.querySelector(".input--email");
 const inputPassword = document.querySelector(".input--password");
 
+const errorFirstName = document.querySelector(".error-message--firstname");
+const errorLastName = document.querySelector(".error-message--lastname");
+const errorEmail = document.querySelector(".error-message--email");
+const errorPassword = document.querySelector(".error-message--password");
+
 const borderRed = "1px solid var(--red)";
-const borderGreen = "1px solid var(--green)";
+const borderBlue = "1px solid var(--grayish-blue)";
+const backgroundError = "url(assets/images/icon-error.svg) no-repeat 95%";
 
 const emailRegExp =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -15,42 +21,59 @@ const emailRegExp =
 let isValidEmail;
 
 const inputCheck = function () {
-  inputFirstName.value === 0
-    ? (inputFirstName.style.border = borderGreen)
-    : (inputFirstName.style.border = borderRed);
-
-  inputFirstName.value === 0
-    ? (inputFirstName.style.background = "none")
-    : (inputFirstName.style.background =
-        "url(../assets/images/icon-error.svg)");
-
-  inputLastName.value === 0
-    ? (inputLastName.style.border = borderGreen)
-    : (inputLastName.style.border = borderRed);
-
-  inputPassword.value === 0
-    ? (inputPassword.style.border = borderGreen)
-    : (inputPassword.style.border = borderRed);
-};
-
-const emailCheck = function () {
   isValidEmail = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
+
+  if (inputFirstName.value === "") {
+    inputFirstName.style.border = borderRed;
+    inputFirstName.style.background = backgroundError;
+    errorFirstName.textContent = "First name cannot be empty";
+  }
+
+  if (inputLastName.value === "") {
+    inputLastName.style.border = borderRed;
+    inputLastName.style.background = backgroundError;
+    errorLastName.textContent = "Last name cannot be empty";
+  }
 
   if (!isValidEmail) {
     inputEmail.style.border = borderRed;
     inputEmail.style.color = "var(--red)";
-    inputEmail.style.background = "url(../images/icon-error.svg)";
-  } else {
-    inputEmail.style.border = borderGreen;
-    inputEmail.style.color = "var(--blue)";
+    inputEmail.style.background = backgroundError;
+    errorEmail.textContent = "Looks like this is not an email";
   }
+
+  if (inputPassword.value === "") {
+    inputPassword.style.border = borderRed;
+    inputPassword.style.background = backgroundError;
+    errorPassword.textContent = "Password cannot be empty";
+  }
+};
+
+const inputReset = function () {
+  inputFirstName.style.border = borderBlue;
+  inputFirstName.style.background = "none";
+  errorFirstName.textContent = "";
+
+  inputLastName.style.border = borderBlue;
+  inputLastName.style.background = "none";
+  errorLastName.textContent = "";
+
+  inputEmail.style.border = borderBlue;
+  inputEmail.style.background = "none";
+  errorEmail.textContent = "";
+
+  inputPassword.style.border = borderBlue;
+  inputPassword.style.background = "none";
+  errorPassword.textContent = "";
 };
 
 const formSubmit = function (e) {
   e.preventDefault();
-
   inputCheck();
-  emailCheck();
+
+  setTimeout(() => {
+    inputReset();
+  }, 5000);
 };
 
 form.addEventListener("submit", formSubmit);
