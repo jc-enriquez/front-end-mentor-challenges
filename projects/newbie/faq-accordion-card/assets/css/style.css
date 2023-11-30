@@ -186,6 +186,10 @@ body {
     font-size: 50%;
   }
 
+  .container {
+    padding-top: 10rem;
+  }
+
   .faq {
     grid-template-columns: 1fr;
   }
