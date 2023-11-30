@@ -53,38 +53,39 @@ body {
 
 .faq {
   position: relative;
-  max-width: 120rem;
+  max-width: 110rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 6rem;
   background-color: var(--white);
   align-items: center;
   border-radius: 20px;
-  padding: 6rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   z-index: 1;
   margin-bottom: 5.2rem;
 }
 
 .faq__img-box {
-  background: url(../images/illustration-woman-online-desktop.svg),
-    url(../images/bg-pattern-desktop.svg);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/illustration-woman-online-desktop.svg) no-repeat,
+    url(../images/bg-pattern-desktop.svg) no-repeat;
+  background-position: left -8rem top 50%, left -55rem top -25rem;
+  background-size: 100%, 220%;
   height: 100%;
+}
+
+.faq__question-box {
+  padding: 6rem 6rem 6rem 0;
 }
 
 .faq__img-box::before {
   content: "";
   display: block;
-  height: 10rem;
-  width: 10rem;
+  height: 14rem;
+  width: 14rem;
   background: url(../images/illustration-box-desktop.svg);
   position: absolute;
-  top: 50%;
-  left: -10rem;
-  transform: translateY(-50%);
+  top: 55%;
+  left: -13rem;
+  transform: translateY(-55%);
   z-index: 2;
 }
 
@@ -169,22 +170,52 @@ body {
   html {
     font-size: 56.25%;
   }
+
+  .faq__img-box {
+    background-position: left -8rem top 50%, left -35rem top -10rem;
+    background-size: 100%, 170%;
+  }
+
+  .faq__img-box::before {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 43.75em) {
+@media screen and (max-width: 46.875em) {
   html {
     font-size: 50%;
   }
+}
 
+@media screen and (max-width: 43.75em) {
   .faq {
     grid-template-columns: 1fr;
   }
 
-  /* .faq__img-box {
-    background: url(../images/illustration-woman-online-mobile.svg), url();
-  } */
+  .faq__img-box {
+    height: 10rem;
+    background: url(../images/bg-pattern-mobile.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   .faq__img-box::before {
-    display: none;
+    display: block;
+    background: url(../images/illustration-woman-online-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .heading--secondary {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .faq__question-box {
+    padding: 6rem;
   }
 }
