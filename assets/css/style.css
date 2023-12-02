@@ -2,6 +2,7 @@
 
 :root {
   --dark-gray: #212529;
+  --medium-gray: #868e96;
   --light-gray: #f8f9fa;
 }
 
@@ -31,14 +32,28 @@ body {
   justify-content: center;
   padding: 2rem;
   line-height: 1.8;
+  transition: all 0.3s;
 }
 
 header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
   margin-bottom: 5.2rem;
 }
 
 strong {
   font-weight: 800;
+}
+
+button {
+  font-size: inherit;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: 50%;
+  color: var(--dark-gray);
+  background: var(--light-gray);
+  transition: all 0.3s;
 }
 
 main {
@@ -73,11 +88,21 @@ a:visited {
 
 a:hover,
 a:active {
-  border-bottom: 1px solid var(--light-gray);
+  border-bottom: 1px solid currentColor;
 }
 
 ::selection {
-  background-color: #000;
+  background-color: var(--medium-gray);
+}
+
+.light-mode {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+}
+
+.btn--light {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
 }
 
 @media screen and (max-width: 43.75em) {
