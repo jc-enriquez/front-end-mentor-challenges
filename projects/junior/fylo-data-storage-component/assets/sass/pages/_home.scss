@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/bg-desktop.png), $very-dark-blue;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+.section-storage {
+  display: flex;
+  align-items: end;
+  gap: 2.4rem;
+}
+
+.storage {
+  &__logo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 4rem 12rem 4rem 4rem;
+    background-color: $dark-blue;
+    border-radius: 8px 100px 8px 8px;
+  }
+
+  &__logo,
+  &__icon {
+    display: block;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: $very-dark-blue;
+  }
+}
