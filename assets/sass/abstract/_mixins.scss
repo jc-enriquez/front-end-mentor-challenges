@@ -3,3 +3,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin hoverLink {
+  background-image: linear-gradient(to right, $clr-green, $clr-green-dark);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease;
+}

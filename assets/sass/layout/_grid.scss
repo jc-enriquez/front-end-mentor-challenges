@@ -4,5 +4,13 @@
 
 .grid-3-cols {
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem;
+  gap: 3.2rem;
+
+  @media screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+  }
 }

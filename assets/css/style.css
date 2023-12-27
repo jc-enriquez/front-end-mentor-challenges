@@ -28,7 +28,7 @@ body {
 
 html {
   font-size: 62.5%; }
-  @media screen and (max-width: 56.25em) {
+  @media screen and (max-width: 50em) {
     html {
       font-size: 56.25%; } }
   @media screen and (max-width: 43.75em) {
@@ -55,6 +55,19 @@ body {
 
 .dark-mode .paragraph {
   color: #d7d8d9; }
+
+.link--external:link, .link--external:visited {
+  background-image: linear-gradient(to right, #62929e, #45666f);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease;
+  color: #62929e;
+  text-decoration: none;
+  font-weight: 600; }
+
+.link--external:hover, .link--external:active {
+  background-size: 100% 2px; }
 
 .u-container {
   max-width: 120rem;
@@ -170,15 +183,21 @@ body {
     .card__skill--js {
       background-color: #f1e05a; }
   .card__title:link, .card__title:visited {
+    background-image: linear-gradient(to right, #62929e, #45666f);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 0.3s ease;
     font-family: "Montserrat", sans-serif;
     font-size: 1.8rem;
-    margin-bottom: 3.2rem;
-    display: inline-block;
     color: inherit;
     text-decoration: none; }
+  .card__title:hover, .card__title:active {
+    background-size: 100% 2px; }
   .card__links {
     display: flex;
-    gap: 1.2rem; }
+    gap: 1.2rem;
+    margin-top: 2.4rem; }
 
 .footer {
   padding: 4rem 0; }
@@ -186,13 +205,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media screen and (max-width: 31.25em) {
+      .footer__content {
+        flex-direction: column;
+        align-items: start;
+        gap: 1.2rem; } }
 
 .grid {
   display: grid; }
 
 .grid-3-cols {
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem; }
+  gap: 3.2rem; }
+  @media screen and (max-width: 50em) {
+    .grid-3-cols {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 31.25em) {
+    .grid-3-cols {
+      grid-template-columns: 1fr; } }
 
 .header {
   padding: 4rem 0; }

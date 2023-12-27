@@ -79,17 +79,22 @@
   &__title {
     &:link,
     &:visited {
+      @include hoverLink;
       font-family: "Montserrat", sans-serif;
       font-size: 1.8rem;
-      margin-bottom: 3.2rem;
-      display: inline-block;
       color: inherit;
       text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 2px;
     }
   }
 
   &__links {
     display: flex;
     gap: 1.2rem;
+    margin-top: 2.4rem;
   }
 }

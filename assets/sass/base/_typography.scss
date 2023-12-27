@@ -36,3 +36,20 @@ body {
 .dark-mode .paragraph {
   color: $clr-gray-light;
 }
+
+.link {
+  &--external {
+    &:link,
+    &:visited {
+      @include hoverLink;
+      color: $clr-green;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 2px;
+    }
+  }
+}
