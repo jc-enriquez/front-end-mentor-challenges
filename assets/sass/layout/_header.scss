@@ -1,0 +1,7 @@
+.header {
+  padding: 4rem 0;
+
+  &__content {
+    @include displayFlex;
+  }
+}

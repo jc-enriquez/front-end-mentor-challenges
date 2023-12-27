@@ -1,0 +1,57 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+  }
+
+  &--solid {
+    &:link,
+    &:visited {
+      background-color: $clr-green;
+      color: $clr-white;
+    }
+
+    &:hover,
+    &:active {
+      background-color: lighten($clr-green, 5%);
+    }
+  }
+
+  &--outlined {
+    &:link,
+    &:visited {
+      box-shadow: 0 0 0 1px inset $clr-green;
+      color: inherit;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $clr-green;
+      color: $clr-white;
+    }
+  }
+
+  &--mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: inherit;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    color: $clr-white;
+    background: $clr-green;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: lighten($clr-green, 5%);
+    }
+  }
+}

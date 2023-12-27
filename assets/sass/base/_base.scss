@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.3rem lighten($clr-green, 10%);
+}
+
+::selection {
+  background-color: $clr-green;
+  color: $clr-white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $clr-white;
+  color: $clr-black;
+  transition: all 0.3s;
+}
+
+.dark-mode {
+  background-color: $clr-black;
+  color: $clr-white;
+}

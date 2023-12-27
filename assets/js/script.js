@@ -1,9 +1,7 @@
 "use strict";
-
-// Setting year
+// Selectors
+const containerProject = document.querySelector(".projects-container");
 const year = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-year.textContent = currentYear;
 
 // Setting light mode
 const body = document.querySelector("body");
@@ -25,7 +23,6 @@ const lightMode = function () {
 btnSwitch.addEventListener("click", lightMode);
 
 // Display Projects
-
 const projects = {
   proj1: {
     title: "Product Preview Card Component",
@@ -295,3 +292,42 @@ const projects = {
     },
   },
 };
+
+Object.values(projects).forEach((project) => {
+  const html = `
+  <div class="card card--${project.difficulty.toLowerCase()}">
+    <img
+      src="https://placehold.co/300"
+      alt="Project image placeholder"
+      class="card__img"
+    />
+
+    <div class="card__body">
+      <span class="card__difficulty card__difficulty--${project.difficulty.toLowerCase()}"
+        >${project.difficulty}</span
+      >
+      <div class="card__skills">
+      ${Object.values(project.skills).forEach((skill) => {
+        console.log(skill);
+      })}
+      </div>
+      <div class="card__text">
+        <a href="#" class="card__title">${project.title}</a>
+      </div>
+      <div class="card__links">
+        <a href="${
+          project.projLink
+        }" target="_blank" class="btn btn--solid">View Project</a>
+        <a href="${
+          project.codeLink
+        }" target="_blank" class="btn btn--outlined">View Code</a>
+      </div>
+    </div>
+  </div>
+    `;
+  containerProject.insertAdjacentHTML("afterbegin", html);
+});
+
+// Setting year
+const currentYear = new Date().getFullYear();
+year.textContent = currentYear;
