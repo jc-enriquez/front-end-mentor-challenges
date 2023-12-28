@@ -13,7 +13,7 @@
   &--solid {
     &:link,
     &:visited {
-      background-color: $clr-green;
+      background-color: $clr-green-dark;
       color: $clr-white;
     }
 
@@ -37,7 +37,8 @@
     }
   }
 
-  &--mode {
+  &--mode,
+  &--scroll {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,9 +50,20 @@
     background: $clr-green;
     cursor: pointer;
     transition: background 0.3s ease;
+  }
 
-    &:hover {
-      background: lighten($clr-green, 5%);
-    }
+  &--scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &--mode:hover,
+  &--scroll:hover {
+    background: lighten($clr-green, 5%);
   }
 }

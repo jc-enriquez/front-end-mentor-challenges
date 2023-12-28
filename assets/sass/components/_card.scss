@@ -1,28 +1,14 @@
 .card {
   position: relative;
-  cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
-  border-bottom: 6px solid transparent;
-
-  &:hover {
-    transform: translateY(-6px);
-  }
-
-  &--newbie:hover {
-    border-bottom: 6px solid $clr-newbie;
-  }
-
-  &--junior:hover {
-    border-bottom: 6px solid $clr-junior;
-  }
+  border: 1px solid $clr-gray-light;
 
   &__img {
     display: block;
     width: 100%;
     object-fit: cover;
+    max-width: fit-content;
   }
 
   &__body {
@@ -33,17 +19,20 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+    font-family: "Montserrat", sans-serif;
     font-size: 1rem;
-    color: $clr-white;
+    font-weight: 700;
     padding: 0.5rem 1rem;
     border-radius: 100px;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
 
     &--newbie {
-      background-color: $clr-newbie;
+      color: $clr-newbie;
     }
 
     &--junior {
-      background-color: $clr-junior;
+      color: $clr-junior;
     }
   }
 

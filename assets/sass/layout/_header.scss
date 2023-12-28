@@ -3,5 +3,11 @@
 
   &__content {
     @include displayFlex;
+
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: start;
+      gap: 2.4rem;
+    }
   }
 }
