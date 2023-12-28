@@ -29,10 +29,12 @@
 
     &--newbie {
       color: $clr-newbie;
+      background-color: $clr-newbie-light;
     }
 
     &--junior {
       color: $clr-junior;
+      background-color: $clr-junior-light;
     }
   }
 
