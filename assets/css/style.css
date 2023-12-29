@@ -165,7 +165,9 @@ body {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid #d7d8d9; }
+  border: 1px solid #d7d8d9;
+  cursor: pointer;
+  transition: all 0.3s; }
   .card__img {
     display: block;
     width: 100%;
@@ -229,6 +231,14 @@ body {
     display: flex;
     gap: 1.2rem;
     margin-top: 2.4rem; }
+
+.projects-container:hover > .card:hover {
+  box-shadow: 0 0 1rem rgba(57, 61, 63, 0.2);
+  scale: 1.05;
+  z-index: 1; }
+
+.projects-container:hover > .card:not(:hover) {
+  filter: blur(1.5px); }
 
 .footer {
   padding: 4rem 0; }

@@ -3,6 +3,8 @@
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid $clr-gray-light;
+  cursor: pointer;
+  transition: all 0.3s;
 
   &__img {
     display: block;
@@ -94,4 +96,14 @@
     gap: 1.2rem;
     margin-top: 2.4rem;
   }
+}
+
+.projects-container:hover > .card:hover {
+  box-shadow: 0 0 1rem rgba($clr-black, 0.2);
+  scale: 1.05;
+  z-index: 1;
+}
+
+.projects-container:hover > .card:not(:hover) {
+  filter: blur(1.5px);
 }
