@@ -10,9 +10,9 @@ const iconBtn = document.querySelector(".btn-icon");
 
 // Setting dark mode
 const switchBtnIcon = function () {
-  iconBtn.getAttribute("name") === "sunny"
-    ? iconBtn.setAttribute("name", "moon")
-    : iconBtn.setAttribute("name", "sunny");
+  iconBtn.getAttribute("name") === "moon"
+    ? iconBtn.setAttribute("name", "sunny")
+    : iconBtn.setAttribute("name", "moon");
 };
 
 const darkMode = function () {
@@ -400,10 +400,12 @@ Object.values(projects).forEach((project) => {
       <div class="card__links">
         <a href="${
           project.projLink
-        }" target="_blank" class="btn btn--solid">View Project</a>
+        }" target="_blank" class="btn btn--full">View Project</a>
         <a href="${
           project.codeLink
-        }" target="_blank" class="btn btn--outlined">View Code</a>
+        }" target="_blank" class="btn btn--icon" aria-label="Link for code">
+          <ion-icon name="code-slash-outline"></ion-icon>
+        </a>
       </div>
     </div>
   </div>

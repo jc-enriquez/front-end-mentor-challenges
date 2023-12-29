@@ -5,8 +5,10 @@ $clr-white: #fdfdff;
 $clr-green: #62929e;
 
 // Tints & Shades
-$clr-gray-light: #d7d8d9;
 $clr-green-dark: #45666f;
+
+$clr-green-light: #eff4f5;
+$clr-gray-light: #d7d8d9;
 $clr-black-light: #4d5052;
 
 // Language Colors
@@ -14,6 +16,15 @@ $clr-html: #e34c26;
 $clr-css: #563d7c;
 $clr-js: #f1e05a;
 $clr-sass: #a53b70;
+
+// Tints & Shades
+$clr-html-light: #fcede9;
+$clr-css-light: #eeecf2;
+$clr-js-light: #fefcef;
+$clr-sass-light: #f6ebf1;
+
+$clr-html-dark: #9f351b;
+$clr-js-dark: #48431b;
 
 // Difficulty Level Colors
 $clr-newbie: #6abecd;
@@ -25,6 +36,9 @@ $clr-guru: #ed2c49;
 // Tints & Shades
 $clr-junior-light: #f7fbec;
 $clr-newbie-light: #f0f9fa;
+
+$clr-junior-dark: #556c21;
+$clr-newbie-dark: #40727b;
 
 // Breakpoints
 $bp-large: 56.25em; // 800px

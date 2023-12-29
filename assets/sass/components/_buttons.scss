@@ -1,20 +1,22 @@
 .btn {
   &:link,
   &:visited {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: 600;
-    font-size: 1.2rem;
     text-decoration: none;
     padding: 1rem 2rem;
-    border-radius: 100px;
+    border-radius: 8px;
     transition: all 0.3s ease;
   }
 
-  &--solid {
+  &--full {
     &:link,
     &:visited {
       background-color: $clr-green;
-      color: $clr-white;
+      color: $clr-green-light;
+      width: 100%;
     }
 
     &:hover,
@@ -23,11 +25,11 @@
     }
   }
 
-  &--outlined {
+  &--icon {
     &:link,
     &:visited {
-      box-shadow: 0 0 0 1px inset $clr-green;
-      color: inherit;
+      background-color: $clr-green-light;
+      color: $clr-green;
     }
 
     &:hover,

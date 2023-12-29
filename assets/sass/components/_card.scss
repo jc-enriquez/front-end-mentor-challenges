@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   border: 1px solid $clr-gray-light;
 
@@ -23,17 +23,17 @@
     font-size: 1rem;
     font-weight: 700;
     padding: 0.5rem 1rem;
-    border-radius: 100px;
+    border-radius: 6px;
     text-transform: uppercase;
     border: 1px solid currentColor;
 
     &--newbie {
-      color: $clr-newbie;
+      color: $clr-newbie-dark;
       background-color: $clr-newbie-light;
     }
 
     &--junior {
-      color: $clr-junior;
+      color: $clr-junior-dark;
       background-color: $clr-junior-light;
     }
   }
@@ -45,25 +45,31 @@
   }
 
   &__skill {
-    font-size: 1rem;
-    color: $clr-white;
+    font-weight: 600;
+    font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    border-radius: 100px;
+    border-radius: 6px;
+    border: 1px solid currentColor;
+    color: $clr-black;
 
     &--html {
-      background-color: $clr-html;
+      color: $clr-html-dark;
+      background-color: $clr-html-light;
     }
 
     &--css {
-      background-color: $clr-css;
+      color: $clr-css;
+      background-color: $clr-css-light;
     }
 
     &--sass {
-      background-color: $clr-sass;
+      color: $clr-sass;
+      background-color: $clr-sass-light;
     }
 
     &--js {
-      background-color: $clr-js;
+      color: $clr-js-dark;
+      background-color: $clr-js-light;
     }
   }
 

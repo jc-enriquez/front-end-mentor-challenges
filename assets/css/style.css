@@ -111,26 +111,28 @@ body {
   margin-bottom: 4.8rem; }
 
 .btn:link, .btn:visited {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 600;
-  font-size: 1.2rem;
   text-decoration: none;
   padding: 1rem 2rem;
-  border-radius: 100px;
+  border-radius: 8px;
   transition: all 0.3s ease; }
 
-.btn--solid:link, .btn--solid:visited {
+.btn--full:link, .btn--full:visited {
   background-color: #62929e;
-  color: #fdfdff; }
+  color: #eff4f5;
+  width: 100%; }
 
-.btn--solid:hover, .btn--solid:active {
+.btn--full:hover, .btn--full:active {
   background-color: #729da8; }
 
-.btn--outlined:link, .btn--outlined:visited {
-  box-shadow: 0 0 0 1px inset #62929e;
-  color: inherit; }
+.btn--icon:link, .btn--icon:visited {
+  background-color: #eff4f5;
+  color: #62929e; }
 
-.btn--outlined:hover, .btn--outlined:active {
+.btn--icon:hover, .btn--icon:active {
   background-color: #62929e;
   color: #fdfdff; }
 
@@ -161,7 +163,7 @@ body {
 
 .card {
   position: relative;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   border: 1px solid #d7d8d9; }
   .card__img {
@@ -179,32 +181,38 @@ body {
     font-size: 1rem;
     font-weight: 700;
     padding: 0.5rem 1rem;
-    border-radius: 100px;
+    border-radius: 6px;
     text-transform: uppercase;
     border: 1px solid currentColor; }
     .card__difficulty--newbie {
-      color: #6abecd;
+      color: #40727b;
       background-color: #f0f9fa; }
     .card__difficulty--junior {
-      color: #aad742;
+      color: #556c21;
       background-color: #f7fbec; }
   .card__skills {
     display: flex;
     gap: 1.2rem;
     margin-bottom: 2.4rem; }
   .card__skill {
-    font-size: 1rem;
-    color: #fdfdff;
+    font-weight: 600;
+    font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    border-radius: 100px; }
+    border-radius: 6px;
+    border: 1px solid currentColor;
+    color: #393d3f; }
     .card__skill--html {
-      background-color: #e34c26; }
+      color: #9f351b;
+      background-color: #fcede9; }
     .card__skill--css {
-      background-color: #563d7c; }
+      color: #563d7c;
+      background-color: #eeecf2; }
     .card__skill--sass {
-      background-color: #a53b70; }
+      color: #a53b70;
+      background-color: #f6ebf1; }
     .card__skill--js {
-      background-color: #f1e05a; }
+      color: #48431b;
+      background-color: #fefcef; }
   .card__title:link, .card__title:visited {
     background-image: linear-gradient(to right, #62929e, #45666f);
     background-size: 0% 2px;
