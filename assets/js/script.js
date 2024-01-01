@@ -1,4 +1,5 @@
 "use strict";
+
 // Selectors
 const containerProject = document.querySelector(".projects-container");
 const year = document.querySelector(".year");
@@ -51,8 +52,8 @@ window.addEventListener("scroll", watchScroll);
 btnScroll.addEventListener("click", scrollToTop);
 
 // Display Projects
-const projects = {
-  proj1: {
+const projects = [
+  {
     title: "Product Preview Card Component",
     projLink: "projects/newbie/product-preview-card-component/",
     codeLink:
@@ -60,12 +61,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/product-preview-card-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj2: {
+  {
     title: "Results Summary Component",
     projLink: "projects/newbie/results-summary-component/",
     codeLink:
@@ -73,12 +71,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/results-summary-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj3: {
+  {
     title: "Order Summary Component",
     projLink: "projects/newbie/order-summary-component/",
     codeLink:
@@ -86,12 +81,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/order-summary-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj4: {
+  {
     title: "QR Code Component",
     projLink: "projects/newbie/qr-code-component/",
     codeLink:
@@ -99,12 +91,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/qr-code-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj5: {
+  {
     title: "NFT Preview Card Component",
     projLink: "projects/newbie/nft-preview-card-component/",
     codeLink:
@@ -112,12 +101,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/nft-preview-card-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj6: {
+  {
     title: "Stats Preview Card Component",
     projLink: "projects/newbie/stats-preview-card-component/",
     codeLink:
@@ -125,12 +111,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/stats-preview-card-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj7: {
+  {
     title: "3-Column Preview Card Component",
     projLink: "projects/newbie/three-column-preview-card-component/",
     codeLink:
@@ -138,12 +121,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/three-column-preview-card-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj8: {
+  {
     title: "Profile Card Component",
     projLink: "projects/newbie/profile-card-component/",
     codeLink:
@@ -151,12 +131,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/profile-card-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj9: {
+  {
     title: "Social Proof Section",
     projLink: "projects/newbie/social-proof-section/",
     codeLink:
@@ -164,12 +141,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/social-proof-section.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj10: {
+  {
     title: "Four Card Feature Section",
     projLink: "projects/newbie/four-card-feature-section/",
     codeLink:
@@ -177,12 +151,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/four-card-feature-section.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj11: {
+  {
     title: "Single Price Grid Component",
     projLink: "projects/newbie/single-price-grid-component/",
     codeLink:
@@ -190,12 +161,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/single-price-grid-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj12: {
+  {
     title: "Huddle Landing Page with a Single Introductory Section",
     projLink: "projects/newbie/huddle-landing-page-with-introductory-section/",
     codeLink:
@@ -203,12 +171,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/huddle-landing-page-with-single-introductory-section.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj13: {
+  {
     title: "Interactive Rating Component",
     projLink: "projects/newbie/interactive-rating-component/",
     codeLink:
@@ -216,13 +181,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/interactive-rating-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "JavaScript"],
   },
-  proj14: {
+  {
     title: "Article Preview Component",
     projLink: "projects/newbie/article-preview-component/",
     codeLink:
@@ -230,13 +191,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/article-preview-component.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "JavaScript"],
   },
-  proj15: {
+  {
     title: "Ping Coming Soon Page",
     projLink: "projects/newbie/ping-coming-soon-page/",
     codeLink:
@@ -244,13 +201,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/ping-coming-soon-page.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "JavaScript"],
   },
-  proj16: {
+  {
     title: "Base Apparel Coming Soon Page",
     projLink: "projects/newbie/base-apparel-coming-soon-page/",
     codeLink:
@@ -258,13 +211,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/base-apparel-coming-soon.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "JavaScript"],
   },
-  proj17: {
+  {
     title: "Intro Component with Sign-Up Form",
     projLink: "projects/newbie/intro-component-with-signup-form/",
     codeLink:
@@ -272,13 +221,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/intro-component-with-signup-form.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "JavaScript"],
   },
-  proj18: {
+  {
     title: "FAQ Accordion Card",
     projLink: "projects/newbie/faq-accordion-card/",
     codeLink:
@@ -286,13 +231,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/faq-accordion-card.webp",
     difficulty: "Newbie",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "JavaScript"],
   },
-  proj19: {
+  {
     title: "Testimonials Grid Section",
     projLink: "projects/junior/testimonials-grid-section/",
     codeLink:
@@ -300,12 +241,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/testimonials-grid-section.webp",
     difficulty: "Junior",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-    },
+    skills: ["HTML", "CSS"],
   },
-  proj20: {
+  {
     title: "Huddle Landing Page with Alternating Feature Blocks",
     projLink:
       "projects/junior/huddle-landing-page-with-alternating-feature-blocks/",
@@ -314,13 +252,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/huddle-landing-page-with-alternating-feature-blocks.webp",
     difficulty: "Junior",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-    },
+    skills: ["HTML", "CSS", "SASS"],
   },
-  proj21: {
+  {
     title: "Huddle Landing Page with Curve Sections",
     projLink: "projects/junior/huddle-landing-page-with-curve-sections/",
     codeLink:
@@ -328,14 +262,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/huddle-landing-page-with-alternating-feature-blocks.webp",
     difficulty: "Junior",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj22: {
+  {
     title: "Fylo Landing Page with Two-Column Layout",
     projLink: "projects/junior/fylo-landing-page-with-two-column-layout/",
     codeLink:
@@ -343,14 +272,9 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/fylo-landing-page-with-two-column-layout.webp",
     difficulty: "Junior",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj23: {
+  {
     title: "News Homepage",
     projLink: "projects/junior/news-homepage/",
     codeLink:
@@ -358,60 +282,54 @@ const projects = {
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/news-homepage.webp",
     difficulty: "Junior",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
+];
+
+const displayProject = () => {
+  projects.forEach(
+    ({ title, projLink, codeLink, imgLink, difficulty, skills }) => {
+      let skillsContainer = [];
+
+      skills.forEach((skill) => {
+        skillsContainer.push(
+          `<span class="card__skill card__skill--${skill.toLowerCase()}">${skill}</span>`
+        );
+      });
+
+      const html = `
+        <div class="card card--${difficulty.toLowerCase()}">
+        <img
+          src="${imgLink}"
+          alt="${title} preview image"
+          class="card__img"
+          loading="lazy"
+        />
+
+        <div class="card__body">
+          <span class="card__difficulty card__difficulty--${difficulty.toLowerCase()}"
+            >${difficulty}</span
+          >
+          <div class="card__skills">
+            ${skillsContainer.join("")}
+          </div>
+          <div class="card__text">
+            <a href="${projLink}" target="_blank" class="card__title">${title}</a>
+          </div>
+          <div class="card__links">
+            <a href="${projLink}" target="_blank" class="btn btn--full">View Project</a>
+            <a href="${codeLink}" target="_blank" class="btn btn--icon" aria-label="Link for code">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+        `;
+      containerProject.insertAdjacentHTML("afterbegin", html);
+    }
+  );
 };
-
-Object.values(projects).forEach((project) => {
-  let skillContainer = [];
-
-  Object.keys(project.skills).forEach((skill) => {
-    skillContainer.push(
-      `<span class="card__skill card__skill--${skill}">${skill.toUpperCase()}</span>`
-    );
-  });
-
-  const html = `
-  <div class="card card--${project.difficulty.toLowerCase()}">
-    <img
-      src="${project.imgLink}"
-      alt="${project.title} preview image"
-      class="card__img"
-      loading="lazy"
-    />
-
-    <div class="card__body">
-      <span class="card__difficulty card__difficulty--${project.difficulty.toLowerCase()}"
-        >${project.difficulty}</span
-      >
-      <div class="card__skills">
-        ${skillContainer.join(" ")}
-      </div>
-      <div class="card__text">
-        <a href="${project.projLink}" target="_blank" class="card__title">${
-    project.title
-  }</a>
-      </div>
-      <div class="card__links">
-        <a href="${
-          project.projLink
-        }" target="_blank" class="btn btn--full">View Project</a>
-        <a href="${
-          project.codeLink
-        }" target="_blank" class="btn btn--icon" aria-label="Link for code">
-          <ion-icon name="code-slash-outline"></ion-icon>
-        </a>
-      </div>
-    </div>
-  </div>
-    `;
-  containerProject.insertAdjacentHTML("afterbegin", html);
-});
+displayProject();
 
 // Setting year
 const currentYear = new Date().getFullYear();
