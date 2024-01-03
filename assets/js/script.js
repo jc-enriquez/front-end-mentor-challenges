@@ -284,6 +284,16 @@ const projects = [
     difficulty: "Junior",
     skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
+  {
+    title: "Blog Preview Card",
+    projLink: "projects/newbie/blog-preview-card/",
+    codeLink:
+      "https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/blog-preview-card",
+    imgLink:
+      "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/blog-preview-card.webp",
+    difficulty: "Newbie",
+    skills: ["HTML", "CSS"],
+  },
 ];
 
 const displayProject = () => {
