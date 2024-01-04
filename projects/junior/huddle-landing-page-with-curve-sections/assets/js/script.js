@@ -9,21 +9,16 @@ const emailRegExp =
 
 let isValid;
 
-const errorStyle = function () {
-  inputEmail.style.boxShadow = `inset 0 0 0 1px #ff4242`;
-  errorMessage.textContent = "Check your email please";
-  errorMessage.style.color = `#ff4242`;
-};
-
-const successStyle = function () {
-  inputEmail.style.boxShadow = `inset 0 0 0 1px #51cf66`;
-  errorMessage.textContent = "Email submitted!";
-  errorMessage.style.color = `#51cf66`;
-};
-
 const checkInput = function () {
   isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
-  !isValid ? errorStyle() : successStyle();
+
+  inputEmail.style.boxShadow = `inset 0 0 0 1px ${
+    !isValid ? "#ff4242" : "#51cf66"
+  }`;
+  errorMessage.textContent = `${
+    !isValid ? "Check your email please" : "Email submitted!"
+  }`;
+  errorMessage.style.color = `${!isValid ? "#ff4242" : "#51cf66"}`;
 };
 
 const resetForm = function () {

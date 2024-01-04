@@ -15,57 +15,61 @@ const emailRegExp =
 
 let isValid;
 
-const errorStyle = function () {
-  if (input.classList.contains("input--hero")) {
-    inputHero.style.border = "1px solid #ff6b6b";
-    error.style.color = "#ff6b6b";
-  }
+const checkInputHero = () => {
+  isValid = inputHero.value === 0 || emailRegExp.test(inputHero.value);
 
-  if (input.classList.contains("input--early")) {
-    input.style.boxShadow = "inset 0 0 0 1px #ff6b6b";
-    error.style.color = "#f8f8fe";
-  }
-
-  error.style.display = "block";
-  error.textContent = "Please check your email";
+  inputHero.style.border = `1px solid ${!isValid ? "#ff6b6b" : "#51cf66"}`;
+  errorHero.style.display = "block";
+  errorHero.style.color = `${!isValid ? "#ff6b6b" : "#51cf66"}`;
+  errorHero.textContent = `${
+    !isValid ? "Please check your email" : "Email submitted!"
+  }`;
 };
 
-const successStyle = function () {
-  if (input.classList.contains("input--hero")) {
-    input.style.border = "1px solid #51cf66";
-    error.style.color = "#51cf66";
-  }
+const checkInputEarly = () => {
+  isValid = inputEarly.value === 0 || emailRegExp.test(inputEarly.value);
 
-  if (input.classList.contains("input--early")) {
-    input.style.boxShadow = "inset 0 0 0 1px #51cf66";
-    error.style.color = "#51cf66";
-  }
-
-  error.style.display = "block";
-  error.textContent = "Email submitted!";
+  inputEarly.style.boxShadow = `0 0 0 1px inset ${
+    !isValid ? "#ff6b6b" : "#51cf66"
+  }`;
+  errorEarly.style.display = "block";
+  errorEarly.style.color = `${!isValid ? "#ff6b6b" : "#51cf66"}`;
+  errorEarly.textContent = `${
+    !isValid ? "Please check your email" : "Email submitted!"
+  }`;
 };
 
-const resetForm = function () {
-  input.classList.contains("input--hero")
-    ? (input.style.border = "1px solid hsl(0, 0%, 75%)")
-    : (input.style.boxShadow = "none");
-
-  input.value = "";
-  error.textContent = "";
-  error.style.display = "none";
+const resetFormHero = () => {
+  inputHero.style.border = "1px solid hsl(0, 0%, 75%)";
+  errorHero.style.display = "none";
+  errorHero.style.textContent = "";
 };
 
-const formSubmit = function (e) {
+const resetFormEarly = () => {
+  inputEarly.style.boxShadow = "none";
+  errorEarly.style.display = "none";
+  errorEarly.style.textContent = "";
+};
+
+const submitFormHero = (e) => {
   e.preventDefault();
 
-  isValid = input.value === 0 || emailRegExp.test(input.value);
-
-  !isValid ? errorStyle() : successStyle();
+  checkInputHero();
 
   setTimeout(() => {
-    resetForm();
+    resetFormHero();
   }, 3000);
 };
 
-formHero.addEventListener("submit", formSubmit);
-formEarly.addEventListener("submit", formSubmit);
+const submitFormEarly = (e) => {
+  e.preventDefault();
+
+  checkInputEarly();
+
+  setTimeout(() => {
+    resetFormEarly();
+  }, 3000);
+};
+
+formHero.addEventListener("submit", submitFormHero);
+formEarly.addEventListener("submit", submitFormEarly);
