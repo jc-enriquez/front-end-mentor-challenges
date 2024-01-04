@@ -11,29 +11,23 @@ const emailRegExp =
 
 let isValid;
 
-const messageStyle = function () {
-  message.style.opacity = 1;
-  message.style.transform = "translateY(0)";
-};
-
-const errorStyle = function () {
-  inputGroup.style.border = "1px solid var(--soft-red)";
-  message.textContent = "Please provide a valid email";
-  message.style.color = "var(--soft-red)";
-  errorIcon.style.display = "block";
-};
-
-const successStyle = function () {
-  inputGroup.style.border = "1px solid var(--green)";
-  message.textContent = "Email submitted!";
-  message.style.color = "var(--green)";
-  errorIcon.style.display = "none";
-};
-
 const checkInput = function () {
   isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
-  !isValid ? errorStyle() : successStyle();
-  messageStyle();
+
+  inputGroup.style.border = `1px solid ${
+    !isValid ? "var(--soft-red)" : "var(--green)"
+  }`;
+
+  message.textContent = `${
+    !isValid ? "Please provide a valid email" : "Email submitted!"
+  }`;
+
+  message.style.color = `${!isValid ? "var(--soft-red)" : "var(--green)"}`;
+  errorIcon.style.display = `${!isValid ? "block" : "none"}`;
+
+  message.style.opacity = 1;
+  message.style.display = "block";
+  message.style.visibility = "visible";
 };
 
 const resetForm = function () {

@@ -53,6 +53,10 @@ body {
   margin-bottom: 14rem;
 }
 
+.form {
+  margin-bottom: 1.2rem;
+}
+
 .form__title {
   font-size: 8.2rem;
   font-weight: 300;
@@ -123,11 +127,10 @@ body {
 .form__input-message {
   font-size: 1.4rem;
   margin-left: 1.6rem;
-  margin-top: 1.2rem;
   text-align: left;
   opacity: 0;
-  transform: translateY(-1rem);
-  transition: all 0.3s;
+  display: none;
+  visibility: hidden;
 }
 
 .btn-submit {

@@ -111,9 +111,6 @@ body {
   font-size: 1.2rem;
   font-style: italic;
   margin-left: 2.4rem;
-  transform: translateY(-1rem);
-  transition: all 0.3s;
-  opacity: 0;
 }
 
 .btn-submit {

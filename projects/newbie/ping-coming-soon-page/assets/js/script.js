@@ -9,27 +9,22 @@ const emailRegExp =
 
 let isValid;
 
-const messageStyle = function () {
-  message.style.opacity = 1;
-  message.style.transform = "translateY(0)";
-};
-
-const errorStyle = function () {
-  inputEmail.style.border = "1px solid var(--light-red)";
-  message.textContent = "Please provide a valid email address";
-  message.style.color = "var(--light-red)";
-};
-
-const successStyle = function () {
-  inputEmail.style.border = "1px solid var(--green)";
-  message.textContent = "Email submitted!";
-  message.style.color = "var(--green)";
-};
-
 const checkInput = function () {
   isValid = inputEmail.value === 0 || emailRegExp.test(inputEmail.value);
-  !isValid ? errorStyle() : successStyle();
-  messageStyle();
+
+  inputEmail.style.border = `1px solid ${
+    !isValid ? "var(--light-red)" : "var(--green)"
+  }`;
+
+  message.textContent = `${
+    !isValid ? "Please provide a valid email address" : "Email submitted!"
+  }`;
+
+  message.style.color = `${!isValid ? "var(--light-red)" : "var(--green)"}`;
+
+  message.style.opacity = 1;
+  message.style.display = "block";
+  message.style.visibility = "visible";
 };
 
 const resetForm = function () {
