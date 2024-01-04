@@ -1,0 +1,142 @@
+.storage {
+  background-color: $dark-blue;
+  padding: 4rem 4rem 6rem 4rem;
+  border-radius: 10px;
+  min-width: 55rem;
+  position: relative;
+
+  @media screen and (max-width: $bp-large) {
+    min-width: 40rem;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    min-width: 0;
+  }
+
+  &__logo-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 4rem 12rem 4rem 4rem;
+    background-color: $dark-blue;
+    border-radius: 8px 100px 8px 8px;
+  }
+
+  &__logo,
+  &__icon {
+    display: block;
+  }
+
+  &__logo {
+    margin-bottom: 1.2rem;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  &__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: $very-dark-blue;
+  }
+
+  &__caption {
+    color: $pale-blue;
+    margin-bottom: 1.6rem;
+
+    & span {
+      font-weight: 700;
+      color: $pale-blue;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+  }
+
+  &__message {
+    position: absolute;
+    background-color: $white;
+    top: -50px;
+    right: 40px;
+    padding: 2rem;
+    color: $grayish-blue;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+
+    @media screen and (max-width: $bp-medium) {
+      top: auto;
+      right: auto;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    & span {
+      font-size: 3.6rem;
+      color: $very-dark-blue;
+      margin-right: 1rem;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-right: 20px solid $white;
+      right: 0;
+      bottom: -20px;
+
+      @media screen and (max-width: $bp-medium) {
+        display: none;
+      }
+    }
+  }
+
+  &__progressbar {
+    height: 1.5rem;
+    width: 100%;
+    background-color: $very-dark-blue;
+    border-radius: 100px;
+
+    &__indicator {
+      height: 1.5rem;
+      width: 80%;
+      background: $gradient;
+      border-radius: 100px;
+      border: 2px solid $very-dark-blue;
+      margin-bottom: 1.2rem;
+      position: relative;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: $white;
+        top: 0;
+        right: 2px;
+      }
+    }
+  }
+
+  &__size {
+    display: flex;
+    justify-content: space-between;
+
+    & span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $pale-blue;
+    }
+  }
+}

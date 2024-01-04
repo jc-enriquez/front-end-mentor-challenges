@@ -304,6 +304,16 @@ const projects = [
     difficulty: "Newbie",
     skills: ["HTML", "CSS", "JavaScript"],
   },
+  {
+    title: "Fylo Data Storage Component",
+    projLink: "projects/junior/fylo-data-storage-component/",
+    codeLink:
+      "https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/fylo-data-storage-component",
+    imgLink:
+      "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/fylo-data-storage-component.webp",
+    difficulty: "Junior",
+    skills: ["HTML", "CSS", "SASS"],
+  },
 ];
 
 const displayProject = () => {
