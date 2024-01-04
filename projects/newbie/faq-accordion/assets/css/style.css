@@ -36,11 +36,12 @@ body {
   min-height: 100vh;
   flex-direction: column;
   gap: 5.2rem;
+  padding: 2rem;
 }
 
 .faq {
   background-color: var(--white);
-  max-width: 80rem;
+  max-width: 60rem;
   padding: 4rem;
   border-radius: 14px;
 }
@@ -72,7 +73,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3rem;
   cursor: pointer;
 }
 
@@ -91,12 +91,25 @@ body {
   opacity: 0;
   visibility: hidden;
   color: var(--grayish-purple);
+  margin-top: 3rem;
+}
+
+.faq__accordion-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: no-repeat url("../images/icon-plus.svg");
+  background-size: cover;
+  flex-shrink: 0;
 }
 
 .active .faq__answer {
   display: block;
   visibility: visible;
   opacity: 1;
+}
+
+.active .faq__question .faq__accordion-icon {
+  background: no-repeat url(../images/icon-minus.svg);
 }
 
 .attribution {
@@ -118,4 +131,26 @@ body {
 .attribution__link:hover,
 .attribution__link:active {
   border-bottom: 1px solid currentColor;
+}
+
+@media screen and (max-width: 50rem) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 28.125rem) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    background: url(../images/background-pattern-mobile.svg), var(--light-pink);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .container {
+    padding: 9.6rem 2rem;
+  }
 }

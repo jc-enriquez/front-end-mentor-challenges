@@ -2,6 +2,7 @@
 
 // Selectors
 const faqBody = document.querySelector(".faq__body");
+const accordionItems = document.querySelectorAll(".faq__accordion-item");
 
 const questions = [
   {
@@ -27,12 +28,12 @@ const questions = [
 ];
 
 const displayQuestions = () => {
-  questions.forEach(({ question, answer }) => {
+  questions.forEach(({ question, answer }, index) => {
     const questionElement = `
-    <div class="faq__accordion-item">
-      <div class="faq__question active">
+    <div class="faq__accordion-item ${index === 0 ? "active" : ""}">
+      <div class="faq__question">
         <p>${question}</p>
-        <img src="assets/images/icon-plus.svg" alt="Plus icon" />
+        <div class="faq__accordion-icon"></div>
       </div>
       <p class="faq__answer">${answer}</p>
     </div>
@@ -45,7 +46,6 @@ displayQuestions();
 
 const viewQuestion = (e) => {
   const clicked = e.target.closest(".faq__accordion-item");
-  const accordionItems = document.querySelectorAll(".faq__accordion-item");
 
   accordionItems.forEach((item) => item.classList.remove("active"));
 
