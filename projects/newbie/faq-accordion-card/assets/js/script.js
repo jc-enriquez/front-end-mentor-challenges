@@ -32,9 +32,9 @@ const questions = [
 ];
 
 const displayQuestion = () => {
-  questions.forEach(({ question, answer }) => {
+  questions.forEach(({ question, answer }, index) => {
     const questionElement = `
-    <div class="faq__accordion-item">
+    <div class="faq__accordion-item ${index === 1 ? "active" : ""}">
       <div class="faq__header">
         <span class="faq__question"
           >${question}</span
@@ -56,11 +56,14 @@ const displayQuestion = () => {
 
 displayQuestion();
 
-accordion.addEventListener("click", function (e) {
+const viewAnswer = (e) => {
   const clicked = e.target.closest(".faq__accordion-item");
+
   // Remove active class
   accordionItems.forEach((item) => item.classList.remove("active"));
 
   // Add active class
   clicked.classList.toggle("active");
-});
+};
+
+accordion.addEventListener("click", viewAnswer);

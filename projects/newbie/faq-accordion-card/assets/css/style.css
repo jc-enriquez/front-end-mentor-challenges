@@ -109,6 +109,7 @@ body {
 .faq__accordion-item {
   border-bottom: 1px solid var(--light-grayish-blue);
   padding-bottom: 1.5rem;
+  min-width: 35rem;
 }
 
 .faq__header {
@@ -187,7 +188,7 @@ body {
   }
 
   .container {
-    padding-top: 10rem;
+    padding-top: 15rem;
   }
 
   .faq {
@@ -223,5 +224,9 @@ body {
 
   .faq__question-box {
     padding: 0 6rem 6rem 6rem;
+  }
+
+  .faq__accordion-item {
+    min-width: 25rem;
   }
 }
