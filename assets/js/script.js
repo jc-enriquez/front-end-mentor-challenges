@@ -294,6 +294,16 @@ const projects = [
     difficulty: "Newbie",
     skills: ["HTML", "CSS"],
   },
+  {
+    title: "FAQ Accordion",
+    projLink: "projects/newbie/faq-accordion/",
+    codeLink:
+      "https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/faq-accordion",
+    imgLink:
+      "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/front-end-mentor/faq-accordion.webp",
+    difficulty: "Newbie",
+    skills: ["HTML", "CSS", "JavaScript"],
+  },
 ];
 
 const displayProject = () => {
