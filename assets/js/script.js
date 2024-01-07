@@ -1,8 +1,5 @@
 "use strict";
 
-import projects from "../data.json" assert { type: "json" };
-// console.log(projects.findIndex((_, index) => console.log(index <= 2)));
-
 // Selectors
 const containerProject = document.querySelector(".projects-container");
 const year = document.querySelector(".year");
@@ -12,51 +9,36 @@ const btnSwitch = document.querySelector(".btn--mode");
 const btnScroll = document.querySelector(".btn--scroll");
 const iconBtn = document.querySelector(".btn-icon");
 
-// Setting dark mode
-const switchBtnIcon = () => {
-  iconBtn.getAttribute("name") === "moon"
-    ? iconBtn.setAttribute("name", "sunny")
-    : iconBtn.setAttribute("name", "moon");
+const btnLoadMore = document.querySelector(".btn--solid");
+
+let startingIndex = 0;
+let endingIndex = 6;
+let projectsDataArr = [];
+
+fetch("https://cdn.jsdelivr.net/gh/jc-ve/projects-data/front-end-mentor.json")
+  .then((res) => res.json())
+  .then((data) => {
+    projectsDataArr = data;
+    displayProjects(projectsDataArr.slice(startingIndex, endingIndex));
+  })
+  .catch((err) => {
+    containerProject.innerHTML = `<p>No data retrieved. ${err}</p>`;
+  });
+
+const fetchMoreProjects = () => {
+  startingIndex += 6;
+  endingIndex += 6;
+
+  displayProjects(projectsDataArr.slice(startingIndex, endingIndex));
+
+  if (projectsDataArr.length <= endingIndex) {
+    btnLoadMore.style.display = "none";
+  }
 };
 
-const darkMode = () => {
-  body.classList.toggle("dark-mode");
-  btnSwitch.classList.toggle("btn--light");
-  switchBtnIcon();
-};
-
-btnSwitch.addEventListener("click", darkMode);
-
-// Scroll to top
-const hideBtnScroll = () => {
-  btnScroll.style.display = "none";
-  btnScroll.style.visibility = "hidden";
-  btnScroll.style.opacity = 0;
-};
-
-const showBtnScroll = () => {
-  btnScroll.style.display = "flex";
-  btnScroll.style.visibility = "visible";
-  btnScroll.style.opacity = 1;
-};
-
-const watchScroll = () => {
-  document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
-    ? showBtnScroll()
-    : hideBtnScroll();
-};
-
-const scrollToTop = () => {
-  body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-};
-
-window.addEventListener("scroll", watchScroll);
-btnScroll.addEventListener("click", scrollToTop);
-
-const displayProject = () => {
+const displayProjects = (projects) => {
   projects.forEach(
-    ({ title, projLink, codeLink, imgLink, difficulty, skills }) => {
+    ({ title, projLink, codeLink, imgLink, difficulty, skills }, index) => {
       let skillsContainer = [];
 
       skills.forEach((skill) => {
@@ -92,12 +74,51 @@ const displayProject = () => {
         </div>
       </div>
         `;
-      containerProject.insertAdjacentHTML("afterbegin", html);
+      containerProject.insertAdjacentHTML("beforeend", html);
     }
   );
 };
 
-displayProject();
+btnLoadMore.addEventListener("click", fetchMoreProjects);
+
+// Setting dark mode
+const darkMode = () => {
+  iconBtn.getAttribute("name") === "moon"
+    ? iconBtn.setAttribute("name", "sunny")
+    : iconBtn.setAttribute("name", "moon");
+
+  body.classList.toggle("dark-mode");
+  btnSwitch.classList.toggle("btn--light");
+};
+
+btnSwitch.addEventListener("click", darkMode);
+
+// Scroll to top
+const hideBtnScroll = () => {
+  btnScroll.style.display = "none";
+  btnScroll.style.visibility = "hidden";
+  btnScroll.style.opacity = 0;
+};
+
+const showBtnScroll = () => {
+  btnScroll.style.display = "flex";
+  btnScroll.style.visibility = "visible";
+  btnScroll.style.opacity = 1;
+};
+
+const watchScroll = () => {
+  document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+    ? showBtnScroll()
+    : hideBtnScroll();
+};
+
+const scrollToTop = () => {
+  body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+window.addEventListener("scroll", watchScroll);
+btnScroll.addEventListener("click", scrollToTop);
 
 // Setting year
 const currentYear = new Date().getFullYear();

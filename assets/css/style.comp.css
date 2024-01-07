@@ -120,7 +120,18 @@ body {
   color: #eff4f5;
   width: 100%; }
 
-.btn--full:hover, .btn--full:active {
+.btn--solid {
+  background-color: #62929e;
+  color: #eff4f5;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto; }
+
+.btn--full:hover, .btn--full:active, .btn--solid:hover {
   background-color: #729da8; }
 
 .btn--icon:link, .btn--icon:visited {
@@ -166,9 +177,7 @@ body {
   .card__img {
     display: block;
     width: 100%;
-    object-fit: cover;
-    height: 25rem;
-    max-width: fit-content; }
+    object-fit: cover; }
   .card__body {
     padding: 2rem 1.5rem; }
   .card__difficulty {

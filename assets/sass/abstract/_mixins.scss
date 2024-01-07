@@ -11,3 +11,8 @@
   background-position: left bottom;
   transition: background-size 0.3s ease;
 }
+
+@mixin btnSolid {
+  background-color: $clr-green;
+  color: $clr-green-light;
+}

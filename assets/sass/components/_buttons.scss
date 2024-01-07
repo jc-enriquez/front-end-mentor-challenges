@@ -14,15 +14,26 @@
   &--full {
     &:link,
     &:visited {
-      background-color: $clr-green;
-      color: $clr-green-light;
+      @include btnSolid;
       width: 100%;
     }
+  }
 
-    &:hover,
-    &:active {
-      background-color: lighten($clr-green, 5%);
-    }
+  &--solid {
+    @include btnSolid;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--full:hover,
+  &--full:active,
+  &--solid:hover {
+    background-color: lighten($clr-green, 5%);
   }
 
   &--icon {
