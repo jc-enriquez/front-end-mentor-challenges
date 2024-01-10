@@ -38,7 +38,11 @@ const fetchMoreProjects = () => {
 
 const displayProjects = (projects) => {
   projects.forEach(
+<<<<<<< HEAD
     ({ title, projLink, codeLink, imgLink, difficulty, skills }, index) => {
+=======
+    ({ title, projLink, codeLink, imgLink, difficulty, skills }) => {
+>>>>>>> 29c4050 (refactored content)
       let skillsContainer = [];
 
       skills.forEach((skill) => {
@@ -53,8 +57,11 @@ const displayProjects = (projects) => {
           src="${imgLink}"
           alt="${title} preview image"
           class="card__img"
+<<<<<<< HEAD
           loading=${index >= projects.length - 6 ? "" : "lazy"};
           fetchpriority=${index >= projects.length - 6 ? "high" : "low"};
+=======
+>>>>>>> 29c4050 (refactored content)
         />
 
         <div class="card__body">
