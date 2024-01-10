@@ -53,6 +53,8 @@ const displayProjects = (projects) => {
           src="${imgLink}"
           alt="${title} preview image"
           class="card__img"
+          loading=${index >= projects.length - 6 ? "" : "lazy"};
+          fetchpriority=${index >= projects.length - 6 ? "high" : "low"};
         />
 
         <div class="card__body">
