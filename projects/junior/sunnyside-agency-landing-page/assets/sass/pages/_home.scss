@@ -33,7 +33,8 @@
 
     &--graphic-design,
     &--photography {
-      height: 60rem;
+      height: 70rem;
+      padding-bottom: 5rem;
       display: flex;
       align-items: center;
       justify-content: end;
@@ -47,7 +48,7 @@
 
 .section-testimonials {
   text-align: center;
-  padding-block: 9.6rem;
+  padding-block: 15rem;
 }
 
 .section-gallery {

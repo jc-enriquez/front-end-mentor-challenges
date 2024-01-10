@@ -15,13 +15,6 @@
 
   &--tertiary {
     font-size: 3.2rem;
-    color: $grayish-blue;
-    text-transform: uppercase;
-
-    &--graphic-design,
-    &--photography {
-      text-transform: none;
-    }
 
     &--graphic-design {
       color: $dark-desaturated-cyan;
@@ -30,6 +23,12 @@
     &--photography {
       color: $dark-blue;
     }
+  }
+
+  &--quaternary {
+    font-size: 2.4rem;
+    color: $grayish-blue;
+    text-transform: uppercase;
   }
 }
 

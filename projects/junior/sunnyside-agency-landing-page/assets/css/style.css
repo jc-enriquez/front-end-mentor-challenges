@@ -24,15 +24,15 @@ body {
     font-size: 4.8rem;
     color: #23303e; }
   .heading--tertiary {
-    font-size: 3.2rem;
-    color: #a7abae;
-    text-transform: uppercase; }
-    .heading--tertiary--graphic-design, .heading--tertiary--photography {
-      text-transform: none; }
+    font-size: 3.2rem; }
     .heading--tertiary--graphic-design {
       color: #25564b; }
     .heading--tertiary--photography {
       color: #19536b; }
+  .heading--quaternary {
+    font-size: 2.4rem;
+    color: #a7abae;
+    text-transform: uppercase; }
 
 .description {
   line-height: 1.6;
@@ -53,8 +53,7 @@ body {
 .u-margin-bottom-xl {
   margin-bottom: 9.6rem; }
 
-.cta:link,
-.cta:visited {
+.cta:link, .cta:visited {
   display: inline-block;
   font-family: "Fraunces", serif;
   font-weight: 700;
@@ -62,25 +61,33 @@ body {
   text-decoration: none;
   color: #23303e; }
 
-.cta:link::after,
-.cta:visited::after {
+.cta--yellow::after {
   content: "";
   display: block;
   height: 1.2rem;
-  width: 100%;
+  width: 110%;
   border-radius: 100px;
   margin-top: -1rem;
-  opacity: 0.2;
-  transition: all 0.3s; }
+  margin-left: -0.5rem;
+  transition: background-color 0.3s ease;
+  background-color: #fff7c7; }
 
-.cta--yellow:link::after {
+.cta--yellow:hover.cta--yellow::after {
   background-color: #fad400; }
 
-.cta--red:link::after {
-  background-color: #fe7867; }
+.cta--red::after {
+  content: "";
+  display: block;
+  height: 1.2rem;
+  width: 110%;
+  border-radius: 100px;
+  margin-top: -1rem;
+  margin-left: -0.5rem;
+  transition: background-color 0.3s ease;
+  background-color: #ffd2cc; }
 
-.cta:hover + .cta:link::after {
-  opacity: 1; }
+.cta--red:hover.cta--red::after {
+  background-color: #fe7867; }
 
 .testimonials__img {
   height: 6.5rem;
@@ -89,10 +96,10 @@ body {
   margin-bottom: 5.2rem; }
 
 .testimonials__feedback {
-  margin-bottom: 3.2rem;
+  font-weight: 400;
   line-height: 1.8;
-  font-weight: 600;
-  color: #23303e; }
+  color: #23303e;
+  margin-bottom: 3.2rem; }
 
 .testimonials__author {
   font-family: "Fraunces", serif;
@@ -104,18 +111,39 @@ body {
   color: #a7abae; }
 
 .footer {
-  background-color: #458c7e; }
+  background-color: #8accbd;
+  padding: 5.2rem 0; }
   .footer__navigation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .footer__navigation-logo {
+      display: block;
+      margin-bottom: 2.4rem; }
     .footer__navigation-list {
       display: flex;
-      gap: 2.4rem;
-      list-style: none; }
-    .footer__navigation-link {
-      text-decoration: none; }
+      align-items: center;
+      list-style: none;
+      gap: 4.8rem;
+      margin-bottom: 6.4rem; }
+    .footer__navigation-link:link, .footer__navigation-link:visited {
+      text-decoration: none;
+      color: #25564b;
+      transition: color 0.3s ease; }
+    .footer__navigation-link:hover, .footer__navigation-link:active {
+      color: white; }
+  .footer__social {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2.4rem; }
+    .footer__social__link:link, .footer__social__link:visited {
+      color: #25564b;
+      text-decoration: none;
+      transition: color 0.3s ease; }
+    .footer__social__link:hover, .footer__social__link:active {
+      color: white; }
 
 .grid {
   display: grid; }
@@ -127,13 +155,14 @@ body {
 .grid-3-cols {
   grid-template-columns: repeat(3, minmax(min-content, 40rem));
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  gap: 2.4rem; }
 
 .grid-4-cols {
   grid-template-columns: repeat(4, minmax(min-content, 60rem)); }
 
 .header {
-  min-height: 95vh;
+  min-height: 100vh;
   background-image: url(../images/desktop/image-header.jpg);
   background-position: bottom;
   background-size: cover;
@@ -141,6 +170,10 @@ body {
   color: white; }
   .header__content {
     margin-top: 5.2rem; }
+    .header__content__icon {
+      margin-top: -3rem;
+      display: block;
+      margin-inline: auto; }
 
 .navigation {
   display: flex;
@@ -195,7 +228,8 @@ body {
     color: #19536b; }
 
 .section-content__img-box--graphic-design, .section-content__img-box--photography {
-  height: 60rem;
+  height: 70rem;
+  padding-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -206,7 +240,7 @@ body {
 
 .section-testimonials {
   text-align: center;
-  padding-block: 9.6rem; }
+  padding-block: 15rem; }
 
 .section-gallery__img {
   display: block;

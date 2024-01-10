@@ -1,0 +1,16 @@
+@mixin linkAfterContent {
+  content: "";
+  display: block;
+  height: 1.2rem;
+  width: 110%;
+  border-radius: 100px;
+  margin-top: -1rem;
+  margin-left: -0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+@mixin navigationFlexReset {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}

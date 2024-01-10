@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -27,7 +27,7 @@
         <div class="navigation__logo-box">
           <a href="index.html"
             ><img
-              src="assets/images/logo.svg"
+              src="assets/images/logo-white.svg"
               alt="Sunnyside agency logo"
               class="navigation__logo"
           /></a>
@@ -52,7 +52,11 @@
           We are creatives
         </h1>
 
-        <img src="assets/images/icon-arrow-down.svg" alt="Icon Arrow Down" />
+        <img
+          src="assets/images/icon-arrow-down.svg"
+          alt="Icon Arrow Down"
+          class="header__content__icon"
+        />
       </div>
     </header>
     <main>
@@ -74,11 +78,14 @@
           <div class="section-content__img-box">
             <img
               src="assets/images/desktop/image-transform.jpg"
-              alt="Egg with a yellow background"
+              alt="Egg with yellow background"
             />
           </div>
           <div class="section-content__img-box">
-            <img src="assets/images/desktop/image-stand-out.jpg" alt="" />
+            <img
+              src="assets/images/desktop/image-stand-out.jpg"
+              alt="Drink with red background "
+            />
           </div>
           <div class="section-content__text-box">
             <div class="section-content__text-block">
@@ -123,9 +130,7 @@
         </div>
       </section>
       <section class="section-testimonials">
-        <h3
-          class="heading heading--tertiary heading--tertiary--dark u-margin-bottom-lg"
-        >
+        <h3 class="heading heading--quaternary u-margin-bottom-lg">
           Client testimonials
         </h3>
 
@@ -211,7 +216,9 @@
       <nav class="footer__navigation">
         <div class="footer__navigation-logo">
           <a href="index.html"
-            ><img src="assets/images/logo.svg" alt="Sunnyside agency logo"
+            ><img
+              src="assets/images/logo-green.svg"
+              alt="Sunnyside agency logo"
           /></a>
         </div>
         <ul class="footer__navigation-list">
@@ -225,8 +232,37 @@
             <a href="#" class="footer__navigation-link">Projects</a>
           </li>
         </ul>
-        <ul class="footer__socials"></ul>
+        <ul class="footer__social">
+          <li>
+            <a href="#" class="footer__social__link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__social__link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__social__link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer__social__link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </html>

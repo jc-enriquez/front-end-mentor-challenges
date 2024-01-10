@@ -1,5 +1,6 @@
 .footer {
-  background-color: $dark-moderate-cyan;
+  background-color: $light-cyan;
+  padding: 5.2rem 0;
 
   &__navigation {
     display: flex;
@@ -7,14 +8,48 @@
     justify-content: center;
     align-items: center;
 
+    &-logo {
+      display: block;
+      margin-bottom: 2.4rem;
+    }
+
     &-list {
-      display: flex;
-      gap: 2.4rem;
-      list-style: none;
+      @include navigationFlexReset;
+      gap: 4.8rem;
+      margin-bottom: 6.4rem;
     }
 
     &-link {
-      text-decoration: none;
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $dark-desaturated-cyan;
+        transition: color 0.3s ease;
+      }
+
+      &:hover,
+      &:active {
+        color: $white;
+      }
+    }
+  }
+
+  &__social {
+    @include navigationFlexReset;
+    gap: 2.4rem;
+
+    &__link {
+      &:link,
+      &:visited {
+        color: $dark-desaturated-cyan;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      &:hover,
+      &:active {
+        color: $white;
+      }
     }
   }
 }
