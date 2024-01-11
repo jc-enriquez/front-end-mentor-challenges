@@ -1,3 +1,20 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.8rem;
+}
+
 .heading {
   font-family: "Fraunces", serif;
 

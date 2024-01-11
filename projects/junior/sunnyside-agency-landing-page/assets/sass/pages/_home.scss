@@ -2,53 +2,51 @@
   &__text-block {
     max-width: 50rem;
     margin: 0 auto;
+    padding: 0 2rem;
+
+    @media screen and (max-width: $bp-tablet) {
+      text-align: center;
+      padding: 9.6rem 2rem;
+    }
 
     &--sm {
       max-width: 40rem;
     }
+
+    &--centered {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -90%);
+      text-align: center;
+
+      @media screen and (max-width: $bp-medium) {
+      }
+    }
   }
 
   &__img-box {
+    position: relative;
+
     & img {
       width: 100%;
       display: block;
       object-fit: cover;
-    }
-
-    &--graphic-design {
-      background-image: url(../images/desktop/image-graphic-design.jpg);
-
-      & .description {
-        color: $dark-desaturated-cyan;
-      }
-    }
-
-    &--photography {
-      background-image: url(../images/desktop/image-photography.jpg);
-
-      & .description {
-        color: $dark-blue;
-      }
-    }
-
-    &--graphic-design,
-    &--photography {
-      height: 70rem;
-      padding-bottom: 5rem;
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      flex-direction: column;
-      background-size: cover;
-      background-position: top;
-      text-align: center;
     }
   }
 }
 
 .section-testimonials {
   text-align: center;
-  padding-block: 15rem;
+  padding: 15rem 2rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 7.5rem 2rem;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 5rem 2rem;
+  }
 }
 
 .section-gallery {

@@ -8,6 +8,10 @@
     display: flex;
     gap: 2.4rem;
     list-style: none;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
   }
 
   &__link:link,

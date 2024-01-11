@@ -5,6 +5,10 @@
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+
+  @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-3-cols {
@@ -12,8 +16,20 @@
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .grid-4-cols {
   grid-template-columns: repeat(4, minmax(min-content, 60rem));
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
