@@ -7,6 +7,17 @@
     justify-content: space-between;
   }
 
+  &__right-col,
+  &__left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__right-col {
+    align-items: end;
+  }
+
   &__navigation-list {
     display: flex;
     gap: 2.4rem;
@@ -14,11 +25,42 @@
   }
 
   &__navigation-link {
-    color: $white;
-    text-decoration: none;
+    &:link,
+    &:visited {
+      color: $white;
+      text-decoration: none;
+      padding-bottom: 1rem;
+      @include linkHover;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 30% 1px;
+    }
   }
 
   &__copyright {
     color: $dark-gray;
+  }
+
+  &__social-icons {
+    color: $white;
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  &__social-link {
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.8rem;
+      @include linkHover;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 1px;
+    }
   }
 }

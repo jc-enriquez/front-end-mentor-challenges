@@ -1,8 +1,22 @@
 .section-leader {
+  padding: 20rem 0;
+
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: baseline;
+    align-items: end;
+  }
+
+  &__img-box {
+    & img {
+      display: block;
+    }
+  }
+
+  &__text-box {
+    background-color: $white;
+    padding: 10rem 0 0 10rem;
+    margin-left: -15rem;
   }
 }
 

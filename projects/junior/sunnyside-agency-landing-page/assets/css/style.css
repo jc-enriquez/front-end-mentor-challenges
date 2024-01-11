@@ -251,6 +251,10 @@ body {
     left: 50%;
     transform: translate(-50%, -90%);
     text-align: center; }
+    @media screen and (max-width: 31.25em) {
+      .section-content__text-block--centered {
+        left: 0;
+        transform: translate(0, -90%); } }
 
 .section-content__img-box {
   position: relative; }

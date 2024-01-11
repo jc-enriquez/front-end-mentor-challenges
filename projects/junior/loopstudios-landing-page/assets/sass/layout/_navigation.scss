@@ -1,6 +1,8 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
 
   &__list {
     display: flex;
@@ -8,15 +10,18 @@
     list-style: none;
   }
 
-  &__link:link,
-  &__link:visited {
-    text-decoration: none;
-    color: $white;
-    padding-bottom: 1rem;
-  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $white;
+      padding-bottom: 1rem;
+      @include linkHover;
+    }
 
-  &__link:hover,
-  &__link:active {
-    border-bottom: 1px solid $white;
+    &:hover,
+    &:active {
+      background-size: 30% 1px;
+    }
   }
 }

@@ -21,6 +21,8 @@
       text-align: center;
 
       @media screen and (max-width: $bp-medium) {
+        left: 0;
+        transform: translate(0, -90%);
       }
     }
   }

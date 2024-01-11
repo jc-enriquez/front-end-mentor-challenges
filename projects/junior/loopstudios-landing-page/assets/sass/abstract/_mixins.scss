@@ -1,0 +1,7 @@
+@mixin linkHover {
+  background-image: linear-gradient($white, $white);
+  background-repeat: no-repeat;
+  background-size: 0 0;
+  background-position: center bottom;
+  transition: background-size 0.3s ease;
+}

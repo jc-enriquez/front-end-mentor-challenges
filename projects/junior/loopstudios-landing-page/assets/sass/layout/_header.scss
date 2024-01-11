@@ -1,12 +1,14 @@
 .header {
   min-height: 80vh;
-  // background-image: url(../assets/images/desktop/image-hero.jpg);
-  // background-position: center;
-  // background-size: cover;
-  background-color: violet;
+  background-image: linear-gradient(rgba($black, 0.4), rgba($black, 0.4)),
+    url(../images/desktop/image-hero.jpg);
+  background-position: top;
+  background-size: cover;
 
   &__text-box {
+    margin-top: 9.6rem;
     display: inline-block;
     border: 2px solid $white;
+    padding: 2.5rem 10rem 2.5rem 2.5rem;
   }
 }
