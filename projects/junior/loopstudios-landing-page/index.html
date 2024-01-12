@@ -30,7 +30,7 @@
             <img
               src="assets/images/logo.svg"
               alt="Loopstudios logo"
-              class="logo logo--header"
+              class="navigation__logo"
             />
           </div>
 
@@ -89,14 +89,17 @@
       <section class="section-creations">
         <div class="u-container">
           <header class="section-creations__header">
-            <h2 class="heading heading--secondary">Our creations</h2>
-            <a href="#" class="btn btn--outline">See all</a>
+            <h2 class="heading heading--tertiary">Our creations</h2>
           </header>
           <div class="section-creations__content">
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-deep-earth.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-deep-earth.jpg"
+                  src="assets/images/mobile/image-deep-earth.jpg"
                   alt="Planet earth"
                   class="img-card__img"
                 />
@@ -107,8 +110,12 @@
             </figure>
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-night-arcade.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-night-arcade.jpg"
+                  src="assets/images/mobile/image-night-arcade.jpg"
                   alt="Arcade"
                   class="img-card__img"
                 />
@@ -119,8 +126,12 @@
             </figure>
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-soccer-team.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-soccer-team.jpg"
+                  src="assets/images/mobile/image-soccer-team.jpg"
                   alt="Man playing soccer"
                   class="img-card__img"
                 />
@@ -131,8 +142,12 @@
             </figure>
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-grid.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-grid.jpg"
+                  src="assets/images/mobile/image-grid.jpg"
                   alt="Car"
                   class="img-card__img"
                 />
@@ -143,8 +158,12 @@
             </figure>
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-from-above.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-from-above.jpg"
+                  src="assets/images/mobile/image-from-above.jpg"
                   alt="Sky view of a long road"
                   class="img-card__img"
                 />
@@ -155,8 +174,12 @@
             </figure>
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-pocket-borealis.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-pocket-borealis.jpg"
+                  src="assets/images/mobile/image-pocket-borealis.jpg"
                   alt="Aurora Borealis"
                   class="img-card__img"
                 />
@@ -167,8 +190,12 @@
             </figure>
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-curiosity.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-curiosity.jpg"
+                  src="assets/images/mobile/image-curiosity.jpg"
                   alt="Space car"
                   class="img-card__img"
                 />
@@ -179,8 +206,12 @@
             </figure>
             <figure class="img-card">
               <picture>
+                <source
+                  srcset="assets/images/desktop/image-fisheye.jpg"
+                  media="(min-width: 400px)"
+                />
                 <img
-                  src="assets/images/desktop/image-fisheye.jpg"
+                  src="assets/images/mobile/image-fisheye.jpg"
                   alt="Fish eye shot of a building"
                   class="img-card__img"
                 />
@@ -190,6 +221,7 @@
               </figcaption>
             </figure>
           </div>
+          <a href="#" class="btn btn--outline btn--creations">See all</a>
         </div>
       </section>
     </main>
@@ -199,7 +231,11 @@
         <div class="footer__container">
           <div class="footer__left-col">
             <div class="footer__logo-box">
-              <img src="assets/images/logo.svg" alt="Loopstudios logo" />
+              <img
+                src="assets/images/logo.svg"
+                alt="Loopstudios logo"
+                class="footer__logo"
+              />
             </div>
             <nav class="footer__navigation">
               <ul class="footer__navigation-list">

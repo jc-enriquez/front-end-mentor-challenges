@@ -5,6 +5,24 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: $bp-large) {
+      flex-direction: column;
+      align-items: start;
+      gap: 3.6rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    display: block;
+
+    @media screen and (max-width: $bp-small) {
+      width: 15rem;
+    }
   }
 
   &__right-col,
@@ -14,14 +32,34 @@
     gap: 2.4rem;
   }
 
+  &__left-col {
+    @media screen and (max-width: $bp-small) {
+      gap: 3.6rem;
+    }
+  }
+
   &__right-col {
     align-items: end;
+
+    @media screen and (max-width: $bp-tablet) {
+      align-items: start;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      align-items: center;
+      gap: 1.2rem;
+    }
   }
 
   &__navigation-list {
     display: flex;
     gap: 2.4rem;
     list-style: none;
+
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__navigation-link {

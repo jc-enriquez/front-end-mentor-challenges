@@ -1,20 +1,40 @@
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  padding: 1rem 3rem;
-  transition: all 0.3s;
-}
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 1rem 3rem;
+    transition: all 0.3s;
+  }
 
-.btn--outline:link,
-.btn--outline:visited {
-  color: $black;
-  border: 1px solid currentColor;
-}
+  &--outline {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $black;
+      border: 1px solid currentColor;
+    }
 
-.btn--outline:hover,
-.btn--outline:active {
-  color: $white;
-  background-color: $black;
+    &:hover,
+    &:active {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  &--creations {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 0;
+      right: 2rem;
+
+      @media screen and (max-width: $bp-medium) {
+        position: static;
+        top: auto;
+        right: auto;
+      }
+    }
+  }
 }

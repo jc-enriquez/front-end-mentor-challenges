@@ -1,5 +1,13 @@
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -16,10 +24,30 @@ body {
   &--primary {
     font-size: 8.4rem;
     color: $white;
+
+    @media screen and (max-width: $bp-large) {
+      font-size: 7.2rem;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      font-size: 5.2rem;
+    }
   }
 
   &--secondary {
     font-size: 5.2rem;
+
+    @media screen and (max-width: $bp-medium) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &--tertiary {
+    font-size: 5rem;
+
+    @media screen and (max-width: $bp-medium) {
+      font-size: 3rem;
+    }
   }
 }
 

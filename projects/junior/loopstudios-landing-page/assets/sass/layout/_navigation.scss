@@ -4,10 +4,22 @@
   align-items: center;
   padding: 4rem 0;
 
+  &__logo {
+    display: block;
+
+    @media screen and (max-width: $bp-small) {
+      width: 15rem;
+    }
+  }
+
   &__list {
     display: flex;
     gap: 2.4rem;
     list-style: none;
+
+    @media screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
 
   &__link {

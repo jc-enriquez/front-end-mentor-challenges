@@ -5,3 +5,10 @@ $white: #ffffff;
 $black: #000000;
 $dark-gray: hsl(0, 0%, 55%);
 $very-dark-gray: hsl(0, 0%, 41%);
+
+// Breakpoints
+
+$bp-large: 56.25em; // 900px
+$bp-tablet: 43.75em; // 700px
+$bp-medium: 34.375em; // 550px
+$bp-small: 25em; // 400px

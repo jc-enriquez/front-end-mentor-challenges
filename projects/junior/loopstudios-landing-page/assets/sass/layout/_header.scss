@@ -5,10 +5,18 @@
   background-position: top;
   background-size: cover;
 
+  @media screen and (max-width: $bp-small) {
+    background-image: url(../images/mobile/image-hero.jpg);
+  }
+
   &__text-box {
     margin-top: 9.6rem;
     display: inline-block;
     border: 2px solid $white;
     padding: 2.5rem 10rem 2.5rem 2.5rem;
+
+    @media screen and (max-width: $bp-medium) {
+      padding: 2rem;
+    }
   }
 }
