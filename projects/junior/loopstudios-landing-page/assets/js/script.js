@@ -6,6 +6,18 @@ const containerSectionCreations = document.querySelector(
   ".section-creations__content"
 );
 
+const btnMobile = document.querySelector(".btn--mobile");
+const navigationEl = document.querySelector(".navigation");
+
+const html = document.querySelector("html");
+const body = document.querySelector("body");
+
+btnMobile.addEventListener("click", function () {
+  html.classList.toggle("u-overscroll-y-hidden");
+  body.classList.toggle("u-overscroll-y-hidden");
+  navigationEl.classList.toggle("navigation__open");
+});
+
 const displayImages = () => {
   images.forEach(({ desktopPath, mobilePath, captionUpper, captionLower }) => {
     const imagesEl = `

@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
 }

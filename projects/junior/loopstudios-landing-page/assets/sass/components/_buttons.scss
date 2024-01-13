@@ -37,4 +37,26 @@
       }
     }
   }
+
+  &--mobile {
+    background: none;
+    border: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+
+    @media screen and (max-width: $bp-medium) {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__icon {
+      &[name="close"] {
+        display: none;
+      }
+    }
+  }
 }
