@@ -4,4 +4,12 @@
   max-width: 45rem;
   padding: 5rem;
   border-radius: 30px;
+
+  &__content {
+    margin-bottom: 3.6rem;
+
+    @media screen and (max-width: $bp-small) {
+      margin-bottom: 14.4rem;
+    }
+  }
 }

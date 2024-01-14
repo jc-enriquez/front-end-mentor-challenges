@@ -8,8 +8,25 @@
   padding: 2rem 2rem 2rem 6rem;
   border-radius: 30px;
 
+  @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 1rem;
+  }
+
   &__text-box {
     color: $clr-charcoal-gray;
+
+    @media screen and (max-width: $bp-tablet) {
+      order: 2;
+      padding: 3rem;
+    }
+  }
+
+  &__img-box {
+    @media screen and (max-width: $bp-tablet) {
+      order: 1;
+    }
   }
 
   &__img {

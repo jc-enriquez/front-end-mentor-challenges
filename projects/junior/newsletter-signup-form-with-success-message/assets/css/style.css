@@ -8,16 +8,29 @@
 body {
   box-sizing: border-box;
   background-color: #242742; }
+  @media screen and (max-width: 25em) {
+    body {
+      background-color: white; } }
 
 main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 2rem; }
+  @media screen and (max-width: 25em) {
+    main {
+      padding: 0; } }
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -92,6 +105,11 @@ body {
   max-width: 45rem;
   padding: 5rem;
   border-radius: 30px; }
+  .message__content {
+    margin-bottom: 3.6rem; }
+    @media screen and (max-width: 25em) {
+      .message__content {
+        margin-bottom: 14.4rem; } }
 
 .signup {
   display: grid;
@@ -102,8 +120,20 @@ body {
   max-width: 85rem;
   padding: 2rem 2rem 2rem 6rem;
   border-radius: 30px; }
+  @media screen and (max-width: 46.875em) {
+    .signup {
+      grid-template-columns: 1fr;
+      padding: 0;
+      gap: 1rem; } }
   .signup__text-box {
     color: #36384e; }
+    @media screen and (max-width: 46.875em) {
+      .signup__text-box {
+        order: 2;
+        padding: 3rem; } }
+  @media screen and (max-width: 46.875em) {
+    .signup__img-box {
+      order: 1; } }
   .signup__img {
     display: block;
     width: 100%; }

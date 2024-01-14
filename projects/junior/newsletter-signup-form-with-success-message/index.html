@@ -57,11 +57,18 @@
               </form>
             </div>
             <div class="signup__img-box">
-              <img
-                src="assets/images/illustration-sign-up-desktop.svg"
-                alt="Chart illustration"
-                class="signup__img"
-              />
+              <picture>
+                <source
+                  srcset="assets/images/illustration-sign-up-desktop.svg"
+                  media="(min-width: 750px)"
+                  class="signup__img"
+                />
+                <img
+                  src="assets/images/illustration-sign-up-mobile.svg"
+                  alt="Chart illustration"
+                  class="signup__img"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -76,13 +83,13 @@
           <h1 class="heading-primary u-margin-bottom-md">
             Thanks for subscribing!
           </h1>
-          <p class="paragraph u-margin-bottom-lg">
+          <p class="paragraph">
             A confirmation email has been sent to
             <strong class="message__email"></strong>. Please open it and click
             the button inside to confirm your subscription.
           </p>
-          <button class="btn--solid btn-dismiss">Dismiss message</button>
         </div>
+        <button class="btn--solid btn-dismiss">Dismiss message</button>
       </figure>
     </main>
     <script src="assets/js/script.js"></script>
