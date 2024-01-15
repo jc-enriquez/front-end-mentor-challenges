@@ -25,7 +25,10 @@ html {
       font-size: 56.25%; } }
   @media screen and (max-width: 31.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 47.5%; } }
+  @media screen and (max-width: 25em) {
+    html {
+      font-size: 40%; } }
 
 body {
   font-family: "DM Sans", sans-serif;
@@ -85,7 +88,10 @@ body {
     display: flex;
     align-items: end;
     padding-bottom: 2rem;
-    border-bottom: 2px solid #f8e9dd;
+    background-image: linear-gradient(#f8e9dd, #f8e9dd);
+    background-size: calc(100% - 0.8rem) 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
     margin-bottom: 3rem; }
     .chart__list .active .chart__list__caption {
       opacity: 1;
@@ -97,12 +103,7 @@ body {
     .chart__list__item {
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
-      align-items: center;
-      cursor: pointer; }
-      .chart__list__item:hover .chart__list__caption {
-        opacity: 1;
-        visibility: visible; }
+      align-items: center; }
     .chart__list__caption {
       font-size: 1.6rem;
       font-weight: 700;
@@ -110,12 +111,18 @@ body {
       color: #f8e9dd;
       padding: 0.8rem;
       border-radius: 6px;
+      margin-bottom: 1rem;
       visibility: hidden;
       opacity: 0;
       transition: opacity 0.3s ease-in; }
+      .chart__list__caption:has(~ .chart__list__graph:hover) {
+        opacity: 1;
+        visibility: visible; }
     .chart__list__graph {
       width: 4.5rem;
       border-radius: 6px;
+      margin-bottom: 2rem;
+      cursor: pointer;
       transition: background-color 0.3s ease-in; }
       .chart__list__graph--normal {
         background-color: #ec775f; }
