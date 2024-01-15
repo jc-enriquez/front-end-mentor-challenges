@@ -1,0 +1,41 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 56.25%;
+  }
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+}
+
+.attribution {
+  font-size: 1rem;
+  color: $clr-dark-brown;
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 700;
+      text-decoration: none;
+      color: $clr-soft-red;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.3s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid currentColor;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.chart {
+  max-width: 80rem;
+
+  &__balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $clr-soft-red;
+    padding: 3rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+
+    &__text-box {
+      color: $clr-cream;
+    }
+
+    &__value {
+      font-weight: 700;
+      font-size: 3.6rem;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+
+    &--dark {
+      color: $clr-medium-brown;
+    }
+  }
+
+  &__expenses {
+    color: $clr-dark-brown;
+    background-color: $clr-very-pale-orange;
+    padding: 3rem;
+    border-radius: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid $clr-cream;
+    margin-bottom: 3rem;
+
+    & .active .chart__list__caption {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    & .active .chart__list__graph--normal {
+      background-color: lighten($clr-soft-red, 10%);
+    }
+
+    & .active .chart__list__graph--max {
+      background-color: lighten($clr-cyan, 10%);
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover .chart__list__caption {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &__caption {
+      font-size: 1.6rem;
+      font-weight: 700;
+      background-color: $clr-dark-brown;
+      color: $clr-cream;
+      padding: 0.8rem;
+      border-radius: 6px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+    }
+
+    &__graph {
+      width: 4.5rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease-in;
+
+      &--normal {
+        background-color: $clr-soft-red;
+
+        &:hover {
+          background-color: lighten($clr-soft-red, 10%);
+        }
+      }
+
+      &--max {
+        background-color: $clr-cyan;
+
+        &:hover {
+          background-color: lighten($clr-cyan, 15%);
+        }
+      }
+    }
+
+    &__day {
+      font-size: 1.4rem;
+      color: $clr-medium-brown;
+    }
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    &__value {
+      font-weight: 700;
+      font-size: 4rem;
+    }
+
+    &__stats {
+      text-align: right;
+    }
+
+    &__pct {
+      font-weight: 700;
+    }
+  }
+}
