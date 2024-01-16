@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solution for the Testimonials grid section from Frontend Mentor by John Christopher Enriquez"
+    />
+    <meta
+      name="keyword"
+      content="HTML, CSS, JavaScript, SASS, Frontend Mentor, John Christopher Enriquez"
+    />
+    <meta name="author" content="John Christopher Enriquez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>
+      Front-End Mentor &mdash; Intro Section with Dropdown Navigation
+    </title>
+  </head>
+  <body>
+    <header class="navigation">
+      <div class="navigation__block">
+        <a href="index.html">
+          <img
+            src="assets/images/logo.svg"
+            alt="Snap logo"
+            class="navigation__logo"
+          />
+        </a>
+        <nav class="navigation__main">
+          <ul class="navigation__list">
+            <li class="navigaton__item">
+              <a href="#" class="navigation__link navigation__link--dropdown"
+                >Features<img
+                  src="assets/images/icon-arrow-down.svg"
+                  alt="Icon arrow"
+                  class="navigation__icon"
+                />
+              </a>
+            </li>
+            <li class="navigaton__item">
+              <a href="#" class="navigation__link navigation__link--dropdown"
+                >Company<img
+                  src="assets/images/icon-arrow-down.svg"
+                  alt="Icon arrow"
+                  class="navigation__icon"
+              /></a>
+            </li>
+            <li class="navigaton__item">
+              <a href="#" class="navigation__link">Careers</a>
+            </li>
+            <li class="navigaton__item">
+              <a href="#" class="navigation__link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navigation__ctas">
+        <a href="#" class="btn btn--link">Login</a>
+        <a href="#" class="btn btn--outlined">Register</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="u-container">
+          <div class="grid grid-2-cols">
+            <div class="hero__text-box">
+              <h1 class="heading-primary u-margin-bottom-md">
+                Make remote work
+              </h1>
+              <p class="paragraph u-margin-bottom-lg">
+                Get your team in sync, no matter your location. Streamline
+                process, create team rituals, and watch productivity soar.
+              </p>
+              <a href="#" class="btn btn--solid u-margin-bottom-xl"
+                >Learn more</a
+              >
+
+              <div class="hero__partners">
+                <img
+                  src="assets/images/client-databiz.svg"
+                  alt="Databiz logo"
+                />
+                <img
+                  src="assets/images/client-audiophile.svg"
+                  alt="Audiophile logo"
+                />
+                <img src="assets/images/client-meet.svg" alt="Meet logo" />
+                <img src="assets/images/client-maker.svg" alt="Maker logo" />
+              </div>
+            </div>
+            <div class="hero__img-box">
+              <img
+                src="assets/images/image-hero-desktop.png"
+                alt="Man holding laptop"
+                class="hero__image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

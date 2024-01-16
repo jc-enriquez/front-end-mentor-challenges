@@ -1,0 +1,38 @@
+.btn {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+
+  &--link {
+    &:hover {
+      color: $clr-almost-black;
+    }
+  }
+
+  &--outlined {
+    border: 1px solid $clr-medium-gray;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+
+    &:hover {
+      color: $clr-almost-black;
+      border: 1px solid currentColor;
+    }
+  }
+
+  &--solid {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: $clr-almost-black;
+    color: $clr-almost-white;
+    padding: 1.8rem 3rem;
+    border-radius: 16px;
+
+    &:hover {
+      background-color: $clr-almost-white;
+      color: $clr-almost-black;
+      box-shadow: 0 0 0 1px inset $clr-almost-black;
+    }
+  }
+}

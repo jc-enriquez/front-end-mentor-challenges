@@ -1,0 +1,56 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $clr-medium-gray;
+  padding: 4rem 0;
+  max-width: 80%;
+  margin: 0 auto;
+
+  &__block,
+  &__ctas {
+    display: flex;
+    align-items: center;
+  }
+
+  &__block {
+    gap: 6.4rem;
+  }
+
+  &__ctas {
+    gap: 3.6rem;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 3.6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-almost-black;
+    }
+
+    &--dropdown {
+      &:link,
+      &:visited {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

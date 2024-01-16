@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  background-color: #fafafa; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.8rem; }
+
+.heading-primary {
+  font-size: 8.4rem; }
+
+.paragraph {
+  color: dimgray;
+  line-height: 1.6;
+  width: 75%; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.u-margin-bottom-md {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 4.8rem; }
+
+.btn {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease; }
+  .btn--link:hover {
+    color: #141414; }
+  .btn--outlined {
+    border: 1px solid dimgray;
+    padding: 1rem 1.5rem;
+    border-radius: 10px; }
+    .btn--outlined:hover {
+      color: #141414;
+      border: 1px solid currentColor; }
+  .btn--solid {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: #141414;
+    color: #fafafa;
+    padding: 1.8rem 3rem;
+    border-radius: 16px; }
+    .btn--solid:hover {
+      background-color: #fafafa;
+      color: #141414;
+      box-shadow: 0 0 0 1px inset #141414; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: dimgray;
+  padding: 4rem 0;
+  max-width: 80%;
+  margin: 0 auto; }
+  .navigation__block, .navigation__ctas {
+    display: flex;
+    align-items: center; }
+  .navigation__block {
+    gap: 6.4rem; }
+  .navigation__ctas {
+    gap: 3.6rem; }
+  .navigation__logo {
+    display: block; }
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    gap: 3.6rem; }
+  .navigation__link:link, .navigation__link:visited {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease; }
+  .navigation__link:hover, .navigation__link:active {
+    color: #141414; }
+  .navigation__link--dropdown:link, .navigation__link--dropdown:visited {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; }
+
+.grid {
+  display: grid; }
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
+  align-items: end; }
+
+.hero__partners {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 15rem; }
+  .hero__partners img {
+    display: block; }
+
+.hero__image {
+  display: block;
+  width: 100%; }
