@@ -5,8 +5,16 @@
 
 .u-margin-bottom-md {
   margin-bottom: 4rem;
+
+  @media screen and (max-width: $bp-small) {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .u-margin-bottom-lg {
   margin-bottom: 4.8rem;
+
+  @media screen and (max-width: $bp-small) {
+    margin-bottom: 3rem;
+  }
 }

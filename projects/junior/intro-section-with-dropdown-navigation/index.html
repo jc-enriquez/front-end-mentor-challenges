@@ -26,14 +26,14 @@
   </head>
   <body>
     <header class="navigation">
+      <a href="index.html">
+        <img
+          src="assets/images/logo.svg"
+          alt="Snap logo"
+          class="navigation__logo"
+        />
+      </a>
       <div class="navigation__block">
-        <a href="index.html">
-          <img
-            src="assets/images/logo.svg"
-            alt="Snap logo"
-            class="navigation__logo"
-          />
-        </a>
         <nav class="navigation__main">
           <ul class="navigation__list">
             <li class="navigaton__item navigation__item--dropdown">
@@ -95,11 +95,23 @@
             </li>
           </ul>
         </nav>
+        <div class="navigation__ctas">
+          <a href="#" class="btn btn--link">Login</a>
+          <a href="#" class="btn btn--outlined">Register</a>
+        </div>
       </div>
-      <div class="navigation__ctas">
-        <a href="#" class="btn btn--link">Login</a>
-        <a href="#" class="btn btn--outlined">Register</a>
-      </div>
+      <button class="btn--mobile" aria-label="button nav">
+        <img
+          src="assets/images/icon-menu.svg"
+          alt="Menu icon"
+          name="menu-icon"
+        />
+        <img
+          src="assets/images/icon-close-menu.svg"
+          alt="Close icon"
+          name="close-icon"
+        />
+      </button>
     </header>
     <main>
       <section class="hero">
@@ -121,26 +133,43 @@
                 <img
                   src="assets/images/client-databiz.svg"
                   alt="Databiz logo"
+                  class="hero__partners__img"
                 />
                 <img
                   src="assets/images/client-audiophile.svg"
                   alt="Audiophile logo"
+                  class="hero__partners__img"
                 />
-                <img src="assets/images/client-meet.svg" alt="Meet logo" />
-                <img src="assets/images/client-maker.svg" alt="Maker logo" />
+                <img
+                  src="assets/images/client-meet.svg"
+                  alt="Meet logo"
+                  class="hero__partners__img"
+                />
+                <img
+                  src="assets/images/client-maker.svg"
+                  alt="Maker logo"
+                  class="hero__partners__img"
+                />
               </div>
             </div>
             <div class="hero__img-box">
-              <img
-                src="assets/images/image-hero-desktop.png"
-                alt="Man holding laptop"
-                class="hero__image"
-              />
+              <picture>
+                <source
+                  srcset="assets/images/image-hero-desktop.png"
+                  media="(min-width: 900px)"
+                />
+                <img
+                  src="assets/images/image-hero-mobile.png"
+                  alt="Man holding laptop"
+                  class="hero__image"
+                />
+              </picture>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <script src="assets/js/script.js"></script>
   </body>
 </html>

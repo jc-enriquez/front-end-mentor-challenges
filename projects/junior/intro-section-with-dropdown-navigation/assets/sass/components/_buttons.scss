@@ -9,6 +9,22 @@
     }
   }
 
+  &--mobile {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
+
+    @media screen and (max-width: $bp-large) {
+      display: block;
+    }
+
+    & img[name="close-icon"] {
+      display: none;
+    }
+  }
+
   &--outlined {
     border: 1px solid $clr-medium-gray;
     padding: 1rem 1.5rem;

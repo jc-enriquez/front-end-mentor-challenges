@@ -4,5 +4,39 @@
     align-items: center;
     gap: 3rem;
     margin-top: 15rem;
+
+    @media screen and (max-width: $bp-large) {
+      justify-content: center;
+      margin-top: 7.5rem;
+    }
+
+    &__img {
+      width: 10rem;
+
+      @media screen and (max-width: $bp-medium) {
+        width: 7.5rem;
+      }
+    }
+  }
+
+  &__text-box {
+    align-self: end;
+
+    @media screen and (max-width: $bp-large) {
+      order: 2;
+      text-align: center;
+      padding: 0 2rem;
+    }
+  }
+
+  &__img-box {
+    @media screen and (max-width: $bp-large) {
+      order: 1;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
   }
 }

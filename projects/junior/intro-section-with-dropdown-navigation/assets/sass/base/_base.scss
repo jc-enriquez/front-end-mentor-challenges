@@ -6,12 +6,18 @@
   box-sizing: inherit;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   box-sizing: border-box;
   background-color: $clr-almost-white;
+  overflow-x: hidden;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+main {
+  @media screen and (max-width: $bp-large) {
+    padding: 2rem 0 8.4rem 0;
+  }
 }

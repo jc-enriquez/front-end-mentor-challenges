@@ -2,11 +2,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 6.4rem;
   font-size: 1.6rem;
   color: $clr-medium-gray;
   padding: 4rem 0;
   max-width: 80%;
   margin: 0 auto;
+
+  &.active .navigation__block {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  &.active .btn--mobile img[name="menu-icon"] {
+    display: none;
+  }
+
+  &.active .btn--mobile img[name="close-icon"] {
+    display: block;
+  }
 
   &__block,
   &__ctas {
@@ -15,11 +31,37 @@
   }
 
   &__block {
-    gap: 6.4rem;
+    flex: 1;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: $bp-large) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: flex-start;
+      gap: 3.6rem;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      width: 60vw;
+      height: 100vh;
+      padding-top: 10rem;
+      padding-left: 3rem;
+      background-color: $clr-white;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateX(100%);
+    }
   }
 
   &__ctas {
     gap: 3.6rem;
+
+    @media screen and (max-width: $bp-large) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -29,7 +71,13 @@
   &__list {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 3.6rem;
+
+    @media screen and (max-width: $bp-large) {
+      flex-direction: column;
+      align-items: start;
+    }
   }
 
   &__item {
@@ -44,6 +92,15 @@
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+      }
+
+      &.active .navigation__link {
+        color: $clr-almost-black;
+      }
+
+      &.active .navigation__icon {
+        fill: $clr-almost-black;
+        transform: rotate(-180deg);
       }
     }
   }
@@ -79,7 +136,7 @@
     height: 2rem;
     width: 2rem;
     fill: $clr-medium-gray;
-    transition: fill 0.3s ease;
+    transition: all 0.3s ease;
   }
 
   &__dropdown {
