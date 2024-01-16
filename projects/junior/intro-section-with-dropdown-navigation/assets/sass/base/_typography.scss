@@ -40,3 +40,28 @@ body {
     width: 100%;
   }
 }
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 700;
+      color: $clr-almost-black;
+      text-decoration: none;
+      padding-bottom: 0.5rem;
+      background-image: linear-gradient($clr-almost-black, $clr-almost-black);
+      background-repeat: no-repeat;
+      background-size: 0 0;
+      background-position: bottom center;
+      transition: background-size 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 1px;
+    }
+  }
+}
