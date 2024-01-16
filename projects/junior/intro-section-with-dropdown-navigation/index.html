@@ -36,22 +36,56 @@
         </a>
         <nav class="navigation__main">
           <ul class="navigation__list">
-            <li class="navigaton__item">
+            <li class="navigaton__item navigation__item--dropdown">
               <a href="#" class="navigation__link navigation__link--dropdown"
-                >Features<img
-                  src="assets/images/icon-arrow-down.svg"
-                  alt="Icon arrow"
-                  class="navigation__icon"
-                />
+                >Features
+                <svg class="navigation__icon">
+                  <use
+                    xlink:href="assets/images/sprite.svg#icon-chevron-small-down"
+                  ></use>
+                </svg>
               </a>
+              <ul class="navigation__dropdown">
+                <li class="navigation__dropdown__item">
+                  <img src="assets/images/icon-todo.svg" alt="Todo icon" />
+                  <a href="#" class="navigation__dropdown__link">Todo List</a>
+                </li>
+                <li class="navigation__dropdown__item">
+                  <img
+                    src="assets/images/icon-calendar.svg"
+                    alt="Calendar icon"
+                  />
+                  <a href="#" class="navigation__dropdown__link">Calendar</a>
+                </li>
+                <li class="navigation__dropdown__item">
+                  <img src="assets/images/icon-reminders.svg" alt="Bell icon" />
+                  <a href="#" class="navigation__dropdown__link">Reminders</a>
+                </li>
+                <li class="navigation__dropdown__item">
+                  <img src="assets/images/icon-planning.svg" alt="Clock icon" />
+                  <a href="#" class="navigation__dropdown__link">Planning</a>
+                </li>
+              </ul>
             </li>
-            <li class="navigaton__item">
+            <li class="navigaton__item navigation__item--dropdown">
               <a href="#" class="navigation__link navigation__link--dropdown"
-                >Company<img
-                  src="assets/images/icon-arrow-down.svg"
-                  alt="Icon arrow"
-                  class="navigation__icon"
-              /></a>
+                >Company
+                <svg class="navigation__icon">
+                  <use
+                    xlink:href="assets/images/sprite.svg#icon-chevron-small-down"
+                  ></use></svg
+              ></a>
+              <ul class="navigation__dropdown">
+                <li class="navigation__dropdown__item">
+                  <a href="#" class="navigation__dropdown__link">History</a>
+                </li>
+                <li class="navigation__dropdown__item">
+                  <a href="#" class="navigation__dropdown__link">Our Team</a>
+                </li>
+                <li class="navigation__dropdown__item">
+                  <a href="#" class="navigation__dropdown__link">Blog</a>
+                </li>
+              </ul>
             </li>
             <li class="navigaton__item">
               <a href="#" class="navigation__link">Careers</a>
@@ -107,5 +141,6 @@
         </div>
       </section>
     </main>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
