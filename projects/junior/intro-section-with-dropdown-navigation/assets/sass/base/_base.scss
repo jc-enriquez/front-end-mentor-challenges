@@ -8,12 +8,30 @@
 
 html {
   overflow-x: hidden;
+
+  &.active body::after {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 body {
   box-sizing: border-box;
   background-color: $clr-almost-white;
   overflow-x: hidden;
+
+  &::after {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba($clr-almost-black, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.3s ease;
+  }
 }
 
 main {

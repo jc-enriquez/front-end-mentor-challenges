@@ -54,6 +54,10 @@
       pointer-events: none;
       transform: translateX(100%);
     }
+
+    @media screen and (max-width: $bp-small) {
+      padding: 10rem 3rem 0 3rem;
+    }
   }
 
   &__ctas {
@@ -61,6 +65,13 @@
 
     @media screen and (max-width: $bp-large) {
       flex-direction: column;
+      align-items: start;
+      gap: 2.4rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      text-align: center;
+      width: 100%;
     }
   }
 
@@ -92,6 +103,10 @@
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+
+        @media screen and (max-width: $bp-large) {
+          display: flex;
+        }
       }
 
       &.active .navigation__link {
@@ -154,6 +169,14 @@
     visibility: hidden;
     pointer-events: none;
     transition: all 0.3s ease;
+
+    @media screen and (max-width: $bp-large) {
+      position: static;
+      display: none;
+      box-shadow: none;
+      gap: 2.4rem;
+      padding: 3rem 2.5rem 0 2.5rem;
+    }
 
     &__item {
       display: flex;
