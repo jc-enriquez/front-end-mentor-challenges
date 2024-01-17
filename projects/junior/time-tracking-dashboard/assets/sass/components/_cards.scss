@@ -1,0 +1,70 @@
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: $clr-dark-blue;
+
+  &__details {
+    background-color: $clr-blue;
+    padding: 3rem 9rem 9rem 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  &__avatar {
+    height: 8.4rem;
+    width: 8.4rem;
+    border: 3px solid $clr-white;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 4.4rem;
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.4rem;
+    color: $clr-pale-blue;
+    margin-bottom: 0.5rem;
+  }
+
+  &__name {
+    font-size: 3.6rem;
+    font-weight: 300;
+    color: $clr-white;
+
+    &--block {
+      display: block;
+    }
+  }
+
+  &__controls {
+    padding: 3rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: $clr-pale-blue;
+
+    &__item {
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $clr-white;
+      }
+
+      &--active {
+        color: $clr-white;
+      }
+    }
+  }
+
+  &--stat {
+    &__variant {
+      height: 4rem;
+      background: url("../assets/images/icon-work.svg"), $clr-light-orange;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  background-color: #0f1424; }
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem; }
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #1c1f4a; }
+  .card__details {
+    background-color: #5847eb;
+    padding: 3rem 9rem 9rem 3rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+  .card__avatar {
+    height: 8.4rem;
+    width: 8.4rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 4.4rem; }
+  .card__label {
+    display: block;
+    font-size: 1.4rem;
+    color: #bdc1ff;
+    margin-bottom: 0.5rem; }
+  .card__name {
+    font-size: 3.6rem;
+    font-weight: 300;
+    color: white; }
+    .card__name--block {
+      display: block; }
+  .card__controls {
+    padding: 3rem; }
+  .card__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    color: #bdc1ff; }
+    .card__list__item {
+      cursor: pointer;
+      transition: color 0.3s ease; }
+      .card__list__item:hover {
+        color: white; }
+      .card__list__item--active {
+        color: white; }
+  .card--stat__variant {
+    height: 4rem;
+    background: url("../assets/images/icon-work.svg"), #ff8c66; }
+
+.grid {
+  display: grid; }
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.6rem; }

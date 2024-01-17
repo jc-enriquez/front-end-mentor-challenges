@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solution for the Time tracking dashboard from Frontend Mentor by John Christopher Enriquez"
+    />
+    <meta
+      name="keyword"
+      content="HTML, CSS, JavaScript, SASS, Frontend Mentor, John Christopher Enriquez"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Front-End Mentor &mdash; Time Tracking Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="grid grid-4-cols">
+          <figure class="card card--profile">
+            <div class="card__details">
+              <img
+                src="assets/images/image-jeremy.png"
+                alt="Jeremy Robson"
+                class="card__avatar"
+              />
+              <span class="card__label">Report for</span>
+              <p class="card__name">
+                <span class="card__name--block">Jeremy </span>Robson
+              </p>
+            </div>
+            <div class="card__controls">
+              <ul class="card__list">
+                <li class="card__list__item">Daily</li>
+                <li class="card__list__item card__list__item--active">
+                  Weekly
+                </li>
+                <li class="card__list__item">Monthly</li>
+              </ul>
+            </div>
+          </figure>
+          <figure class="card card--stat card--stat--work">
+            <div class="card--stat__variant card--stat__variant--work"></div>
+            <div class="card--stat__header">
+              <span class="card__title">Work</span>
+              <img src="assets/images/icon-ellipsis.svg" alt="Ellipsis icon" />
+            </div>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js" type="module"></script>
+  </body>
+</html>
