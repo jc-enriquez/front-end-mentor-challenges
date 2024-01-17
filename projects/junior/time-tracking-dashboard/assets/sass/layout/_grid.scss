@@ -2,7 +2,12 @@
   display: grid;
 }
 
-.grid-4-cols {
-  grid-template-columns: repeat(4, 1fr);
+.grid-2-cols {
+  grid-template-columns: 1fr 3fr;
+  gap: 3.6rem;
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
   gap: 3.6rem;
 }

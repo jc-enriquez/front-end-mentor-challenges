@@ -62,9 +62,64 @@
   }
 
   &--stat {
+    color: $clr-white;
+
     &__variant {
       height: 4rem;
-      background: url("../assets/images/icon-work.svg"), $clr-light-orange;
+
+      &--work {
+        background: $clr-light-orange;
+      }
+
+      &--play {
+        background-color: $clr-soft-blue;
+      }
+
+      &--study {
+        background-color: $clr-light-red;
+      }
+
+      &--exercise {
+        background-color: $clr-lime-green;
+      }
+
+      &--social {
+        background-color: $clr-violet;
+      }
+
+      &--selfcare {
+        background-color: $clr-soft-orange;
+      }
+    }
+
+    &__content {
+      padding: 3rem;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    &__numbers {
+      padding-right: 6rem;
+    }
+
+    &__hours {
+      font-size: 5.2rem;
+      font-weight: 300;
+      margin-bottom: 1.6rem;
+    }
+
+    &__previous-stat {
+      color: $clr-pale-blue;
     }
   }
 }

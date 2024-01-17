@@ -64,13 +64,48 @@ body {
         color: white; }
       .card__list__item--active {
         color: white; }
-  .card--stat__variant {
-    height: 4rem;
-    background: url("../assets/images/icon-work.svg"), #ff8c66; }
+  .card--stat {
+    color: white; }
+    .card--stat__variant {
+      height: 4rem; }
+      .card--stat__variant--work {
+        background: #ff8c66; }
+      .card--stat__variant--play {
+        background-color: #56c2e6; }
+      .card--stat__variant--study {
+        background-color: #ff5c7c; }
+      .card--stat__variant--exercise {
+        background-color: #4acf81; }
+      .card--stat__variant--social {
+        background-color: #7536d3; }
+      .card--stat__variant--selfcare {
+        background-color: #f1c65b; }
+    .card--stat__content {
+      padding: 3rem; }
+    .card--stat__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem; }
+    .card--stat__title {
+      font-size: 1.8rem;
+      font-weight: 500; }
+    .card--stat__numbers {
+      padding-right: 6rem; }
+    .card--stat__hours {
+      font-size: 5.2rem;
+      font-weight: 300;
+      margin-bottom: 1.6rem; }
+    .card--stat__previous-stat {
+      color: #bdc1ff; }
 
 .grid {
   display: grid; }
 
-.grid-4-cols {
-  grid-template-columns: repeat(4, 1fr);
+.grid-2-cols {
+  grid-template-columns: 1fr 3fr;
+  gap: 3.6rem; }
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
   gap: 3.6rem; }
