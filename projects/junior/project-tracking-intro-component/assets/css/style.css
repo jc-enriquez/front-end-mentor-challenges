@@ -35,7 +35,9 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  grid-column: full-start / full-end;
+  grid: 1; }
   .navigation__brand, .navigation__logo {
     display: block; }
   .navigation__list {
@@ -56,3 +58,10 @@ body {
     transition: background-size 0.3s ease; }
   .navigation__link:hover, .navigation__link:active {
     background-size: 100% 1px; }
+
+.container {
+  display: grid;
+  grid-template-columns: [first-spacer-start] 30rem [first-spacer-end full-start] repeat(2, [col-start] 1fr [col-end]) [second-spacer-start full-end] 30rem [second-spacer-end]; }
+
+.hero {
+  grid-column: full-start / full-end; }

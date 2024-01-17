@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  grid-column: full-start / full-end;
+  grid: 1;
 
   &__brand,
   &__logo {

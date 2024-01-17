@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns:
+    [first-spacer-start] 30rem [first-spacer-end full-start] repeat(
+      2,
+      [col-start] 1fr [col-end]
+    )
+    [second-spacer-start full-end] 30rem [second-spacer-end];
+}
