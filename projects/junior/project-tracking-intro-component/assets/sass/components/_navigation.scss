@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand,
+  &__logo {
+    display: block;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-family: "Barlow Condensed", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $clr-very-dark-blue;
+      background-image: linear-gradient(
+        $clr-very-dark-blue,
+        $clr-very-dark-blue
+      );
+      background-size: 0 0;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 1px;
+    }
+  }
+}

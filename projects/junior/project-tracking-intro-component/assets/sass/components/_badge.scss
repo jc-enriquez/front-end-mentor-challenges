@@ -1,0 +1,11 @@
+.badge {
+  &--solid {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    background-color: $clr-very-dark-blue;
+    color: $clr-light-grayish-blue;
+    padding: 0.4rem 0.8rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+  }
+}

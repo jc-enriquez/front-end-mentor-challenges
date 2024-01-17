@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "Barlow", sans-serif; }
+
+.heading-primary {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #242942; }
+
+.caption {
+  text-transform: uppercase; }
+
+.badge--solid {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  background-color: #242942;
+  color: #eef3f6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100px;
+  text-transform: uppercase; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .navigation__brand, .navigation__logo {
+    display: block; }
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.6rem; }
+  .navigation__link:link, .navigation__link:visited {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #242942;
+    background-image: linear-gradient(#242942, #242942);
+    background-size: 0 0;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease; }
+  .navigation__link:hover, .navigation__link:active {
+    background-size: 100% 1px; }
