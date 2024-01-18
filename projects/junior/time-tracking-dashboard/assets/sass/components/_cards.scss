@@ -55,7 +55,7 @@
         color: $clr-white;
       }
 
-      &--active {
+      &.active {
         color: $clr-white;
       }
     }
@@ -63,37 +63,35 @@
 
   &--stat {
     color: $clr-white;
+    padding-top: 4rem;
 
-    &__variant {
-      height: 4rem;
+    &--work {
+      background: $clr-light-orange;
+    }
 
-      &--work {
-        background: $clr-light-orange;
-      }
+    &--play {
+      background: $clr-soft-blue;
+    }
 
-      &--play {
-        background-color: $clr-soft-blue;
-      }
+    &--study {
+      background: $clr-light-red;
+    }
 
-      &--study {
-        background-color: $clr-light-red;
-      }
+    &--exercise {
+      background: $clr-lime-green;
+    }
 
-      &--exercise {
-        background-color: $clr-lime-green;
-      }
+    &--social {
+      background: $clr-violet;
+    }
 
-      &--social {
-        background-color: $clr-violet;
-      }
-
-      &--selfcare {
-        background-color: $clr-soft-orange;
-      }
+    &--selfcare {
+      background: $clr-soft-orange;
     }
 
     &__content {
       padding: 3rem;
+      background-color: $clr-dark-blue;
     }
 
     &__header {

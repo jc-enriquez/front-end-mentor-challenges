@@ -62,26 +62,26 @@ body {
       transition: color 0.3s ease; }
       .card__list__item:hover {
         color: white; }
-      .card__list__item--active {
+      .card__list__item.active {
         color: white; }
   .card--stat {
-    color: white; }
-    .card--stat__variant {
-      height: 4rem; }
-      .card--stat__variant--work {
-        background: #ff8c66; }
-      .card--stat__variant--play {
-        background-color: #56c2e6; }
-      .card--stat__variant--study {
-        background-color: #ff5c7c; }
-      .card--stat__variant--exercise {
-        background-color: #4acf81; }
-      .card--stat__variant--social {
-        background-color: #7536d3; }
-      .card--stat__variant--selfcare {
-        background-color: #f1c65b; }
+    color: white;
+    padding-top: 4rem; }
+    .card--stat--work {
+      background: #ff8c66; }
+    .card--stat--play {
+      background: #56c2e6; }
+    .card--stat--study {
+      background: #ff5c7c; }
+    .card--stat--exercise {
+      background: #4acf81; }
+    .card--stat--social {
+      background: #7536d3; }
+    .card--stat--selfcare {
+      background: #f1c65b; }
     .card--stat__content {
-      padding: 3rem; }
+      padding: 3rem;
+      background-color: #1c1f4a; }
     .card--stat__header {
       display: flex;
       align-items: center;
