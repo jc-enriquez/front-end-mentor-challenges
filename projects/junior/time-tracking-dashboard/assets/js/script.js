@@ -6,8 +6,35 @@ const containerGrid = document.querySelector(".grid-stat");
 const cardList = document.querySelector(".card__list");
 const cardListItems = document.querySelectorAll(".card__list__item");
 
-const displayData = (time = "weekly") => {
+let timeCurrent;
+let timePrevious;
+let timeCaption;
+
+const displayData = (time) => {
   data.forEach(({ title, timeframes: { weekly, daily, monthly } }) => {
+    switch (time) {
+      case "daily":
+        timeCurrent = daily.current;
+        timePrevious = daily.previous;
+        timeCaption = "Yesterday";
+        break;
+      case "weekly":
+        timeCurrent = weekly.current;
+        timePrevious = weekly.previous;
+        timeCaption = "Last week";
+        break;
+      case "monthly":
+        timeCurrent = monthly.current;
+        timePrevious = monthly.previous;
+        timeCaption = "Last month";
+        break;
+      default:
+        timeCurrent = weekly.current;
+        timePrevious = weekly.previous;
+        timeCaption = "Last week";
+        break;
+    }
+
     const dataEl = `
     <figure class="card card--stat card--stat--${title
       .split(" ")
@@ -16,38 +43,11 @@ const displayData = (time = "weekly") => {
       <div class="card--stat__content">
         <div class="card--stat__header">
           <span class="card--stat__title">${title}</span>
-          <img
-            src="assets/images/icon-ellipsis.svg"
-            alt="Ellipsis icon"
-          />
+          <ion-icon name="ellipsis-horizontal" class="card--stat__setting"></ion-icon>
         </div>
         <div class="card--stat__numbers">
-          <p class="card--stat__hours">${
-            time === "weekly"
-              ? weekly.current
-              : time === "daily"
-              ? daily.current
-              : time === "monthly"
-              ? monthly.current
-              : weekly.current
-          }hrs</p>
-          <p class="card--stat__previous-stat">${
-            time === "weekly"
-              ? "Last week"
-              : time === "daily"
-              ? "Yesterday"
-              : time === "monthly"
-              ? "Last month"
-              : "Last week"
-          } - ${
-      time === "weekly"
-        ? weekly.previous
-        : time === "daily"
-        ? daily.previous
-        : time === "monthly"
-        ? monthly.previous
-        : weekly.previous
-    }hrs</p>
+          <p class="card--stat__hours">${timeCurrent}hrs</p>
+          <p class="card--stat__previous-stat">${timeCaption} - ${timePrevious}hrs</p>
         </div>
       </div>
     </figure>`;

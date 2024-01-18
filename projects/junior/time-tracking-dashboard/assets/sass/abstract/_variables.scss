@@ -15,3 +15,8 @@ $clr-dark-blue: hsl(235, 46%, 20%);
 $clr-desaturated-blue: hsl(235, 45%, 61%);
 $clr-pale-blue: hsl(236, 100%, 87%);
 $clr-white: hsl(0, 0%, 100%);
+
+// BREAKPOINTS
+$bp-large: 59.375em; // 950px
+$bp-tablet: 50em; // 800px
+$bp-small: 28.125em; // 450px

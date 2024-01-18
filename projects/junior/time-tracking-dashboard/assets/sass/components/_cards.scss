@@ -4,10 +4,21 @@
   background-color: $clr-dark-blue;
 
   &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
     background-color: $clr-blue;
     padding: 3rem 9rem 9rem 3rem;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1.6rem;
+      padding: 3rem;
+    }
   }
 
   &__avatar {
@@ -16,7 +27,6 @@
     border: 3px solid $clr-white;
     border-radius: 50%;
     display: block;
-    margin-bottom: 4.4rem;
   }
 
   &__label {
@@ -31,8 +41,16 @@
     font-weight: 300;
     color: $clr-white;
 
+    @media screen and (max-width: $bp-small) {
+      font-size: 3rem;
+    }
+
     &--block {
       display: block;
+
+      @media screen and (max-width: $bp-tablet) {
+        display: inline;
+      }
     }
   }
 
@@ -46,6 +64,12 @@
     flex-direction: column;
     gap: 1.6rem;
     color: $clr-pale-blue;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+    }
 
     &__item {
       cursor: pointer;
@@ -64,6 +88,7 @@
   &--stat {
     color: $clr-white;
     padding-top: 4rem;
+    cursor: pointer;
 
     &--work {
       background: $clr-light-orange;
@@ -92,6 +117,11 @@
     &__content {
       padding: 3rem;
       background-color: $clr-dark-blue;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: lighten($clr-dark-blue, 10%);
+      }
     }
 
     &__header {
@@ -99,6 +129,10 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 3rem;
+
+      @media screen and (max-width: $bp-large) {
+        margin-bottom: 1rem;
+      }
     }
 
     &__title {
@@ -106,14 +140,38 @@
       font-weight: 500;
     }
 
+    &__setting {
+      font-size: 2.4rem;
+      color: $clr-pale-blue;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $clr-white;
+      }
+    }
+
     &__numbers {
       padding-right: 6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      @media screen and (max-width: $bp-large) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0;
+      }
     }
 
     &__hours {
       font-size: 5.2rem;
       font-weight: 300;
-      margin-bottom: 1.6rem;
+
+      @media screen and (max-width: $bp-large) {
+        font-size: 4.4rem;
+      }
     }
 
     &__previous-stat {

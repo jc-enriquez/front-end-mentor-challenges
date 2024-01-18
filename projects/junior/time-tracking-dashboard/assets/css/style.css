@@ -12,32 +12,63 @@ body {
 main {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  gap: 5.2rem;
+  padding: 2rem; }
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 59.375em) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 28.125em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Rubik", sans-serif;
   font-size: 1.6rem; }
+
+.attribution {
+  font-size: 1rem;
+  color: white; }
+  .attribution__link:link, .attribution__link:visited {
+    font-weight: 500;
+    text-decoration: none;
+    color: #bdc1ff;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease; }
+  .attribution__link:hover, .attribution__link:active {
+    border-bottom: 1px solid currentColor; }
 
 .card {
   border-radius: 15px;
   overflow: hidden;
   background-color: #1c1f4a; }
   .card__details {
+    display: flex;
+    flex-direction: column;
+    gap: 4.4rem;
     background-color: #5847eb;
     padding: 3rem 9rem 9rem 3rem;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; }
+    @media screen and (max-width: 50em) {
+      .card__details {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+        padding: 3rem; } }
   .card__avatar {
     height: 8.4rem;
     width: 8.4rem;
     border: 3px solid white;
     border-radius: 50%;
-    display: block;
-    margin-bottom: 4.4rem; }
+    display: block; }
   .card__label {
     display: block;
     font-size: 1.4rem;
@@ -47,8 +78,14 @@ body {
     font-size: 3.6rem;
     font-weight: 300;
     color: white; }
+    @media screen and (max-width: 28.125em) {
+      .card__name {
+        font-size: 3rem; } }
     .card__name--block {
       display: block; }
+      @media screen and (max-width: 50em) {
+        .card__name--block {
+          display: inline; } }
   .card__controls {
     padding: 3rem; }
   .card__list {
@@ -57,6 +94,11 @@ body {
     flex-direction: column;
     gap: 1.6rem;
     color: #bdc1ff; }
+    @media screen and (max-width: 50em) {
+      .card__list {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between; } }
     .card__list__item {
       cursor: pointer;
       transition: color 0.3s ease; }
@@ -66,7 +108,8 @@ body {
         color: white; }
   .card--stat {
     color: white;
-    padding-top: 4rem; }
+    padding-top: 4rem;
+    cursor: pointer; }
     .card--stat--work {
       background: #ff8c66; }
     .card--stat--play {
@@ -81,21 +124,45 @@ body {
       background: #f1c65b; }
     .card--stat__content {
       padding: 3rem;
-      background-color: #1c1f4a; }
+      background-color: #1c1f4a;
+      transition: background-color 0.3s ease; }
+      .card--stat__content:hover {
+        background-color: #292f70; }
     .card--stat__header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 3rem; }
+      @media screen and (max-width: 59.375em) {
+        .card--stat__header {
+          margin-bottom: 1rem; } }
     .card--stat__title {
       font-size: 1.8rem;
       font-weight: 500; }
+    .card--stat__setting {
+      font-size: 2.4rem;
+      color: #bdc1ff;
+      cursor: pointer;
+      transition: color 0.3s ease; }
+      .card--stat__setting:hover {
+        color: white; }
     .card--stat__numbers {
-      padding-right: 6rem; }
+      padding-right: 6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem; }
+      @media screen and (max-width: 59.375em) {
+        .card--stat__numbers {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding-right: 0; } }
     .card--stat__hours {
       font-size: 5.2rem;
-      font-weight: 300;
-      margin-bottom: 1.6rem; }
+      font-weight: 300; }
+      @media screen and (max-width: 59.375em) {
+        .card--stat__hours {
+          font-size: 4.4rem; } }
     .card--stat__previous-stat {
       color: #bdc1ff; }
 
@@ -105,7 +172,16 @@ body {
 .grid-2-cols {
   grid-template-columns: 1fr 3fr;
   gap: 3.6rem; }
+  @media screen and (max-width: 50em) {
+    .grid-2-cols {
+      grid-template-columns: 1fr; } }
 
 .grid-3-cols {
   grid-template-columns: repeat(3, 1fr);
   gap: 3.6rem; }
+  @media screen and (max-width: 50em) {
+    .grid-3-cols {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 28.125em) {
+    .grid-3-cols {
+      grid-template-columns: 1fr; } }
