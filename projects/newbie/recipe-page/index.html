@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solution for the Recipe page challenge from Frontend Mentor by John Christopher Enriquez"
+    />
+    <meta
+      name="keyword"
+      content="HTML, CSS, Frontend Mentor, John Christopher Enriquez"
+    />
+    <meta name="author" content="John Christopher Enriquez" />
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Front-End Mentor &mdash; Recipe Page</title>
+  </head>
+  <body>
+    <main>
+      <article class="recipe">
+        <img
+          src="assets/images/image-omelette.jpeg"
+          alt="Omelette"
+          class="recipe__img"
+        />
+        <div class="container">
+          <header>
+            <h1 class="heading-primary u-margin-bottom-md">
+              Simple Omelette Recipe
+            </h1>
+            <p class="paragraph u-margin-bottom-md">
+              An easy and quick dish, perfect for any meal. This classic
+              omelette combines beaten eggs cooked to perfection, optionally
+              filled with your choice of cheese, vegetables, or meats.
+            </p>
+          </header>
+          <section class="recipe__preparation u-margin-bottom-lg">
+            <h3 class="heading-tertiary u-margin-bottom-sm">
+              Preparation time
+            </h3>
+            <ul class="recipe__list recipe__list--preparation"></ul>
+          </section>
+          <section class="recipe__ingredients u-margin-bottom-lg">
+            <h2 class="heading-secondary u-margin-bottom-md">Ingredients</h2>
+            <ul class="recipe__list recipe__list--ingredients"></ul>
+          </section>
+          <section class="recipe__instructions u-margin-bottom-lg">
+            <h2 class="heading-secondary u-margin-bottom-md">Instructions</h2>
+            <ol class="recipe__list recipe__list--instructions"></ol>
+          </section>
+          <section class="recipe__nutrition">
+            <h2 class="heading-secondary u-margin-bottom-md">Nutrition</h2>
+            <p class="paragraph u-margin-bottom-sm">
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <table class="recipe__table">
+              <tbody class="recipe__table-body"></tbody>
+            </table>
+          </section>
+        </div>
+      </article>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="attribution__link"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://jc-ve.github.io/"
+          class="attribution__link"
+          target="_blank"
+          >John Christopher Enriquez </a
+        >.
+      </div>
+    </main>
+    <script src="assets/js/script.js" type="module"></script>
+  </body>
+</html>
