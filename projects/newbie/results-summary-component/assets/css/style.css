@@ -128,38 +128,22 @@ body {
   gap: 1.2rem;
 }
 
-<<<<<<< HEAD
-.summary__item--red {
-=======
 .summary__item--reaction {
->>>>>>> 29c4050 (refactored content)
   color: var(--light-red);
   background-color: hsla(0, 100%, 67%, 0.1);
 }
 
-<<<<<<< HEAD
-.summary__item--yellow {
-=======
 .summary__item--memory {
->>>>>>> 29c4050 (refactored content)
   color: var(--orange-yellow);
   background-color: hsla(39, 100%, 56%, 0.1);
 }
 
-<<<<<<< HEAD
-.summary__item--green {
-=======
 .summary__item--verbal {
->>>>>>> 29c4050 (refactored content)
   color: var(--green-teal);
   background-color: hsla(166, 100%, 37%, 0.1);
 }
 
-<<<<<<< HEAD
-.summary__item--blue {
-=======
 .summary__item--visual {
->>>>>>> 29c4050 (refactored content)
   color: var(--cobalt-blue);
   background-color: hsla(234, 85%, 45%, 0.1);
 }
