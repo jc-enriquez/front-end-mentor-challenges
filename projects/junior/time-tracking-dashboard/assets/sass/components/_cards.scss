@@ -120,35 +120,32 @@
     padding-top: 4rem;
 
     &--work {
-      background: url(/assets/images/icon-work.svg) no-repeat top -1rem right 2rem,
+      background: url(../images/icon-work.svg) no-repeat top -1rem right 2rem,
         linear-gradient(to bottom, $clr-light-orange 50%, transparent 50%);
     }
 
     &--play {
-      background: url(/assets/images/icon-play.svg) no-repeat top -0.5rem right 2rem,
+      background: url(../images/icon-play.svg) no-repeat top -0.5rem right 2rem,
         linear-gradient(to bottom, $clr-soft-blue 50%, transparent 50%);
     }
 
     &--study {
-      background: url(/assets/images/icon-study.svg) no-repeat top -1rem right 2rem,
+      background: url(../images/icon-study.svg) no-repeat top -1rem right 2rem,
         linear-gradient(to bottom, $clr-light-red 50%, transparent 50%);
     }
 
     &--exercise {
-      background: url(/assets/images/icon-exercise.svg) no-repeat top -0.2rem right
-          2rem,
+      background: url(../images/icon-exercise.svg) no-repeat top -0.2rem right 2rem,
         linear-gradient(to bottom, $clr-lime-green 50%, transparent 50%);
     }
 
     &--social {
-      background: url(/assets/images/icon-social.svg) no-repeat top -1.8rem right
-          2rem,
+      background: url(../images/icon-social.svg) no-repeat top -1.8rem right 2rem,
         linear-gradient(to bottom, $clr-violet 50%, transparent 50%);
     }
 
     &--selfcare {
-      background: url(/assets/images/icon-self-care.svg) no-repeat top -1rem right
-          2rem,
+      background: url(../images/icon-self-care.svg) no-repeat top -1rem right 2rem,
         linear-gradient(to bottom, $clr-soft-orange 50%, transparent 50%);
     }
 

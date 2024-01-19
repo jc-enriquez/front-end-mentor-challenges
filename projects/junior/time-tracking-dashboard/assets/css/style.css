@@ -111,17 +111,17 @@ body {
     cursor: pointer;
     padding-top: 4rem; }
     .card--stat--work {
-      background: url(/assets/images/icon-work.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #ff8c66 50%, transparent 50%); }
+      background: url(../images/icon-work.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #ff8c66 50%, transparent 50%); }
     .card--stat--play {
-      background: url(/assets/images/icon-play.svg) no-repeat top -0.5rem right 2rem, linear-gradient(to bottom, #56c2e6 50%, transparent 50%); }
+      background: url(../images/icon-play.svg) no-repeat top -0.5rem right 2rem, linear-gradient(to bottom, #56c2e6 50%, transparent 50%); }
     .card--stat--study {
-      background: url(/assets/images/icon-study.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #ff5c7c 50%, transparent 50%); }
+      background: url(../images/icon-study.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #ff5c7c 50%, transparent 50%); }
     .card--stat--exercise {
-      background: url(/assets/images/icon-exercise.svg) no-repeat top -0.2rem right 2rem, linear-gradient(to bottom, #4acf81 50%, transparent 50%); }
+      background: url(../images/icon-exercise.svg) no-repeat top -0.2rem right 2rem, linear-gradient(to bottom, #4acf81 50%, transparent 50%); }
     .card--stat--social {
-      background: url(/assets/images/icon-social.svg) no-repeat top -1.8rem right 2rem, linear-gradient(to bottom, #7536d3 50%, transparent 50%); }
+      background: url(../images/icon-social.svg) no-repeat top -1.8rem right 2rem, linear-gradient(to bottom, #7536d3 50%, transparent 50%); }
     .card--stat--selfcare {
-      background: url(/assets/images/icon-self-care.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #f1c65b 50%, transparent 50%); }
+      background: url(../images/icon-self-care.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #f1c65b 50%, transparent 50%); }
     .card--stat__content {
       padding: 3rem;
       background-color: #1c1f4a;
