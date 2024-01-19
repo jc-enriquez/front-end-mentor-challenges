@@ -17,6 +17,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5.2rem;
   flex-direction: column;
   padding: 2rem; }
   @media screen and (max-width: 25em) {
@@ -41,6 +42,18 @@ body {
   font-size: 4.8rem;
   color: #242742;
   line-height: 1; }
+
+.attribution {
+  font-size: 1rem;
+  color: white;
+  text-align: center; }
+  .attribution__link:link, .attribution__link:visited {
+    font-weight: 700;
+    color: #ff6257;
+    text-decoration: none; }
+  .attribution__link:hover, .attribution__link:active {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem; }
 
 .u-container {
   max-width: 120rem;

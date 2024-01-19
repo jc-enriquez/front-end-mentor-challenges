@@ -21,3 +21,24 @@ body {
   color: $clr-dark-slate-gray;
   line-height: 1;
 }
+
+.attribution {
+  font-size: 1rem;
+  color: $clr-white;
+  text-align: center;
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 700;
+      color: $clr-tomato;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+    }
+  }
+}
