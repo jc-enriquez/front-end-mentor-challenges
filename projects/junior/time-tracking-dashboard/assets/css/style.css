@@ -108,23 +108,26 @@ body {
         color: white; }
   .card--stat {
     color: white;
-    padding-top: 4rem;
-    cursor: pointer; }
+    cursor: pointer;
+    padding-top: 4rem; }
     .card--stat--work {
-      background: #ff8c66; }
+      background: url(/assets/images/icon-work.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #ff8c66 50%, transparent 50%); }
     .card--stat--play {
-      background: #56c2e6; }
+      background: url(/assets/images/icon-play.svg) no-repeat top -0.5rem right 2rem, linear-gradient(to bottom, #56c2e6 50%, transparent 50%); }
     .card--stat--study {
-      background: #ff5c7c; }
+      background: url(/assets/images/icon-study.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #ff5c7c 50%, transparent 50%); }
     .card--stat--exercise {
-      background: #4acf81; }
+      background: url(/assets/images/icon-exercise.svg) no-repeat top -0.2rem right 2rem, linear-gradient(to bottom, #4acf81 50%, transparent 50%); }
     .card--stat--social {
-      background: #7536d3; }
+      background: url(/assets/images/icon-social.svg) no-repeat top -1.8rem right 2rem, linear-gradient(to bottom, #7536d3 50%, transparent 50%); }
     .card--stat--selfcare {
-      background: #f1c65b; }
+      background: url(/assets/images/icon-self-care.svg) no-repeat top -1rem right 2rem, linear-gradient(to bottom, #f1c65b 50%, transparent 50%); }
     .card--stat__content {
       padding: 3rem;
       background-color: #1c1f4a;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      overflow: hidden;
       transition: background-color 0.3s ease; }
       .card--stat__content:hover {
         background-color: #292f70; }
@@ -179,7 +182,7 @@ body {
 .grid-3-cols {
   grid-template-columns: repeat(3, 1fr);
   gap: 3.6rem; }
-  @media screen and (max-width: 50em) {
+  @media screen and (max-width: 59.375em) {
     .grid-3-cols {
       grid-template-columns: repeat(2, 1fr); } }
   @media screen and (max-width: 28.125em) {

@@ -85,38 +85,79 @@
     }
   }
 
+  // &__variant {
+  //   height: 4rem;
+
+  //   &--work {
+  //     background: url("./assets/images/icon-work.svg"), $clr-light-orange;
+  //     background-repeat: no-repeat;
+  //   }
+
+  //   &--play {
+  //     background: $clr-soft-blue;
+  //   }
+
+  //   &--study {
+  //     background: $clr-light-red;
+  //   }
+
+  //   &--exercise {
+  //     background: $clr-lime-green;
+  //   }
+
+  //   &--social {
+  //     background: $clr-violet;
+  //   }
+
+  //   &--selfcare {
+  //     background: $clr-soft-orange;
+  //   }
+  // }
+
   &--stat {
     color: $clr-white;
-    padding-top: 4rem;
     cursor: pointer;
+    padding-top: 4rem;
 
     &--work {
-      background: $clr-light-orange;
+      background: url(/assets/images/icon-work.svg) no-repeat top -1rem right 2rem,
+        linear-gradient(to bottom, $clr-light-orange 50%, transparent 50%);
     }
 
     &--play {
-      background: $clr-soft-blue;
+      background: url(/assets/images/icon-play.svg) no-repeat top -0.5rem right 2rem,
+        linear-gradient(to bottom, $clr-soft-blue 50%, transparent 50%);
     }
 
     &--study {
-      background: $clr-light-red;
+      background: url(/assets/images/icon-study.svg) no-repeat top -1rem right 2rem,
+        linear-gradient(to bottom, $clr-light-red 50%, transparent 50%);
     }
 
     &--exercise {
-      background: $clr-lime-green;
+      background: url(/assets/images/icon-exercise.svg) no-repeat top -0.2rem right
+          2rem,
+        linear-gradient(to bottom, $clr-lime-green 50%, transparent 50%);
     }
 
     &--social {
-      background: $clr-violet;
+      background: url(/assets/images/icon-social.svg) no-repeat top -1.8rem right
+          2rem,
+        linear-gradient(to bottom, $clr-violet 50%, transparent 50%);
     }
 
     &--selfcare {
-      background: $clr-soft-orange;
+      background: url(/assets/images/icon-self-care.svg) no-repeat top -1rem right
+          2rem,
+        linear-gradient(to bottom, $clr-soft-orange 50%, transparent 50%);
     }
 
     &__content {
       padding: 3rem;
       background-color: $clr-dark-blue;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      overflow: hidden;
       transition: background-color 0.3s ease;
 
       &:hover {

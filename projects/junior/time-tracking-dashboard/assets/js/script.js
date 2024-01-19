@@ -6,12 +6,13 @@ const containerGrid = document.querySelector(".grid-stat");
 const cardList = document.querySelector(".card__list");
 const cardListItems = document.querySelectorAll(".card__list__item");
 
+let cardVariant;
 let timeCurrent;
 let timePrevious;
 let timeCaption;
 
 const displayData = (time) => {
-  data.forEach(({ title, timeframes: { weekly, daily, monthly } }) => {
+  data.forEach(({ title, icon, timeframes: { weekly, daily, monthly } }) => {
     switch (time) {
       case "daily":
         timeCurrent = daily.current;
@@ -35,11 +36,10 @@ const displayData = (time) => {
         break;
     }
 
+    cardVariant = title.split(" ").join("").toLowerCase();
+
     const dataEl = `
-    <figure class="card card--stat card--stat--${title
-      .split(" ")
-      .join("")
-      .toLowerCase()}">
+    <figure class="card card--stat card--stat--${cardVariant}">
       <div class="card--stat__content">
         <div class="card--stat__header">
           <span class="card--stat__title">${title}</span>
