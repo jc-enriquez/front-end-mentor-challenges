@@ -47,6 +47,10 @@ body {
   font-size: 1rem;
   color: white;
   text-align: center; }
+  @media screen and (max-width: 25em) {
+    .attribution {
+      color: #9294a0;
+      padding-bottom: 2rem; } }
   .attribution__link:link, .attribution__link:visited {
     font-weight: 700;
     color: #ff6257;

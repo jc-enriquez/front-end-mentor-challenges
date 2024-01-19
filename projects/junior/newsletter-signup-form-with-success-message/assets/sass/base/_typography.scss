@@ -27,6 +27,11 @@ body {
   color: $clr-white;
   text-align: center;
 
+  @media screen and (max-width: $bp-small) {
+    color: $clr-gray;
+    padding-bottom: 2rem;
+  }
+
   &__link {
     &:link,
     &:visited {
