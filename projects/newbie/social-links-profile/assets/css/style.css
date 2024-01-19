@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-dark-gray: hsl(0, 0%, 12%);
+  --clr-off-black: hsl(0, 0%, 8%);
+}
+
+::selection {
+  color: var(--clr-dark-gray);
+  background-color: var(--clr-green);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--clr-off-black);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  max-width: 40rem;
+  text-align: center;
+  color: var(--clr-white);
+  background-color: var(--clr-dark-gray);
+  padding: 5rem 4rem 4rem 4rem;
+  border-radius: 15px;
+}
+
+.card__avatar {
+  height: 8.4rem;
+  width: 8.4rem;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 2.4rem auto;
+}
+
+.card__name {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.card__location {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--clr-green);
+  margin-bottom: 3rem;
+}
+
+.card__caption {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+  padding-inline: 2.4rem;
+}
+
+.card__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.card__link:link,
+.card__link:visited {
+  display: block;
+  background-color: var(--clr-grey);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: inherit;
+  color: var(--clr-white);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.card__link:hover,
+.card__link:active {
+  background-color: var(--clr-green);
+  color: var(--clr-dark-gray);
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.attribution__link:link,
+.attribution__link:visited {
+  font-weight: 600;
+  color: var(--clr-green);
+  text-decoration: none;
+  text-underline-offset: 0.5rem;
+}
+
+.attribution__link:hover,
+.attribution__link:active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+@media screen and (max-width: 46.875em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .card {
+    padding: 4rem 3rem 3rem 3rem;
+  }
+
+  .card__caption {
+    padding-inline: 1.2rem;
+  }
+}
