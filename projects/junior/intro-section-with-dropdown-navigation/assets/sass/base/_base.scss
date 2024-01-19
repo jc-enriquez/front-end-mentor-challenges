@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   background-color: $clr-almost-white;
   overflow-x: hidden;
@@ -43,5 +44,9 @@ main {
 
   @media screen and (max-width: $bp-large) {
     padding: 2rem 0 8.4rem 0;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    padding: 2rem 0 4.8rem 0;
   }
 }

@@ -12,6 +12,7 @@ html {
     visibility: visible; }
 
 body {
+  position: relative;
   box-sizing: border-box;
   background-color: #fafafa;
   overflow-x: hidden; }
@@ -36,6 +37,9 @@ main {
   @media screen and (max-width: 56.25em) {
     main {
       padding: 2rem 0 8.4rem 0; } }
+  @media screen and (max-width: 25em) {
+    main {
+      padding: 2rem 0 4.8rem 0; } }
 
 html {
   font-size: 62.5%; }
@@ -296,33 +300,34 @@ body {
     .grid-2-cols {
       grid-template-columns: 1fr; } }
 
-.hero__partners {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 15rem; }
+.hero {
+  padding: 0 2rem; }
   @media screen and (max-width: 56.25em) {
-    .hero__partners {
-      justify-content: center;
-      margin-top: 7.5rem; } }
-  .hero__partners__img {
-    width: 10rem; }
-    @media screen and (max-width: 37.5em) {
-      .hero__partners__img {
-        width: 7.5rem; } }
-
-.hero__text-box {
-  align-self: end; }
+    .hero {
+      padding: 0; } }
+  .hero__partners {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 15rem; }
+    @media screen and (max-width: 56.25em) {
+      .hero__partners {
+        justify-content: center;
+        margin-top: 7.5rem; } }
+    .hero__partners__img {
+      width: 10rem; }
+      @media screen and (max-width: 37.5em) {
+        .hero__partners__img {
+          width: 7.5rem; } }
+  .hero__text-box {
+    align-self: end; }
+    @media screen and (max-width: 56.25em) {
+      .hero__text-box {
+        order: 2;
+        text-align: center; } }
   @media screen and (max-width: 56.25em) {
-    .hero__text-box {
-      order: 2;
-      text-align: center;
-      padding: 0 2rem; } }
-
-@media screen and (max-width: 56.25em) {
-  .hero__img-box {
-    order: 1; } }
-
-.hero__image {
-  display: block;
-  width: 100%; }
+    .hero__img-box {
+      order: 1; } }
+  .hero__image {
+    display: block;
+    width: 100%; }

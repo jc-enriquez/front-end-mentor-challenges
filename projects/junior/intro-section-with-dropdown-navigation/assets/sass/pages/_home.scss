@@ -1,4 +1,10 @@
 .hero {
+  padding: 0 2rem;
+
+  @media screen and (max-width: $bp-large) {
+    padding: 0;
+  }
+
   &__partners {
     display: flex;
     align-items: center;
@@ -25,7 +31,6 @@
     @media screen and (max-width: $bp-large) {
       order: 2;
       text-align: center;
-      padding: 0 2rem;
     }
   }
 
