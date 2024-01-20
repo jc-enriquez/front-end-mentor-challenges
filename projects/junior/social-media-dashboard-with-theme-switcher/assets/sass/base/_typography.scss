@@ -1,0 +1,31 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  color: $clr-very-dark-blue;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  color: $clr-dark-grayish-blue;
+}
+
+.label {
+  font-weight: 700;
+  color: $clr-dark-grayish-blue;
+}

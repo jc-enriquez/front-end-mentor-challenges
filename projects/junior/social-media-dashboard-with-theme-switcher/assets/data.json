@@ -1,0 +1,58 @@
+[
+  {
+    "variant": "Facebook",
+    "heading": "Page Views",
+    "stat": 87,
+    "trajectory": "Up",
+    "gains": 3
+  },
+  {
+    "variant": "Facebook",
+    "heading": "Likes",
+    "stat": 52,
+    "trajectory": "Down",
+    "gains": -2
+  },
+  {
+    "variant": "Instagram",
+    "heading": "Likes",
+    "stat": 5462,
+    "trajectory": "Up",
+    "gains": 2257
+  },
+  {
+    "variant": "Instagram",
+    "heading": "Profile Views",
+    "stat": "52k",
+    "trajectory": "Up",
+    "gains": 1375
+  },
+  {
+    "variant": "Twitter",
+    "heading": "Retweets",
+    "stat": 117,
+    "trajectory": "Up",
+    "gains": 303
+  },
+  {
+    "variant": "Twitter",
+    "heading": "Likes",
+    "stat": 507,
+    "trajectory": "Up",
+    "gains": 553
+  },
+  {
+    "variant": "Youtube",
+    "heading": "Likes",
+    "stat": 107,
+    "trajectory": "Down",
+    "gains": -19
+  },
+  {
+    "variant": "Youtube",
+    "heading": "Total Views",
+    "stat": 1407,
+    "trajectory": "Down",
+    "gains": -12
+  }
+]

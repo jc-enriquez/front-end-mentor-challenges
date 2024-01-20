@@ -1,0 +1,119 @@
+.card {
+  background-color: $clr-light-grayish-blue;
+  padding: 3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+
+  &:hover {
+    background-color: darken($clr-light-grayish-blue, 5%);
+  }
+
+  &--main {
+    text-align: center;
+
+    &__heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+
+      @media screen and (max-width: $bp-medium) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &--stat {
+    &__heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      @media screen and (max-width: $bp-medium) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  &__icon {
+    height: 2.4rem;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $clr-dark-grayish-blue;
+  }
+
+  &__stat {
+    font-weight: 700;
+
+    &--lg {
+      font-size: 6.4rem;
+
+      @media screen and (max-width: $bp-largest) {
+        font-size: 5.2rem;
+      }
+
+      @media screen and (max-width: $bp-large) {
+        font-size: 6.4rem;
+      }
+    }
+
+    &--sm {
+      font-size: 3.6rem;
+
+      @media screen and (max-width: $bp-largest) {
+        font-size: 2.4rem;
+      }
+
+      @media screen and (max-width: $bp-large) {
+        font-size: 3.6rem;
+      }
+    }
+  }
+
+  &__caption {
+    font-size: 1.4rem;
+    color: $clr-dark-grayish-blue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 2.4rem;
+  }
+
+  &__trajectory {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &--main {
+      justify-content: center;
+    }
+
+    &__icon {
+      height: 0.5rem;
+    }
+
+    &__caption {
+      font-weight: 700;
+      font-size: 1.4rem;
+
+      &--green {
+        color: $clr-lime-green;
+      }
+
+      &--red {
+        color: $clr-bright-red;
+      }
+    }
+  }
+}

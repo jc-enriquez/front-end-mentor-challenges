@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    to bottom $clr-very-pale-blue 25%,
+    $clr-light-grayish-blue 75%
+  );
+  padding: 2rem;
+}
