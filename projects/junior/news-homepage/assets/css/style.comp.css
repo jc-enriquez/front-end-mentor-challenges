@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: inherit; }
 
+body {
+  box-sizing: border-box;
+  background-color: #fffdfa;
+  padding: 2rem;
+  position: relative;
+  overflow-x: hidden; }
+
 html {
   font-size: 62.5%; }
   @media screen and (max-width: 68.75em) {
@@ -13,15 +20,6 @@ html {
   @media screen and (max-width: 50em) {
     html {
       font-size: 50%; } }
-
-body {
-  box-sizing: border-box;
-  background-color: #fffdfa;
-  padding: 2rem;
-  position: relative; }
-  @media screen and (max-width: 28.125em) {
-    body {
-      overflow-x: hidden; } }
 
 body {
   font-family: "Inter", sans-serif;

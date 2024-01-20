@@ -6,25 +6,10 @@
   box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
-
-  @media screen and (max-width: $bp-largest) {
-    font-size: 56.25%;
-  }
-
-  @media screen and (max-width: $bp-medium) {
-    font-size: 50%;
-  }
-}
-
 body {
   box-sizing: border-box;
   background-color: $off-white;
   padding: 2rem;
   position: relative;
-
-  @media screen and (max-width: $bp-smallest) {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
