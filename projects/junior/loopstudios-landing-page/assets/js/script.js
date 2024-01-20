@@ -13,8 +13,8 @@ const html = document.querySelector("html");
 const body = document.querySelector("body");
 
 btnMobile.addEventListener("click", function () {
-  html.classList.toggle("u-overscroll-y-hidden");
-  body.classList.toggle("u-overscroll-y-hidden");
+  html.classList.toggle("u-overflow-y-hidden");
+  body.classList.toggle("u-overflow-y-hidden");
   navigationEl.classList.toggle("navigation__open");
 });
 
