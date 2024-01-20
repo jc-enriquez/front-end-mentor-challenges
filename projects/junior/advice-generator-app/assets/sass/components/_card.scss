@@ -1,0 +1,29 @@
+.card {
+  position: relative;
+  max-width: 50rem;
+  background-color: $clr-dark-grayish-blue;
+  text-align: center;
+  padding: 3.5rem 3.5rem 7rem 3.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem 1rem rgba($clr-dark-blue, 0.9);
+
+  &__title {
+    font-size: 1.2rem;
+    color: $clr-neon-green;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 2.4rem;
+  }
+
+  &__advice {
+    font-size: 2.8rem;
+    color: $clr-light-cyan;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+  }
+
+  &__divider {
+    display: block;
+    width: 100%;
+  }
+}

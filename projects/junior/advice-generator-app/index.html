@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solution for the Advice generator app from Frontend Mentor by John Christopher Enriquez"
+    />
+    <meta
+      name="keyword"
+      content="HTML, CSS, JavaScript, SASS, Frontend Mentor, John Christopher Enriquez"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Front-End Mentor &mdash; Advice Generator App</title>
+  </head>
+  <body>
+    <main>
+      <figure class="card">
+        <p class="card__title">Advice #<span class="card__number"></span></p>
+        <p class="card__advice">
+          &ldquo;<span class="card__quote"></span>&rdquo;
+        </p>
+        <picture>
+          <source
+            srcset="assets/images/pattern-divider-mobile.svg"
+            media="(min-width: 400px)"
+          />
+          <img
+            src="assets/images/pattern-divider-mobile.svg"
+            alt="Pattern divider"
+            class="card__divider"
+          />
+        </picture>
+        <button class="btn--generate" role="button">
+          <img src="assets/images/icon-dice.svg" alt="Dice icon" />
+        </button>
+      </figure>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="attribution__link"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://jc-ve.github.io/"
+          target="_blank"
+          class="attribution__link"
+          >John Christopher Enriquez </a
+        >.
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
