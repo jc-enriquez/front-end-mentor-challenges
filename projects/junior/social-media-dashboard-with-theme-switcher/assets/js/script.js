@@ -4,6 +4,8 @@ import cards from "../data.json" assert { type: "json" };
 
 const containerCardsMain = document.querySelector(".cards-main");
 const containerCardsSub = document.querySelector(".cards-sub");
+const btnToggle = document.querySelector(".btn--toggle");
+const body = document.querySelector("body");
 
 const cardsMain = [
   {
@@ -86,3 +88,10 @@ const displayCardsSub = () => {
 };
 
 displayCardsSub();
+
+const darkMode = () => {
+  btnToggle.classList.toggle("slide");
+  body.classList.toggle("dark-mode");
+};
+
+btnToggle.addEventListener("click", darkMode);

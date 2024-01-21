@@ -1,0 +1,38 @@
+.btn {
+  &--toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: $clr-btn-light;
+    height: 2.5rem;
+    width: 5rem;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 0.5rem;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+      background: $clr-white;
+      transform: translateX(100%);
+      transition: all 0.3s ease-in;
+    }
+
+    &.slide.btn--toggle::before {
+      transform: translateX(0%);
+    }
+  }
+}
+
+.dark-mode .btn--toggle {
+  background: $clr-btn-dark;
+
+  &::before {
+    background: $clr-dark-desaturated-blue;
+  }
+}

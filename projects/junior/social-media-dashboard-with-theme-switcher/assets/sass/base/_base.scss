@@ -8,9 +8,18 @@
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(
-    to bottom $clr-very-pale-blue 25%,
-    $clr-light-grayish-blue 75%
+  background: linear-gradient(
+    $clr-very-pale-blue 35%,
+    $clr-white 0,
+    $clr-white 65%
   );
   padding: 2rem;
+}
+
+.dark-mode {
+  background: linear-gradient(
+    $clr-very-dark-blue-top 35%,
+    $clr-very-dark-blue 0,
+    $clr-very-dark-blue 65%
+  );
 }

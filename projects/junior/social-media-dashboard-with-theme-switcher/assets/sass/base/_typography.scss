@@ -18,6 +18,10 @@ body {
 .heading-primary {
   font-size: 3.6rem;
   color: $clr-very-dark-blue;
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 3.2rem;
+  }
 }
 
 .heading-secondary {
@@ -28,4 +32,50 @@ body {
 .label {
   font-weight: 700;
   color: $clr-dark-grayish-blue;
+  display: block;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: $clr-very-dark-blue;
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 700;
+      text-decoration: none;
+      color: $clr-bright-red;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}
+
+.dark-mode {
+  & .heading-primary,
+  & .heading-secondary {
+    color: $clr-white;
+  }
+
+  & .label {
+    color: $clr-desaturated-blue;
+  }
+
+  & .attribution {
+    color: $clr-white;
+
+    &__link {
+      &:link,
+      &:visited {
+        color: $clr-lime-green;
+      }
+    }
+  }
 }

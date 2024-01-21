@@ -1,9 +1,34 @@
 .header {
-  padding: 6rem 0 8rem 0;
+  padding: 2rem 0 8rem 0;
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: start;
+      gap: 1.6rem;
+    }
+  }
+
+  &__text {
+    @media screen and (max-width: $bp-tablet) {
+      width: 100%;
+      padding-bottom: 2.4rem;
+      border-bottom: 1px solid $clr-dark-grayish-blue;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 }
