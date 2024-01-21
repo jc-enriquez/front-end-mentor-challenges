@@ -15,27 +15,6 @@ let startingIndex = 0;
 let endingIndex = 6;
 let projectsDataArr = [];
 
-fetch("https://cdn.jsdelivr.net/gh/jc-ve/projects-data/front-end-mentor.json")
-  .then((res) => res.json())
-  .then((data) => {
-    projectsDataArr = data;
-    displayProjects(projectsDataArr.slice(startingIndex, endingIndex));
-  })
-  .catch((err) => {
-    containerProject.innerHTML = `<p>No data retrieved. ${err}</p>`;
-  });
-
-const fetchMoreProjects = () => {
-  startingIndex += 6;
-  endingIndex += 6;
-
-  displayProjects(projectsDataArr.slice(startingIndex, endingIndex));
-
-  if (projectsDataArr.length <= endingIndex) {
-    btnLoadMore.style.display = "none";
-  }
-};
-
 const displayProjects = (projects) => {
   projects.forEach(
     ({ title, projLink, codeLink, imgLink, difficulty, skills }) => {
@@ -77,6 +56,31 @@ const displayProjects = (projects) => {
       containerProject.insertAdjacentHTML("beforeend", html);
     }
   );
+};
+
+const getProject = () => {
+  fetch("https://cdn.jsdelivr.net/gh/jc-ve/projects-data/front-end-mentor.json")
+    .then((res) => res.json())
+    .then((data) => {
+      projectsDataArr = data;
+      displayProjects(projectsDataArr.slice(startingIndex, endingIndex));
+    })
+    .catch((err) => {
+      containerProject.innerHTML = `<p>No data retrieved. ${err}</p>`;
+    });
+};
+
+getProject();
+
+const fetchMoreProjects = () => {
+  startingIndex += 6;
+  endingIndex += 6;
+
+  displayProjects(projectsDataArr.slice(startingIndex, endingIndex));
+
+  if (projectsDataArr.length <= endingIndex) {
+    btnLoadMore.style.display = "none";
+  }
 };
 
 btnLoadMore.addEventListener("click", fetchMoreProjects);
