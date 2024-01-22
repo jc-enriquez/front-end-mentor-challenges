@@ -3,10 +3,21 @@
 }
 
 .grid-2-cols {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   align-items: center;
+
+  @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
 }
 
 .grid-3-cols {
   grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
 }

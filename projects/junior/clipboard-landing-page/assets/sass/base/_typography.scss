@@ -1,5 +1,13 @@
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -39,4 +47,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    align-items: center;
+    text-align: center;
+  }
 }

@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+::selection {
+  background-color: $clr-cyan;
+  color: $clr-white;
+}
+
 body {
   box-sizing: border-box;
 }

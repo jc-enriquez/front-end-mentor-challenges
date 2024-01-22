@@ -9,6 +9,10 @@
     border-radius: 100px;
     transition: background-color 0.3s ease-in;
     box-shadow: 0 -0.4rem inset rgba($clr-dark-grayish-blue, 0.2);
+
+    @media screen and (max-width: $bp-small) {
+      width: 100%;
+    }
   }
 
   &--primary {

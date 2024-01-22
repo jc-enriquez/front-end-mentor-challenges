@@ -1,6 +1,19 @@
 .section {
   &--hero {
     padding: 16rem 0 8rem 0;
+    background: url(../images/bg-header-desktop.png);
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 16rem 4rem 8rem 4rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      background: url(../images/bg-header-mobile.png);
+      background-size: cover;
+      padding: 16rem 2rem 4rem 2rem;
+    }
   }
 
   &--snippets,
@@ -8,6 +21,14 @@
   &--workflow,
   &--partners {
     padding: 8rem 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 4rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      padding: 4rem 2rem;
+    }
   }
 
   &--partners {
@@ -15,11 +36,47 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 3.2rem;
+
+      @media screen and (max-width: $bp-tablet) {
+        flex-direction: column;
+        gap: 6.4rem;
+      }
     }
   }
 
   &--download {
     padding: 8rem 0 16rem 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 8rem 4rem 16rem 4rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      padding: 8rem 2rem 16rem 2rem;
+    }
+  }
+}
+
+.img-block {
+  grid-column: 1 / 7;
+
+  @media screen and (max-width: $bp-tablet) {
+    grid-column: 1 / -1;
+  }
+
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.text-block {
+  grid-column: 8 / -1;
+
+  @media screen and (max-width: $bp-tablet) {
+    grid-column: 1 / -1;
   }
 }
 
@@ -28,4 +85,8 @@
   gap: 2.4rem;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
 }

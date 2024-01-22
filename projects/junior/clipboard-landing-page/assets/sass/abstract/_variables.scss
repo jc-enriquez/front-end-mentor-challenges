@@ -3,6 +3,11 @@ $clr-cyan: #26baa4;
 $clr-light-blue: #6173ff;
 
 $clr-dark-grayish-blue: #4c545d;
-$clr-grayish-blue: hsl(201, 11%, 66%);
+$clr-grayish-blue: #9fabb2;
 
 $clr-white: #fff;
+
+// BREAKPOINTS
+$bp-large: 56.25em; // 900px
+$bp-tablet: 43.75em; // 700px
+$bp-small: 28.125em; // 450px
