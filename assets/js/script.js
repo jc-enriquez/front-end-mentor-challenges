@@ -59,7 +59,9 @@ const displayProjects = (projects) => {
 };
 
 const getProject = () => {
-  fetch("https://cdn.jsdelivr.net/gh/jc-ve/projects-data/front-end-mentor.json")
+  fetch(
+    "https://cdn.jsdelivr.net/gh/jc-ve/projects-data@latest/front-end-mentor.json"
+  )
     .then((res) => res.json())
     .then((data) => {
       projectsDataArr = data;
