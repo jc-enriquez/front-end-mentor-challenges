@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem;
+}
+
+.heading {
+  font-weight: 600;
+  color: $clr-dark-grayish-blue;
+
+  &--primary {
+    font-size: 4rem;
+  }
+
+  &--secondary {
+    font-size: 3.2rem;
+  }
+}
+
+.paragraph {
+  color: $clr-grayish-blue;
+  line-height: 1.6;
+
+  &--lg {
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+
+  &--sm {
+    font-size: 1.6rem;
+    max-width: 40ch;
+  }
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}

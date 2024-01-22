@@ -1,0 +1,37 @@
+.btn {
+  &:link,
+  &:visited {
+    font-weight: 600;
+    display: inline-block;
+    color: $clr-white;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 100px;
+    transition: background-color 0.3s ease-in;
+    box-shadow: 0 -0.4rem inset rgba($clr-dark-grayish-blue, 0.2);
+  }
+
+  &--primary {
+    &:link,
+    &:visited {
+      background-color: $clr-cyan;
+    }
+
+    &:hover,
+    &:active {
+      background-color: lighten($clr-cyan, 15%);
+    }
+  }
+
+  &--secondary {
+    &:link,
+    &:visited {
+      background-color: $clr-light-blue;
+    }
+
+    &:hover,
+    &:active {
+      background-color: lighten($clr-light-blue, 10%);
+    }
+  }
+}

@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem; }
+
+.heading {
+  font-weight: 600;
+  color: #4c545d; }
+  .heading--primary {
+    font-size: 4rem; }
+  .heading--secondary {
+    font-size: 3.2rem; }
+
+.paragraph {
+  color: #9fabb2;
+  line-height: 1.6; }
+  .paragraph--lg {
+    max-width: 60ch;
+    margin: 0 auto; }
+  .paragraph--sm {
+    font-size: 1.6rem;
+    max-width: 40ch; }
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.u-centered {
+  margin: 0 auto; }
+
+.u-margin-bottom-xs {
+  margin-bottom: 0.6rem; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.2rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 3.6rem; }
+
+.u-margin-bottom-xl {
+  margin-bottom: 7.2rem; }
+
+.u-margin-bottom-2xl {
+  margin-bottom: 9.6rem; }
+
+.btn:link, .btn:visited {
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 100px;
+  transition: background-color 0.3s ease-in;
+  box-shadow: 0 -0.4rem inset rgba(76, 84, 93, 0.2); }
+
+.btn--primary:link, .btn--primary:visited {
+  background-color: #26baa4; }
+
+.btn--primary:hover, .btn--primary:active {
+  background-color: #51dbc7; }
+
+.btn--secondary:link, .btn--secondary:visited {
+  background-color: #6173ff; }
+
+.btn--secondary:hover, .btn--secondary:active {
+  background-color: #94a0ff; }
+
+.feature {
+  text-align: center; }
+  .feature__icon {
+    margin-bottom: 2.4rem; }
+  .feature__title {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.6rem; }
+
+.grid {
+  display: grid; }
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; }
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr); }
+
+.section--hero {
+  padding: 16rem 0 8rem 0; }
+
+.section--snippets, .section--access, .section--workflow, .section--partners {
+  padding: 8rem 0; }
+
+.section--partners__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.section--download {
+  padding: 8rem 0 16rem 0; }
+
+.cta-block {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center; }

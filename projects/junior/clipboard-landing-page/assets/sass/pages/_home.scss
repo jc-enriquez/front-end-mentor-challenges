@@ -1,0 +1,31 @@
+.section {
+  &--hero {
+    padding: 16rem 0 8rem 0;
+  }
+
+  &--snippets,
+  &--access,
+  &--workflow,
+  &--partners {
+    padding: 8rem 0;
+  }
+
+  &--partners {
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &--download {
+    padding: 8rem 0 16rem 0;
+  }
+}
+
+.cta-block {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
