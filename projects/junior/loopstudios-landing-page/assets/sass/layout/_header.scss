@@ -4,6 +4,7 @@
     url(../images/desktop/image-hero.jpg);
   background-position: top;
   background-size: cover;
+  position: relative;
 
   @media screen and (max-width: $bp-small) {
     background-image: url(../images/mobile/image-hero.jpg);
