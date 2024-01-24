@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $clr-very-light-grayish-blue;
+}
+
+main {
+  padding: 6rem 2rem;
+
+  @media screen and (max-width: $bp-mobile) {
+    padding: 0 0 2rem 0;
+  }
+}

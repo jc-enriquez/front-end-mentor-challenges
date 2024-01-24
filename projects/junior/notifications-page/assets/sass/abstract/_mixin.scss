@@ -1,0 +1,6 @@
+@mixin hoverLink {
+  &:hover,
+  &:active {
+    color: $clr-blue;
+  }
+}

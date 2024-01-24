@@ -1,8 +1,39 @@
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 49%;
+  }
 }
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 800;
+      color: $clr-blue;
+      text-decoration: none;
+      text-underline-offset: 0.5rem;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-red;
+      text-decoration: underline;
+    }
+  }
 }

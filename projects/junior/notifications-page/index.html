@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -27,7 +27,7 @@
       <div class="notification">
         <div class="notification__header">
           <p class="notification__title">
-            Notifications
+            <span> Notifications </span>
             <span class="notification__total">3</span>
           </p>
           <button class="btn--notification">Mark all as read</button>
@@ -40,12 +40,18 @@
               class="notification__img"
             />
             <div class="notification__text">
-              <p class="notification__message">
-                <span class="notification__name">Mark Webber</span>
+              <p class="notification__message notification__message">
+                <a href="#" class="notification__link notification__link--name"
+                  >Mark Webber</a
+                >
                 reacted to your recent post
                 <a href="#" class="notification__link notification__link--gray"
                   >My first tournament today!</a
                 >
+                <span
+                  class="notification__symbol"
+                  aria-label="Notification symbol"
+                ></span>
               </p>
               <time class="notification__time">1m ago</time>
             </div>
@@ -57,9 +63,15 @@
               class="notification__img"
             />
             <div class="notification__text">
-              <p class="notification__message">
-                <span class="notification__name">Angela Gray</span>
+              <p class="notification__message notification__message">
+                <a href="#" class="notification__link notification__link--name"
+                  >Angela Gray</a
+                >
                 followed you
+                <span
+                  class="notification__symbol"
+                  aria-label="Notification symbol"
+                ></span>
               </p>
               <time class="notification__time">5m ago</time>
             </div>
@@ -71,12 +83,18 @@
               class="notification__img"
             />
             <div class="notification__text">
-              <p class="notification__message">
-                <span class="notification__name">Jacob Thompson</span>
+              <p class="notification__message notification__message--unread">
+                <a href="#" class="notification__link notification__link--name"
+                  >Jacob Thompson</a
+                >
                 has joined your group
                 <a href="#" class="notification__link notification__link--blue"
                   >Chess club</a
                 >
+                <span
+                  class="notification__symbol"
+                  aria-label="Notification symbol"
+                ></span>
               </p>
               <time class="notification__time">1day ago</time>
             </div>
@@ -89,7 +107,9 @@
             />
             <div class="notification__text">
               <p class="notification__message">
-                <span class="notification__name">Rizky Hasanuddin</span>
+                <a href="#" class="notification__link notification__link--name"
+                  >Rizky Hasanuddin</a
+                >
                 sent you a private message
                 <time class="notification__time">5 days ago</time>
                 <span class="notification__private-message"
@@ -109,7 +129,11 @@
             <div class="notification__text notification__text--image">
               <div>
                 <p class="notification__message">
-                  <span class="notification__name">Kimberly Smith</span>
+                  <a
+                    href="#"
+                    class="notification__link notification__link--name"
+                    >Kimberly Smith</a
+                  >
                   commented on your picture
                 </p>
                 <time class="notification__time">1 week ago</time>
@@ -117,6 +141,7 @@
               <img
                 src="assets/images/image-chess.webp"
                 alt="Woman playing chess"
+                class="notification__img"
               />
             </div>
           </li>
@@ -128,7 +153,9 @@
             />
             <div class="notification__text">
               <p class="notification__message">
-                <span class="notification__name">Nathan Peterson</span>
+                <a href="#" class="notification__link notification__link--name"
+                  >Nathan Peterson</a
+                >
                 reacted to your recent post
                 <a href="#" class="notification__link notification__link--gray"
                   >5 end-game strategies to increase your win rate</a
@@ -145,7 +172,9 @@
             />
             <div class="notification__text">
               <p class="notification__message">
-                <span class="notification__name">Anna Kim</span>
+                <a href="#" class="notification__link notification__link--name"
+                  >Anna Kim</a
+                >
                 left the group
                 <a href="#" class="notification__link notification__link--blue"
                   >Chess Club</a
