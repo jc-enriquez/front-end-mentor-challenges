@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: $clr-eggshell;
+  padding: 12.4rem 2rem;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 700;
+}

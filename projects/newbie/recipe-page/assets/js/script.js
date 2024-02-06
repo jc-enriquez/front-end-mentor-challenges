@@ -95,7 +95,7 @@ const displayNutrients = () => {
   nutrients.forEach(({ title, value }) => {
     const tableRow = `
     <tr class="recipe__row">
-      <td class="recipe__data">${title}</td>
+      <td class="recipe__data recipe__data--title">${title}</td>
       <td class="recipe__data recipe__data--value">${value}</td>
     </tr>
     `;

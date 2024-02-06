@@ -1,0 +1,83 @@
+.recipe {
+  max-width: 73.6rem;
+  margin-inline: auto;
+  background-color: $clr-white;
+  padding: 4rem;
+  border-radius: 24px;
+
+  &__img {
+    margin-bottom: 4rem;
+    border-radius: 12px;
+  }
+
+  &__preparation {
+    background-color: $clr-snow;
+    border-radius: 12px;
+    padding: 2.8rem;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $clr-dark-raspberry;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__ingredients,
+  &__instructions {
+    padding-bottom: 3.2rem;
+    border-bottom: 1px solid $clr-white-coffee;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-left: 2.8rem;
+
+    &__item {
+      &--purple {
+        &::marker {
+          color: $clr-dark-raspberry;
+        }
+      }
+
+      &--red {
+        &::marker {
+          font-weight: 700;
+          color: $clr-brandy-red;
+        }
+      }
+
+      & span {
+        display: block;
+        padding-left: 1.6rem;
+      }
+    }
+  }
+
+  &__table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  &__row {
+    &:not(:last-child) {
+      border-bottom: 1px solid $clr-white-coffee;
+    }
+  }
+
+  &__data {
+    padding-block: 1.2rem;
+
+    &--title {
+      padding-left: 3.2rem;
+    }
+
+    &--value {
+      font-weight: 700;
+      color: $clr-brandy-red;
+      padding-right: 3.2rem;
+    }
+  }
+}

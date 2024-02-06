@@ -1,0 +1,28 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+  color: $clr-wenge-brown;
+}
+
+.heading {
+  font-family: "Young Serif", serif;
+
+  &--primary {
+    font-size: 4rem;
+    color: $clr-dark-charcoal;
+    line-height: 1;
+  }
+
+  &--secondary {
+    font-size: 2.8rem;
+    color: $clr-brandy-red;
+  }
+}
+
+.paragraph {
+  line-height: 1.5;
+}
