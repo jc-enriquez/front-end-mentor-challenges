@@ -1,0 +1,18 @@
+.section-hero {
+  background-color: $clr-dark-purple;
+
+  &__text-box {
+    max-width: 63.5rem;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &__img {
+    width: 50%;
+    margin-inline: auto;
+  }
+}
+
+.section-features {
+  background-color: $clr-ghost-white;
+}

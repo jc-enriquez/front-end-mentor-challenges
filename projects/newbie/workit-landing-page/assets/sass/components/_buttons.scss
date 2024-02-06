@@ -1,0 +1,39 @@
+.btn {
+  &:link,
+  &:visited {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  &--primary {
+    &:link,
+    &:visited {
+      color: $clr-dark-purple;
+      background-color: $clr-eucalyptus;
+      padding: 1.6rem 2.4rem;
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-eucalyptus;
+      background-color: transparent;
+      box-shadow: 0 0 0 2px inset $clr-eucalyptus;
+    }
+  }
+
+  &--secondary {
+    &:link,
+    &:visited {
+      color: $clr-white;
+      border-bottom: 3px solid $clr-eucalyptus;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-eucalyptus;
+    }
+  }
+}

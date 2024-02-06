@@ -1,3 +1,25 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  font-size: 1.8rem;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.78;
+}
+
+.heading {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+
+  &--primary {
+    font-size: 8rem;
+    line-height: 1;
+    color: $clr-white;
+  }
+
+  &--secondary {
+    font-size: 5.6rem;
+    line-height: 1.15;
+  }
+}

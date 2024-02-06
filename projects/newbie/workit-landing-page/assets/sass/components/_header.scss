@@ -1,0 +1,13 @@
+.header {
+  background-color: $clr-dark-purple;
+  padding-block: 5.6rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 112rem;
+    padding: 0 2rem;
+    margin-inline: auto;
+  }
+}

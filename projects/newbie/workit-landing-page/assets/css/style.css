@@ -19,3 +19,101 @@ video {
 
 html {
   font-size: 62.5%; }
+
+body {
+  font-size: 1.8rem;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.78; }
+
+.heading {
+  font-family: "Fraunces", serif;
+  font-weight: 600; }
+  .heading--primary {
+    font-size: 8rem;
+    line-height: 1;
+    color: #fff; }
+  .heading--secondary {
+    font-size: 5.6rem;
+    line-height: 1.15; }
+
+.u-container {
+  max-width: 112rem;
+  padding: 0 2rem;
+  margin-inline: auto; }
+
+.u-underlined {
+  border-bottom: 3px solid #44ffa1; }
+
+.u-margin-bottom-md {
+  margin-bottom: 3.7rem; }
+
+.btn:link, .btn:visited {
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block; }
+
+.btn--primary:link, .btn--primary:visited {
+  color: #24053e;
+  background-color: #44ffa1;
+  padding: 1.6rem 2.4rem;
+  transition: all 0.3s ease; }
+
+.btn--primary:hover, .btn--primary:active {
+  color: #44ffa1;
+  background-color: transparent;
+  box-shadow: 0 0 0 2px inset #44ffa1; }
+
+.btn--secondary:link, .btn--secondary:visited {
+  color: #fff;
+  border-bottom: 3px solid #44ffa1;
+  transition: color 0.3s ease; }
+
+.btn--secondary:hover, .btn--secondary:active {
+  color: #44ffa1; }
+
+.feature {
+  color: #24053e;
+  text-align: center;
+  padding: 17.1rem 0; }
+  .feature__number, .feature__title {
+    font-family: "Fraunces", serif;
+    font-weight: 600; }
+  .feature__number {
+    font-size: 2.4rem;
+    padding: 0.8rem 1.7rem 0.8rem 1.8rem;
+    border: 1px solid currentColor;
+    border-radius: 50%; }
+  .feature__title {
+    font-size: 3.2rem;
+    line-height: 1.25;
+    margin: 5.6rem 0 2.8rem 0; }
+
+.header {
+  background-color: #24053e;
+  padding-block: 5.6rem; }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 112rem;
+    padding: 0 2rem;
+    margin-inline: auto; }
+
+.grid {
+  display: grid; }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.6rem; }
+
+.section-hero {
+  background-color: #24053e; }
+  .section-hero__text-box {
+    max-width: 63.5rem;
+    margin-inline: auto;
+    text-align: center; }
+  .section-hero__img {
+    width: 50%;
+    margin-inline: auto; }
+
+.section-features {
+  background-color: #fcf8ff; }
