@@ -27,6 +27,7 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
+  font-weight: 400;
   font-size: 1.6rem;
   color: #5f564d; }
 
@@ -78,14 +79,16 @@ body {
     flex-direction: column;
     gap: 0.8rem;
     padding-left: 2.8rem; }
-    .recipe__list__item--purple::marker {
-      color: #7a284e; }
-    .recipe__list__item--red::marker {
-      font-weight: 700;
-      color: #854632; }
-    .recipe__list__item span {
-      display: block;
-      padding-left: 1.6rem; }
+    .recipe__list__item {
+      padding: 0.4rem 0; }
+      .recipe__list__item--purple::marker {
+        color: #7a284e; }
+      .recipe__list__item--red::marker {
+        font-weight: 700;
+        color: #854632; }
+      .recipe__list__item span {
+        display: block;
+        padding-left: 1.6rem; }
   .recipe__table {
     border-collapse: collapse;
     width: 100%; }
