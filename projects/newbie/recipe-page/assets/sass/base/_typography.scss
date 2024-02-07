@@ -17,6 +17,10 @@ body {
   &--primary {
     font-size: 4rem;
     color: $clr-dark-charcoal;
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 3.6rem;
+    }
   }
 
   &--secondary {
