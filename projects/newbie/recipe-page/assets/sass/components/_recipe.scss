@@ -36,6 +36,8 @@
     padding-left: 2.8rem;
 
     &__item {
+      line-height: 1.5;
+
       &--purple {
         &::marker {
           color: $clr-dark-raspberry;

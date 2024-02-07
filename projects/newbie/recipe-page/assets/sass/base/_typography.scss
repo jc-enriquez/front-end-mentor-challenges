@@ -12,15 +12,19 @@ body {
 
 .heading {
   font-family: "Young Serif", serif;
+  line-height: normal;
 
   &--primary {
     font-size: 4rem;
     color: $clr-dark-charcoal;
-    line-height: 1;
   }
 
   &--secondary {
     font-size: 2.8rem;
     color: $clr-brandy-red;
   }
+}
+
+.paragraph {
+  line-height: 1.5;
 }
