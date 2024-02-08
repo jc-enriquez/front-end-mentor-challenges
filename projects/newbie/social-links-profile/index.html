@@ -12,6 +12,12 @@
       content="HTML, CSS, JavaScript, Frontend Mentor, John Christopher Enriquez"
     />
     <meta name="author" content="John Christopher Enriquez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Front-End Mentor &mdash; Social Links Profile</title>
@@ -24,8 +30,10 @@
           alt="Jessica Randall"
           class="card__avatar"
         />
-        <p class="card__name">Jessica Randall</p>
-        <p class="card__location">London, United Kingdom</p>
+        <div class="card__info">
+          <h1 class="card__name">Jessica Randall</h1>
+          <p class="card__location">London, United Kingdom</p>
+        </div>
         <p class="card__caption">"Front-end developer and avid reader"</p>
         <ul class="card__list">
           <li class="card__list__item">
@@ -45,21 +53,23 @@
           </li>
         </ul>
       </figure>
-      <div class="attribution">
+    </main>
+    <!-- <footer class="footer">
+      <p class="footer__attribution">
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          class="attribution__link"
+          class="footer__attribution__link"
           >Frontend Mentor</a
         >. Coded by
         <a
           href="https://jc-ve.github.io/"
           target="_blank"
-          class="attribution__link"
+          class="footer__attribution__link"
           >John Christopher Enriquez </a
         >.
-      </div>
-    </main>
+      </p>
+    </footer> -->
   </body>
 </html>
