@@ -1,4 +1,4 @@
-# Frontend Mentor Challenges
+# 🖌️ Frontend Mentor Challenges
 
 This is a compilation of challenges I finished in [Frontend Mentor](https://www.frontendmentor.io). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -29,6 +29,17 @@ This is a compilation of challenges I finished in [Frontend Mentor](https://www.
 | [Social Proof Section](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/social-proof-section](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/social-proof-section) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/newbie/social-proof-section](https://jc-ve.github.io/front-end-mentor-challenges/projects/newbie/social-proof-section/)
 | [Stats Preview Card Component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/stats-preview-card-component](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/stats-preview-card-component) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/newbie/stats-preview-card-component](https://jc-ve.github.io/front-end-mentor-challenges/projects/newbie/stats-preview-card-component/)
 | [3-Column Preview Card Component](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/three-column-preview-card-component](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/newbie/three-column-preview-card-component) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/newbie/three-column-preview-card-component](https://jc-ve.github.io/front-end-mentor-challenges/projects/newbie/three-column-preview-card-component/)
+
+### Junior
+| Project Title  | Solution URL | Live Site URL
+| --- | --- | --- |
+| [Advice Generator App](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/advice-generator-app](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/advice-generator-app) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/advice-generator-app](https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/advice-generator-app/)
+| [Clipboard Landing Page](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/clipboard-landing-page](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/clipboard-landing-page) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/clipboard-landing-page](https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/clipboard-landing-page/)
+| [Expneses Chart Component](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/expenses-chart-component](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/expenses-chart-component) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/clipboard-landing-page](https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/expenses-chart-component/)
+| [Fylo Data Storage Component](https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/fylo-data-storage-component](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/fylo-data-storage-component) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/fylo-data-storage-component](https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/fylo-data-storage-component/)
+| [Fylo Landing Page with Two Column Layout](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5) | [https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/fylo-landing-page-with-two-column-layout](https://github.com/jc-ve/front-end-mentor-challenges/tree/main/projects/junior/fylo-landing-page-with-two-column-layout) | [https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/fylo-landing-page-with-two-column-layout](https://jc-ve.github.io/front-end-mentor-challenges/projects/junior/fylo-landing-page-with-two-column-layout/)
+
+
 
 ## Author
 
