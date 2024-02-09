@@ -31,7 +31,7 @@ body {
 }
 
 .article {
-  max-width: 38.4rem;
+  max-width: 36rem;
   background-color: var(--white);
   padding: 2.4rem;
   border: 1px solid var(--black);
