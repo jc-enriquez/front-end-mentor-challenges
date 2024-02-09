@@ -12,19 +12,25 @@
       content="HTML, CSS, JavaScript, Frontend Mentor, John Christopher Enriquez"
     />
     <meta name="author" content="John Christopher Enriquez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Front-End Mentor &mdash; Blog Preview Card</title>
   </head>
   <body>
     <main>
-      <div class="container">
-        <article class="article">
-          <img
-            src="assets/images/illustration-article.svg"
-            alt="Article preview image"
-            class="article__img"
-          />
+      <article class="article">
+        <img
+          src="assets/images/illustration-article.svg"
+          alt="Article preview image"
+          class="article__img"
+        />
+        <div class="article__body">
           <span class="article__tag">Learning</span>
           <span class="article__date">Published 21 Dec 2023</span>
           <div class="article__body">
@@ -33,32 +39,32 @@
               These languages are the backbone of every website, defining
               structure, content, and presentation
             </p>
-            <div class="article__author">
-              <img
-                src="assets/images/image-avatar.webp"
-                alt="Greg Hooper"
-                class="article__author__img"
-              />
-              <p class="article__author__name">Greg Hooper</p>
-            </div>
           </div>
-        </article>
-        <div class="attribution">
-          Challenge by
-          <a
-            href="https://www.frontendmentor.io"
-            target="_blank"
-            class="attribution__link"
-            >Frontend Mentor</a
-          >. Coded by
-          <a
-            href="https://jc-ve.github.io/"
-            target="_blank"
-            class="attribution__link"
-            >John Christopher Enriquez </a
-          >.
+          <div class="article__author">
+            <img
+              src="assets/images/image-avatar.webp"
+              alt="Greg Hooper"
+              class="article__author__img"
+            />
+            <p class="article__author__name">Greg Hooper</p>
+          </div>
         </div>
-      </div>
+      </article>
     </main>
+    <!-- <footer class="footer__attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io"
+        target="_blank"
+        class="footer__attribution__link"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://jc-ve.github.io/"
+        target="_blank"
+        class="footer__attribution__link"
+        >John Christopher Enriquez </a
+      >.
+    </footer> -->
   </body>
 </html>
