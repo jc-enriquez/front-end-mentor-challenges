@@ -48,6 +48,7 @@ main {
 
 .heading {
   font-family: "Young Serif", serif;
+  font-weight: normal;
 }
 
 .heading--primary {
