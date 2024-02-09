@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Figtree", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
@@ -31,7 +32,7 @@ body {
 }
 
 .article {
-  max-width: 36rem;
+  max-width: 38.4rem;
   background-color: var(--white);
   padding: 2.4rem;
   border: 1px solid var(--black);
