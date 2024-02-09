@@ -27,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-inline: 2.4rem;
 }
 
 .article {
@@ -36,19 +37,15 @@ body {
   border: 1px solid var(--black);
   border-radius: 20px;
   box-shadow: 0.8rem 0.8rem var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
   margin-bottom: 5.2rem;
   transition: box-shadow 0.3s ease;
 }
 
 .article:hover {
   box-shadow: 1.6rem 1.6rem;
-}
-
-.article__img {
-  display: block;
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 2.4rem;
 }
 
 .article__body {
@@ -58,13 +55,19 @@ body {
   align-items: flex-start;
 }
 
+.article__img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .article__tag,
 .article__date {
   font-size: 1.4rem;
+  display: inline-flex;
 }
 
 .article__tag {
-  display: inline-block;
   font-weight: 800;
   background-color: var(--yellow);
   padding: 0.4rem 1.2rem;
@@ -73,7 +76,6 @@ body {
 
 .article__date {
   display: block;
-  font-weight: 600;
 }
 
 .article__title:link,
@@ -92,7 +94,6 @@ body {
 }
 
 .article__description {
-  margin-bottom: 2.4rem;
   color: var(--grey);
 }
 
@@ -104,8 +105,8 @@ body {
 
 .article__author__img {
   display: block;
-  height: 3.6rem;
-  width: 3.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
 }
 
 .article__author__name {
@@ -132,16 +133,4 @@ body {
 .attribution__link:hover,
 .attribution__link:active {
   border-bottom: 1px solid currentColor;
-}
-
-@media screen and (max-width: 50rem) {
-  html {
-    font-size: 56.25%;
-  }
-}
-
-@media screen and (max-width: 25rem) {
-  html {
-    font-size: 50%;
-  }
 }
