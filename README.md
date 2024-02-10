@@ -1,4 +1,4 @@
-# 🖌️ Frontend Mentor Challenges
+# ![Front-End Mentor Icon.](/assets/images/fem-favicon.png) Frontend Mentor Challenges
 
 This is a compilation of challenges I finished in [Frontend Mentor](https://www.frontendmentor.io). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
