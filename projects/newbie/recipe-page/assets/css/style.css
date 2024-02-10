@@ -108,6 +108,14 @@ main {
   padding-left: 1.6rem;
 }
 
+ul > .recipe__list__item {
+  font-size: 1.2rem;
+}
+
+.recipe__list__item::marker {
+  padding-left: 0.8rem;
+}
+
 .recipe__list__item--purple::marker {
   color: var(--clr-dark-raspberry);
 }
