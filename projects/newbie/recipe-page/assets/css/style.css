@@ -49,12 +49,12 @@ main {
 .heading {
   font-family: "Young Serif", serif;
   font-weight: normal;
+  line-height: 1;
 }
 
 .heading--primary {
   font-size: 4rem;
   color: var(--clr-dark-charcoal);
-  line-height: 1;
 }
 
 .heading--secondary {
@@ -131,6 +131,7 @@ main {
   font-weight: 600;
   font-size: 2rem;
   color: var(--clr-dark-raspberry);
+  line-height: 1;
 }
 
 /* ======================= */
