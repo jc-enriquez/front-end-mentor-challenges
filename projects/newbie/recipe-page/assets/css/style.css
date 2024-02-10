@@ -54,7 +54,7 @@ main {
 .heading--primary {
   font-size: 4rem;
   color: var(--clr-dark-charcoal);
-  line-height: normal;
+  line-height: 1;
 }
 
 .heading--secondary {
@@ -91,7 +91,7 @@ main {
 
 .recipe__img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   border-radius: 12px;
   margin-bottom: 4rem;
 }
