@@ -45,13 +45,14 @@ body {
 .product {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-height: 45rem;
   max-width: 60rem;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .product__img {
-  max-height: 45rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -124,13 +125,13 @@ body {
   background-color: var(--darker-cyan);
 }
 
-.attribution {
+.footer__attribution {
   font-size: 1rem;
   text-align: center;
 }
 
-.attribution__link:link,
-.attribution__link:visited {
+.footer__attribution__link:link,
+.footer__attribution__link:visited {
   padding-bottom: 0.3rem;
   color: var(--dark-cyan);
   font-weight: 700;
@@ -139,9 +140,15 @@ body {
   transition: all 0.3s;
 }
 
-.attribution__link:hover,
-.attribution__link:active {
+.footer__attribution__link:hover,
+.footer__attribution__link:active {
   border-bottom: 1px solid currentColor;
+}
+
+@media screen and (max-width: 40.625em) {
+  .product {
+    max-height: 100%;
+  }
 }
 
 @media screen and (max-width: 31.25em) {
