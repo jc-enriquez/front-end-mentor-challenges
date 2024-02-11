@@ -45,6 +45,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 60rem;
+  max-height: 45rem;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -141,6 +142,12 @@ body {
 .attribution__link:hover,
 .attribution__link:active {
   border-bottom: 1px solid currentColor;
+}
+
+@media screen and (max-width: 40.625em) {
+  .product {
+    max-height: 100%;
+  }
 }
 
 @media screen and (max-width: 31.25em) {
