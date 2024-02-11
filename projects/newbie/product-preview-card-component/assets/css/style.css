@@ -51,7 +51,7 @@ body {
 }
 
 .product__img {
-  height: 100%;
+  max-height: 45rem;
   width: 100%;
   object-fit: cover;
 }
@@ -62,10 +62,11 @@ body {
 }
 
 .product__label {
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
+  line-height: normal;
 }
 
 .product__title:link,
@@ -93,10 +94,11 @@ body {
 }
 
 .product__price--sale {
-  color: var(--dark-cyan);
   font-family: "Fraunces", serif;
   font-size: 3.2rem;
   font-weight: 700;
+  color: var(--dark-cyan);
+  line-height: 1;
 }
 
 .product__price--original {
@@ -142,12 +144,6 @@ body {
 .attribution__link:hover,
 .attribution__link:active {
   border-bottom: 1px solid currentColor;
-}
-
-@media screen and (max-width: 40.625em) {
-  .product {
-    max-height: 100%;
-  }
 }
 
 @media screen and (max-width: 31.25em) {
