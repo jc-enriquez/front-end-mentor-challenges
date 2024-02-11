@@ -12,18 +12,24 @@
       content="HTML, CSS, JavaScript, Frontend Mentor, John Christopher Enriquez"
     />
     <meta name="author" content="John Christopher Enriquez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Front-End Mentor &mdash; Product Preview Card Components</title>
   </head>
   <body>
-    <div class="container">
-      <figure class="product">
+    <main>
+      <article class="product">
         <div class="product__img-box">
           <picture>
             <source
-              media="(min-width:450px)"
               srcset="assets/images/image-product-desktop.jpg"
+              media="(min-width: 500px)"
             />
             <img
               src="assets/images/image-product-mobile.jpg"
@@ -34,7 +40,11 @@
         </div>
         <div class="product__text-box">
           <p class="product__label">Perfume</p>
-          <p class="product__title">Gabrielle Essence Eau De Parfum</p>
+          <h1>
+            <a href="#" class="product__title"
+              >Gabrielle Essence Eau De Parfum</a
+            >
+          </h1>
           <p class="product__description">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL
@@ -43,27 +53,27 @@
             <p class="product__price--sale">$149.99</p>
             <p class="product__price--original">$169.99</p>
           </div>
-          <button class="btn btn-add">
+          <button class="btn--add">
             <img src="assets/images/icon-cart.svg" alt="Cart icon" />
             Add to Cart
           </button>
         </div>
-      </figure>
-      <div class="attribution">
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io"
-          target="_blank"
-          class="attribution__link"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          href="https://jc-ve.github.io/"
-          target="_blank"
-          class="attribution__link"
-          >John Christopher Enriquez </a
-        >.
-      </div>
-    </div>
+      </article>
+    </main>
+    <!-- <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io"
+        target="_blank"
+        class="footer__attribution__link"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://jc-ve.github.io/"
+        target="_blank"
+        class="footer__attribution__link"
+        >John Christopher Enriquez </a
+      >.
+    </footer> -->
   </body>
 </html>
