@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
-
 :root {
   /* Primary Colors */
   --light-red: hsl(0, 100%, 67%);
@@ -28,9 +26,7 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
-}
-
-.container {
+  line-height: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,27 +38,34 @@ body {
 .summary {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 60rem;
-  border-radius: 20px;
+  max-width: 73.6rem;
+  border-radius: 32px;
   overflow: hidden;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.05);
   margin-bottom: 5.2rem;
 }
 
 .summary__text {
-  margin-bottom: 2.4rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
+}
+
+.summary__text--result {
+  margin-bottom: 3.5rem;
+}
+
+.summary__text--score {
+  margin-bottom: 2.8rem;
 }
 
 .summary__result-box {
   text-align: center;
-  padding: 3rem;
+  padding: 3.8rem 5.4rem 4.6rem 5.4rem;
   background-image: linear-gradient(
     to bottom,
     hsl(252, 100%, 67%),
     hsl(241, 81%, 54%)
   );
-  border-radius: 20px;
+  border-radius: 32px;
   color: var(--light-lavender);
 }
 
@@ -71,8 +74,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2.4rem auto;
-  margin-top: 0;
+  margin-inline: auto;
+  margin-bottom: 2.8rem;
   padding: 2rem;
   height: 15rem;
   width: 15rem;
@@ -87,25 +90,24 @@ body {
 .result-score--actual {
   display: block;
   color: var(--white);
-  font-size: 6.4rem;
+  font-size: 7.2rem;
   font-weight: 800;
 }
 
 .result-score--overall {
   font-weight: 700;
-  font-size: 1.6rem;
 }
 
 .summary__overview {
   color: var(--white);
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 700;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.4rem;
 }
 
 .summary__score-box {
-  padding: 3rem;
-  border-radius: 0 20px 20px 0;
+  padding: 3.8rem 4rem 4.6rem 4rem;
+  border-radius: 0 32px 32px 0;
 }
 
 .summary__list {
@@ -113,14 +115,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.1rem;
 }
 
 .summary__item {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  border-radius: 6px;
+  padding: 1.6rem;
+  border-radius: 12px;
 }
 
 .summary__item-title {

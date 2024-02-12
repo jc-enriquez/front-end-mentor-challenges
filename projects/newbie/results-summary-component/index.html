@@ -12,30 +12,38 @@
       content="HTML, CSS, JavaScript, Frontend Mentor, John Christopher Enriquez"
     />
     <meta name="author" content="John Christopher Enriquez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Front-End Mentor &mdash; Results Summary Component</title>
   </head>
   <body>
-    <div class="container">
+    <main>
       <figure class="summary">
         <div class="summary__result-box">
-          <p class="summary__text">Your Result</p>
+          <p class="summary__text summary__text--result">Your Result</p>
           <div class="summary__result-score">
             <span class="result-score--actual">76</span>
             <span class="result-score--overall">of 100</span>
           </div>
           <p class="summary__overview">Great</p>
           <p class="summary__description">
-            You scored higher than 65% of the people who have taken these tests
+            You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
         <div class="summary__score-box">
-          <p class="summary__text">Summary</p>
+          <p class="summary__text summary__text--score">Summary</p>
           <ul class="summary__list"></ul>
           <button class="btn-continue">Continue</button>
         </div>
       </figure>
+    </main>
+    <!-- <footer>
       <div class="attribution">
         Challenge by
         <a
@@ -51,9 +59,7 @@
           >John Christopher Enriquez </a
         >.
       </div>
-    </div>
-    <<<<<<< HEAD =======
+    </footer> -->
     <script type="module" src="assets/js/script.js"></script>
-    >>>>>>> 29c4050 (refactored content)
   </body>
 </html>
