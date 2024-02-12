@@ -42,7 +42,7 @@ body {
   border-radius: 32px;
   overflow: hidden;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.05);
-  margin-bottom: 5.2rem;
+  /* margin-bottom: 5.2rem; */
 }
 
 .summary__text {
