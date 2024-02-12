@@ -41,7 +41,7 @@ body {
   max-width: 73.6rem;
   border-radius: 32px;
   overflow: hidden;
-  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3rem 6rem rgba(61, 108, 236, 0.15);
   /* margin-bottom: 5.2rem; */
 }
 
@@ -77,8 +77,8 @@ body {
   margin-inline: auto;
   margin-bottom: 2.8rem;
   padding: 2rem;
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  width: 20rem;
   background-image: linear-gradient(
     to bottom,
     hsla(256, 72%, 46%, 1),
