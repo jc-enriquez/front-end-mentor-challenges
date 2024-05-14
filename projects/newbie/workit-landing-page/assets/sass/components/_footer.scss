@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  background-color: $clr-white;
+  padding: 6rem 0;
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 5.762rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $clr-davys-gray;
+    transition: fill 0.3s ease;
+
+    &:hover {
+      fill: $clr-dark-purple;
+    }
+  }
+}

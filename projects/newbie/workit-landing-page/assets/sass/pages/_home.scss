@@ -1,5 +1,12 @@
 .section-hero {
+  position: relative;
+  // background: url(/assets/images/bg-hero.png);
   background-color: $clr-dark-purple;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: bottom;
+  // border-bottom-right-radius: 100% 25%;
+  // border-bottom-left-radius: 100% 25%;
 
   &__text-box {
     max-width: 63.5rem;
@@ -15,4 +22,8 @@
 
 .section-features {
   background-color: $clr-ghost-white;
+  // background: url(/assets/images/bg-features.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: bottom;
 }
