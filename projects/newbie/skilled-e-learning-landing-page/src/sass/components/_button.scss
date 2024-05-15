@@ -1,0 +1,55 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    color: $clr-white;
+    padding: 1.4rem 3.2rem;
+    border-radius: 28px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  &--primary {
+    &,
+    &:link,
+    &:visited {
+      background-color: $clr-navy-blue;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $clr-light-blue;
+    }
+  }
+
+  &--secondary {
+    &,
+    &:link,
+    &:visited {
+      background: $clr-gradient-1;
+    }
+
+    &:hover,
+    &:active {
+      background: linear-gradient(rgba($clr-white, 0.5), rgba($clr-white, 0.5)),
+        linear-gradient($clr-orange, $clr-pink);
+    }
+  }
+
+  &--tertiary {
+    &,
+    &:link,
+    &:visited {
+      background: $clr-gradient-2;
+    }
+
+    &:hover,
+    &:active {
+      background: linear-gradient(rgba($clr-white, 0.5), rgba($clr-white, 0.5)),
+        linear-gradient($clr-blue, $clr-pink);
+    }
+  }
+}

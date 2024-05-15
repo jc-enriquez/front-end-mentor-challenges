@@ -1,0 +1,10 @@
+.footer {
+  background-color: $clr-navy-blue;
+  padding: 3.2rem 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
