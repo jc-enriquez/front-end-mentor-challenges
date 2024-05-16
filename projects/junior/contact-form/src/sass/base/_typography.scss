@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: $font-size-md;
+}
+
+.heading {
+  font-weight: 700;
+
+  &--primary {
+    font-size: 3.2rem;
+  }
+}

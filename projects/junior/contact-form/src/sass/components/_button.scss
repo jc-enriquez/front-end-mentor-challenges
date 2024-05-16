@@ -1,0 +1,20 @@
+.btn {
+  &--solid {
+    width: 100%;
+    font-weight: 700;
+    color: $clr-pure-white;
+    background: linear-gradient($clr-green, $clr-green);
+    padding: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(
+          rgba($clr-pure-black, 0.5),
+          rgba($clr-pure-black, 0.5)
+        ),
+        linear-gradient($clr-green, $clr-green);
+    }
+  }
+}

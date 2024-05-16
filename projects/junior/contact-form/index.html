@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" class="form" id="form" autocomplete="off">
+        <h1 class="heading heading--primary u-margin-bottom-xl">Contact Us</h1>
+
+        <div class="form__input-grouped u-margin-bottom-lg">
+          <div class="form__input-group">
+            <label for="first-name" class="form__label">First Name </label>
+            <input type="text" id="first-name" class="form__input" />
+          </div>
+          <div class="form__input-group">
+            <label for="last-name" class="form__label">Last Name </label>
+            <input type="text" id="last-name" class="form__input" />
+          </div>
+        </div>
+
+        <div class="form__input-group u-margin-bottom-lg">
+          <label for="email" class="form__label">Email </label>
+          <input type="email" id="email" class="form__input" />
+        </div>
+
+        <div class="form__input-group u-margin-bottom-lg">
+          <label class="form__label">Query Type </label>
+          <div class="form__input-grouped">
+            <div class="form__input-group--radio">
+              <input
+                type="radio"
+                name="query"
+                id="enquiry"
+                class="form__input-radio"
+              />
+              <span class="form__input-radio__mark">&nbsp;</span>
+              <label for="enquiry" class="form__label--radio"
+                >General Enquiry</label
+              >
+            </div>
+            <div class="form__input-group--radio">
+              <input
+                type="radio"
+                name="query"
+                id="request"
+                class="form__input-radio"
+              />
+              <span class="form__input-radio__mark">&nbsp;</span>
+              <label for="request" class="form__label--radio"
+                >Support Request</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <button class="btn--solid" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
