@@ -27,14 +27,19 @@ body {
 
 .heading {
   font-family: "Fraunces", serif;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #fff; }
   .heading--primary {
     font-size: 8rem;
-    line-height: 1;
-    color: #fff; }
+    line-height: 1; }
   .heading--secondary {
     font-size: 5.6rem;
     line-height: 1.15; }
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: #fff; }
 
 .u-container {
   max-width: 112rem;
@@ -43,6 +48,9 @@ body {
 
 .u-underlined {
   border-bottom: 3px solid #44ffa1; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 3.2rem; }
 
 .u-margin-bottom-md {
   margin-bottom: 3.7rem; }
@@ -139,3 +147,31 @@ body {
 
 .section-features {
   background-color: #fcf8ff; }
+
+.section-test__content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 60px);
+  align-items: center; }
+
+.section-test__img-box {
+  grid-column: 1 / 4;
+  grid-row: 1 / 6; }
+
+.section-test__txt-box {
+  position: relative;
+  grid-column: 3 / -1;
+  grid-row: 3 / -1;
+  padding: 6.4rem;
+  background-color: #24053e; }
+  .section-test__txt-box::after {
+    position: absolute;
+    right: 7.269rem;
+    top: 26.329rem;
+    bottom: -6.174rem;
+    content: "";
+    display: block;
+    height: 13.7rem;
+    width: 17.3rem;
+    background: url(/assets/images/bg-pattern-3.svg);
+    background-size: cover; }

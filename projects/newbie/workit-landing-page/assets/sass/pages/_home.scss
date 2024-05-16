@@ -27,3 +27,38 @@
   // background-repeat: no-repeat;
   // background-position: bottom;
 }
+
+.section-test {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 60px);
+    align-items: center;
+  }
+
+  &__img-box {
+    grid-column: 1 / 4;
+    grid-row: 1 / 6;
+  }
+
+  &__txt-box {
+    position: relative;
+    grid-column: 3 / -1;
+    grid-row: 3 / -1;
+    padding: 6.4rem;
+    background-color: $clr-dark-purple;
+
+    &::after {
+      position: absolute;
+      right: 7.269rem;
+      top: 26.329rem;
+      bottom: -6.174rem;
+      content: "";
+      display: block;
+      height: 13.7rem;
+      width: 17.3rem;
+      background: url(/assets/images/bg-pattern-3.svg);
+      background-size: cover;
+    }
+  }
+}

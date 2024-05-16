@@ -11,15 +11,21 @@ body {
 .heading {
   font-family: "Fraunces", serif;
   font-weight: 600;
+  color: $clr-white;
 
   &--primary {
     font-size: 8rem;
     line-height: 1;
-    color: $clr-white;
   }
 
   &--secondary {
     font-size: 5.6rem;
     line-height: 1.15;
   }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: $clr-white;
 }
