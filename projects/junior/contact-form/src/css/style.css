@@ -15,6 +15,9 @@ main {
   display: grid;
   place-items: center; }
 
+textarea {
+  resize: none; }
+
 html {
   font-size: 62.5%; }
 
@@ -32,6 +35,9 @@ body {
 
 .u-margin-bottom-xl {
   margin-bottom: 3.2rem; }
+
+.u-margin-bottom-2xl {
+  margin-bottom: 4rem; }
 
 .btn--solid {
   width: 100%;
