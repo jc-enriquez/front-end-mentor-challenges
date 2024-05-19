@@ -32,6 +32,7 @@
     font-size: $font-size-sm;
     color: $clr-dark-grey;
     margin-bottom: $spacing-xs;
+    cursor: pointer;
 
     &::after {
       display: block;
@@ -86,12 +87,46 @@
       }
     }
 
-    &:checked + .input-radio__mark {
+    &:checked + .form__input-radio__mark {
       border: 1px solid $clr-green;
     }
 
-    &:checked + .input-radio__mark::before {
+    &:checked + .form__input-radio__mark::before {
       background-color: $clr-green;
+    }
+  }
+
+  &__input-checkbox {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+
+    &__mark {
+      position: relative;
+      height: 1.8rem;
+      width: 1.8rem;
+      box-shadow: 0 0 0 1px inset $clr-medium-grey;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $clr-pure-white;
+        display: none;
+        content: "\2713";
+      }
+    }
+
+    &:checked + .form__input-checkbox__mark {
+      background-color: $clr-green;
+      box-shadow: none;
+    }
+
+    &:checked + .form__input-checkbox__mark::before {
+      display: block;
     }
   }
 }

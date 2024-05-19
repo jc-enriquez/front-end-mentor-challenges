@@ -75,7 +75,8 @@ body {
     gap: 0.8rem;
     font-size: 1.6rem;
     color: #2a4144;
-    margin-bottom: 0.8rem; }
+    margin-bottom: 0.8rem;
+    cursor: pointer; }
     .form__label::after {
       display: block;
       content: "*";
@@ -115,7 +116,31 @@ body {
         width: 1.2rem;
         border-radius: 50%;
         background-color: transparent; }
-    .form__input-radio:checked + .input-radio__mark {
+    .form__input-radio:checked + .form__input-radio__mark {
       border: 1px solid #0c7d69; }
-    .form__input-radio:checked + .input-radio__mark::before {
+    .form__input-radio:checked + .form__input-radio__mark::before {
       background-color: #0c7d69; }
+  .form__input-checkbox {
+    display: none;
+    visibility: hidden;
+    pointer-events: none; }
+    .form__input-checkbox__mark {
+      position: relative;
+      height: 1.8rem;
+      width: 1.8rem;
+      box-shadow: 0 0 0 1px inset #86a2a5;
+      border-radius: 4px;
+      cursor: pointer; }
+      .form__input-checkbox__mark::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        display: none;
+        content: "\2713"; }
+    .form__input-checkbox:checked + .form__input-checkbox__mark {
+      background-color: #0c7d69;
+      box-shadow: none; }
+    .form__input-checkbox:checked + .form__input-checkbox__mark::before {
+      display: block; }
