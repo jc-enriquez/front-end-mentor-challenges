@@ -1,9 +1,8 @@
 "use strict";
 
-const containerSummary = document.querySelector(".summary__list");
+import data from "../data.json" with { type: "json" };
 
-import data from "../data.json" assert { type: "json" };
-console.log(data);
+const containerSummary = document.querySelector(".summary__list");
 
 const displayData = () => {
   data.forEach(({ category, score, icon }) => {

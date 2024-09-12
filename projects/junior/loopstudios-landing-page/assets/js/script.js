@@ -1,6 +1,6 @@
 "use strict";
 
-import images from "../data.json" assert { type: "json" };
+import images from "../data.json" with { type: "json" };
 
 const containerSectionCreations = document.querySelector(
   ".section-creations__content"

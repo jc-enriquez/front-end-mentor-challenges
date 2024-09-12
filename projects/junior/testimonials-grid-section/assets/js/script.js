@@ -1,6 +1,6 @@
 "use script";
 
-import testimonial from "../data.json" assert { type: "json" };
+import testimonial from "../data.json" with { type: "json" };
 
 const containerTestimonials = document.querySelector(".testimonials");
 

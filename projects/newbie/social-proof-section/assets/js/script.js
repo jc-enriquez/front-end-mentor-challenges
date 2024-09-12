@@ -1,6 +1,6 @@
 "use strict";
 
-import testimonials from "../data.json" assert { type: "json" };
+import testimonials from "../data.json" with { type: "json" };
 
 const containerTestimonials = document.querySelector(
   ".social-proof__testimonials"

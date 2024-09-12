@@ -1,6 +1,6 @@
 "use strict";
 
-import graphs from "../data.json" assert { type: "json" };
+import graphs from "../data.json" with { type: "json" };
 
 const containerChartList = document.querySelector(".chart__list");
 

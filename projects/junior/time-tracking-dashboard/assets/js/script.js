@@ -1,6 +1,6 @@
 "use strict";
 
-import data from "../data.json" assert { type: "json" };
+import data from "../data.json" with { type: "json" };
 
 const containerGrid = document.querySelector(".grid-stat");
 const cardList = document.querySelector(".card__list");
